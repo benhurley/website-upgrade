@@ -11,8 +11,4 @@ font-size: 14px;
 font-family: 'Kdam Thmor Pro', sans-serif;
 cursor: pointer;
 box-shadow: 5px 5px gray;
-&:hover {
-    transform: scale(1.03);
-    transition: transform 0.5s ease;
-}
 `

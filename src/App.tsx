@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     background-image: url(${backgroundImg});
     background-size: contain;
     background-color: #000;
-    background-repeat: no-rpeat;
+    background-repeat: no-repeat;
   }
 `;
 

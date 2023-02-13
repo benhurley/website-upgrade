@@ -43,7 +43,8 @@ cursor: pointer;
 border: 2px solid;
 border-color: white;
 &:hover {
-    transform: scale(1.03);
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
 }
 `
 
