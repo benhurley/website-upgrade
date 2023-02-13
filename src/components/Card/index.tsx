@@ -4,13 +4,13 @@ const Container = styled.div`
 width: 275px;
 padding: 24px;
 margin: auto;
-background-color: #111;
+background-color: black;
 color: white;
 height: auto;
-border: 2px solid;
+border: 1px solid;
 border-color: whtite;
 border-radius: 30px;
-box-shadow: 5px 5px 5px white;
+box-shadow: 5px 5px white;
 &:hover {
     transform: scale(1.02);
     transition: transform 0.5s ease;
