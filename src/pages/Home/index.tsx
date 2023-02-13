@@ -51,7 +51,7 @@ const Description = styled.h3`
 max-width: 700px;
 margin-left: auto;
 margin-right: auto;
-padding: 10px 10px 30px 10px;
+padding: 10px 10px 20px 10px;
 `
 
 const CTAContainer = styled.div`
@@ -71,7 +71,7 @@ export const Home = () => {
   const [headshotSrc, setHeadshotSrc] = useState(benHeadshot);
 
   return (
-    <FadeInComponent>
+    <FadeInComponent timeout={500}>
       <Container>
         <h1>Hey, it's Ben <Wave>👋</Wave></h1>
         <AvatarContainer>
