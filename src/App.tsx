@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
+    min-height: 100vh;
   }
 `;
 
