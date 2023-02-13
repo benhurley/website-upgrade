@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryButton } from '../../components/Buttons/PrimaryButton';
+import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButton';
 
 const benHeadshot = require("../../img/ben.png");
 const monkeHeadshot = require("../../img/smb.png");
@@ -50,23 +51,20 @@ const Description = styled.h3`
 max-width: 700px;
 margin-left: auto;
 margin-right: auto;
-margin: 10px 10px 30px 10px;
+padding: 10px 10px 30px 10px;
 `
 
-const wiggle = keyframes`
-  0% { transform: rotate(0deg); }
-  80% { transform: rotate(0deg); }
-  85% { transform: rotate(2deg); }
-  95% { transform: rotate(-2deg); }
-  100% { transform: rotate(0deg); }
-`;
+const CTAContainer = styled.div`
+display: inline-block;
+`
 
-const WigglingHeading = styled.h1`
-  animation: ${wiggle} 10s;
-  &:hover {
-    animation: none;
-  }
-`;
+const ShowMeButton = styled(PrimaryButton)`
+margin-right: 10px;
+`
+
+const ReachOutButton = styled(SecondaryLinkButton)`
+margin-left: 10px;
+`
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -76,13 +74,14 @@ export const Home = () => {
     <FadeInComponent>
       <Container>
         <h1>Hey, it's Ben <Wave>👋</Wave></h1>
-        <WigglingHeading>
-          <AvatarContainer>
-            <Image alt="headshot of ben" src={headshotSrc} onClick={() => headshotSrc === benHeadshot ? setHeadshotSrc(monkeHeadshot) : setHeadshotSrc(benHeadshot)} />
-          </AvatarContainer>
-        </WigglingHeading>
+        <AvatarContainer>
+          <Image alt="headshot of ben" src={headshotSrc} onClick={() => headshotSrc === benHeadshot ? setHeadshotSrc(monkeHeadshot) : setHeadshotSrc(benHeadshot)} />
+        </AvatarContainer>
         <Description>I create interfaces that closely match your design system.</Description>
-        <PrimaryButton onClick={() => navigate("/portfolio")}>Show Me</PrimaryButton>
+        <CTAContainer>
+          <ShowMeButton onClick={() => navigate("/portfolio")}>Show Me</ShowMeButton>
+          <ReachOutButton href="mailto:webdevbyben@gmail.com">Reach Out</ReachOutButton>
+        </CTAContainer>
       </Container>
     </FadeInComponent>
   )

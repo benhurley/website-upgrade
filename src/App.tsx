@@ -7,11 +7,14 @@ import { Contact } from './pages/Contact';
 import { Footer } from './components/Footer';
 import styled, { createGlobalStyle } from "styled-components";
 
+const backgroundImg = require('./img/background.png')
+
 const GlobalStyles = createGlobalStyle`
   body {
-    background-image: url("./img/background.png");
+    background-image: url(${backgroundImg});
     background-size: contain;
     background-color: #000;
+    background-repeat: no-rpeat;
   }
 `;
 
