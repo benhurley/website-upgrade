@@ -5,8 +5,7 @@ import { projectData } from "./projectData";
 
 const Grid = styled.div`
     max-width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto 0px auto;
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
