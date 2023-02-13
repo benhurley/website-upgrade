@@ -39,7 +39,7 @@ export const projectData = [
         imgAlt: "big cigar guy homepage",
         title: "Big Cigar Guy",
         description: "A lifestyle clothing brand for the modern-day cigar enthusiast.",
-        url: "https:/bigcigarguy.com/"
+        url: "https://bigcigarguy.com/"
     },
     {
         imgUrl: NYCInfoScreenshot,

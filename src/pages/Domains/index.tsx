@@ -11,13 +11,13 @@ export const Domains = () => {
         <FadeInComponent>
             <h1>Domains For Sale</h1>
             <LinkContainer>
-                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="mailto:webdevbyben@gmail.com?subject=Domain%20Inquiry%20for%20unchained.fyi">unchained.fyi</PrimaryLinkButton>
+                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="https://sedo.com/search/?keyword=unchained.fyi&synonyms=false&safe_search=1&kws=right">unchained.fyi</PrimaryLinkButton>
             </LinkContainer>
             <LinkContainer>
-                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="https://sedo.com/member/dnmanagement.php4?language=us">voteforbezos.com</PrimaryLinkButton>
+                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="https://sedo.com/search/?keyword=voteforbezos.com&synonyms=false&safe_search=1&kws=right">voteforbezos.com</PrimaryLinkButton>
             </LinkContainer>
             <LinkContainer>
-                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="mailto:webdevbyben@gmail.com?subject=Domain%20Inquiry%20for%20drinkingplaybook.com">drinkingplaybook.com</PrimaryLinkButton>
+                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="https://sedo.com/search/?keyword=drinkingplaybook&synonyms=false&safe_search=1&kws=right">drinkingplaybook.com</PrimaryLinkButton>
             </LinkContainer>
         </FadeInComponent>
     );
