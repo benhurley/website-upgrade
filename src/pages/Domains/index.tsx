@@ -6,19 +6,32 @@ const LinkContainer = styled.div`
 margin: 70px 0px 70px 0px;
 `
 
+const domainData = [
+    {
+        name: "unchained.fyi",
+        href: "https://sedo.com/search/?keyword=unchained.fyi&synonyms=false&safe_search=1&kws=right",
+    },
+    {
+        name: "voteforbezos.com",
+        href: "https://sedo.com/search/?keyword=voteforbezos.com&synonyms=false&safe_search=1&kws=right",
+    },
+    {
+        name: "drinkingplaybook.com",
+        href: "https://sedo.com/search/?keyword=drinkingplaybook.comk&synonyms=false&safe_search=1&kws=right",
+    },
+]
+
 export const Domains = () => {
     return (
-        <FadeInComponent>
+        <>
             <h1>Domains For Sale</h1>
-            <LinkContainer>
-                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="https://sedo.com/search/?keyword=unchained.fyi&synonyms=false&safe_search=1&kws=right">unchained.fyi</PrimaryLinkButton>
-            </LinkContainer>
-            <LinkContainer>
-                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="https://sedo.com/search/?keyword=voteforbezos.com&synonyms=false&safe_search=1&kws=right">voteforbezos.com</PrimaryLinkButton>
-            </LinkContainer>
-            <LinkContainer>
-                <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href="https://sedo.com/search/?keyword=drinkingplaybook&synonyms=false&safe_search=1&kws=right">drinkingplaybook.com</PrimaryLinkButton>
-            </LinkContainer>
-        </FadeInComponent>
+            {domainData.map((domain, index) => (
+                <FadeInComponent timeout={index * 500}>
+                    <LinkContainer>
+                        <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href={domain.href}>{domain.name}</PrimaryLinkButton>
+                    </LinkContainer>
+                </FadeInComponent>
+            ))}
+        </>
     );
 }

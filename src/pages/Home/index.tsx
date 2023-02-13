@@ -1,11 +1,8 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FadeInComponent } from '../../helpers/FadeInComponent';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryButton } from '../../components/Buttons/PrimaryButton';
 import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButton';
 
-const benHeadshot = require("../../img/ben.png");
 const monkeHeadshot = require("../../img/smb.png");
 
 const waveAnimation = keyframes`
@@ -69,14 +66,12 @@ margin-left: 10px;
 
 export const Home = () => {
   const navigate = useNavigate();
-  const [headshotSrc, setHeadshotSrc] = useState(benHeadshot);
 
   return (
-    <FadeInComponent timeout={500}>
       <Container>
         <h1>Hey, it's Ben <Wave>👋</Wave></h1>
         <AvatarContainer>
-          <Image alt="headshot of ben" src={headshotSrc} onClick={() => headshotSrc === benHeadshot ? setHeadshotSrc(monkeHeadshot) : setHeadshotSrc(benHeadshot)} />
+          <Image alt="headshot of ben" src={monkeHeadshot} />
         </AvatarContainer>
         <Description>I create interfaces that closely match your design system.</Description>
         <CTAContainer>
@@ -84,6 +79,5 @@ export const Home = () => {
           <ReachOutButton href="mailto:webdevbyben@gmail.com">Reach Out</ReachOutButton>
         </CTAContainer>
       </Container>
-    </FadeInComponent>
   )
 }

@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import { useNavigate } from 'react-router-dom';
 
-const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }];
+const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: 'Domains', path: '/domains' }];
 const siteName = 'justben.fyi';
 
 const MUINavBar = styled(AppBar)`
