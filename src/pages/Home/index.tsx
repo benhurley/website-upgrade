@@ -73,7 +73,7 @@ export const Home = () => {
         <AvatarContainer>
           <Image alt="headshot of ben" src={monkeHeadshot} />
         </AvatarContainer>
-        <Description>I build interfaces that closely match your design system.</Description>
+        <Description>I build detail-specific experiences to match your brand.</Description>
         <CTAContainer>
           <ShowMeButton onClick={() => navigate("/portfolio")}>Show Me</ShowMeButton>
           <ReachOutButton href="mailto:webdevbyben@gmail.com">Reach Out</ReachOutButton>
