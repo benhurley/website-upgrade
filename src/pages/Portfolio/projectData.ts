@@ -1,9 +1,7 @@
 const NippiesScreenshot = require('../../img/nippies.png');
 const CryptoCostScreenshot = require('../../img/cryptocost.png')
-const NYCInfoScreenshot = require('../../img/nycinfo.png')
 const DHScreenshot = require('../../img/dh.png')
 const BonobosScreenshot = require('../../img/bonobos.png')
-const BCGScreenshot = require('../../img/bcg.png')
 
 export const projectData = [
     {
@@ -33,19 +31,5 @@ export const projectData = [
         title: "Crypto Cost",
         description: "Query historical prices for common crypto coins for an estimation in USD.",
         url: "https://cryptocost.netlify.app"
-    },
-    {
-        imgUrl: BCGScreenshot,
-        imgAlt: "big cigar guy homepage",
-        title: "Big Cigar Guy",
-        description: "A lifestyle clothing brand for the modern-day cigar enthusiast.",
-        url: "https://bigcigarguy.com/"
-    },
-    {
-        imgUrl: NYCInfoScreenshot,
-        imgAlt: "nyc restaurant info homepage",
-        title: "NYC Restaurant Info",
-        description: "Query recent inspection data for restaurants across the five boroughs.",
-        url: "https://nyc-restaurant-info.netlify.app/"
     },
 ]
