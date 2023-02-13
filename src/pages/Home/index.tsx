@@ -47,11 +47,10 @@ border-color: white;
 `
 
 const Description = styled.h3`
-margin: 0px 0px 20px 0px;
 max-width: 700px;
 margin-left: auto;
 margin-right: auto;
-padding: 0px 20px 0px 20px;
+margin: 10px 10px 30px 10px;
 `
 
 const wiggle = keyframes`
@@ -82,7 +81,7 @@ export const Home = () => {
             <Image alt="headshot of ben" src={headshotSrc} onClick={() => headshotSrc === benHeadshot ? setHeadshotSrc(monkeHeadshot) : setHeadshotSrc(benHeadshot)} />
           </AvatarContainer>
         </WigglingHeading>
-        <Description>I design and build interfaces that are easy to use and match your brand.</Description>
+        <Description>I create interfaces that closely match your design system.</Description>
         <PrimaryButton onClick={() => navigate("/portfolio")}>Show Me</PrimaryButton>
       </Container>
     </FadeInComponent>
