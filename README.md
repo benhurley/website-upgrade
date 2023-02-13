@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# justben.fyi
+
+An updated version of my online résumé using a new design, typeescript, and styled components.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

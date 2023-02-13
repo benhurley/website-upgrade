@@ -1,0 +1,34 @@
+import styled from "styled-components";
+import { Card } from "../../components/Card";
+import { FadeInComponent } from "../../helpers/FadeInComponent";
+import { projectData } from "./projectData";
+
+const Grid = styled.div`
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+`
+
+export const Portfolio = () => {
+    return (
+        <FadeInComponent>
+            <Grid>
+                {projectData.map((project, index) => (
+                    <FadeInComponent timeout={index * 500}>
+                        <Card
+                            key={index}
+                            href={project.url}
+                            imgAlt={project.imgAlt}
+                            imgUrl={project.imgUrl}
+                            title={project.title}
+                            description={project.description}
+                        />
+                    </FadeInComponent>
+                ))}
+            </Grid>
+        </FadeInComponent>
+    );
+}
