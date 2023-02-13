@@ -28,7 +28,6 @@ const Wave = styled.div`
 `;
 
 const Container = styled.div`
-padding: 0px 20px 0px 20px;
 overflowX: hidden;
 `
 
@@ -48,7 +47,7 @@ border-color: white;
 `
 
 const Description = styled.h3`
-margin: 20px 0px 40px 0px;
+margin: 0px 0px 20px 0px;
 max-width: 700px;
 margin-left: auto;
 margin-right: auto;
