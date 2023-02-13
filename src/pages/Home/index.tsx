@@ -36,13 +36,6 @@ margin-bottom: 20px;
 const Image = styled.img`
 border-radius: 100%;
 height: 200px;
-cursor: pointer;
-border: 2px solid;
-border-color: white;
-&:hover {
-  transform: scale(1.02);
-  transition: transform 0.5s ease;
-}
 `
 
 const Description = styled.h3`

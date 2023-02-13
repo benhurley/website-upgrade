@@ -13,6 +13,8 @@ import styled from 'styled-components';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import { useNavigate } from 'react-router-dom';
 
+const twitterLogo = require('../../img/twitterLogo.png')
+
 const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: 'Domains', path: '/domains' }];
 const siteName = 'justben.fyi';
 
@@ -42,6 +44,20 @@ text-transform: uppercase;
 font-family: Kdam Thmor Pro, sans-serif !important;
 flex-grow: 1;
 cursor: pointer;
+`
+
+const TwitterLogoDesktop = styled.img`
+position: fixed;
+top: 22px;
+right: 275px;
+height: 25px;
+`
+
+const TwitterLogoMobile = styled.img`
+position: fixed;
+top: 15px;
+right: 25px;
+height: 25px;
 `
 
 export const NavBar = () => {
@@ -104,6 +120,9 @@ export const NavBar = () => {
                             <MobileTitle onClick={() => navigate("/")}>
                                 {siteName}
                             </MobileTitle>
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/0xNDO">
+                                <TwitterLogoMobile src={twitterLogo} />
+                            </a>
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             <DesktopTitle
@@ -112,6 +131,9 @@ export const NavBar = () => {
                             >
                                 {siteName}
                             </DesktopTitle>
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/0xNDO">
+                                <TwitterLogoDesktop src={twitterLogo} />
+                            </a>
                             {tabs.map((tab, index) => (
                                 <FadeInComponent timeout={index * 500}>
                                     <Button
