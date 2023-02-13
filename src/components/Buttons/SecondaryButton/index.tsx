@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 export const SecondaryButton = styled.button`
 text-transform: uppercase;
-background: black;
+background: white;
+color: black;
 border-radius: 100px;
-border: 2px solid;
-border-color: white;
+border: none;
 padding: 20px 40px 20px 40px;
 font-size: 14px;
 font-family: 'Kdam Thmor Pro', sans-serif;
 cursor: pointer;
-box-shadow: 5px 5px white;
+box-shadow: 5px 5px gray;
 `
