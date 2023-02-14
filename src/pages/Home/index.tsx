@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryButton } from '../../components/Buttons/PrimaryButton';
@@ -5,6 +6,7 @@ import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButto
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 
 const monkeHeadshot = require("../../img/smb.png");
+const benHeadshot = require("../../img/ben.png");
 const hand = require("../../img/hand.png");
 
 const waveAnimation = keyframes`
@@ -37,6 +39,12 @@ margin-bottom: 20px;
 const Image = styled.img`
 border-radius: 100%;
 height: 200px;
+width: 200px;
+cursor: pointer;
+&:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+}
 `
 
 const Description = styled.h3`
@@ -65,13 +73,17 @@ padding-left: 5px;
 
 export const Home = () => {
   const navigate = useNavigate();
+  const [imgSrc, setImgSrc] = useState(benHeadshot);
 
   return (
     <FadeInComponent>
       <Container>
         <h1>Hey, it's Ben <Wave><Hand src={hand} alt="waiving hand" /></Wave></h1>
         <AvatarContainer>
-          <Image alt="headshot of ben" src={monkeHeadshot} />
+          <Image 
+            alt={imgSrc === benHeadshot ? "headshot of ben" : "ben's solana monke business nft"} 
+            src={imgSrc} onClick={() => imgSrc === benHeadshot ? setImgSrc(monkeHeadshot) : setImgSrc(benHeadshot)} 
+          />
         </AvatarContainer>
         <Description>I create bespoke brand experiences, down to the smallest detail.</Description>
         <CTAContainer>
