@@ -38,8 +38,8 @@ margin-bottom: 20px;
 
 const Image = styled.img`
 border-radius: 100%;
-height: 200px;
-width: 200px;
+height: 175px;
+width: 175px;
 cursor: pointer;
 &:hover {
   transform: scale(1.02);
@@ -73,7 +73,7 @@ padding-left: 5px;
 
 export const Home = () => {
   const navigate = useNavigate();
-  const [imgSrc, setImgSrc] = useState(benHeadshot);
+  const [imgSrc, setImgSrc] = useState(window.location.search.includes('monke') ? monkeHeadshot : benHeadshot);
 
   return (
     <FadeInComponent>
