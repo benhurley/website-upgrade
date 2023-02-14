@@ -73,7 +73,7 @@ padding-left: 5px;
 
 export const Home = () => {
   const navigate = useNavigate();
-  const [imgSrc, setImgSrc] = useState(window.location.search.includes('monke') ? monkeHeadshot : benHeadshot);
+  const [imgSrc, setImgSrc] = useState(benHeadshot);
 
   return (
     <FadeInComponent>
