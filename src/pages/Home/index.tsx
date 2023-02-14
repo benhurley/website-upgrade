@@ -21,7 +21,7 @@ const waveAnimation = keyframes`
 `;
 
 const Wave = styled.div`
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-name: ${waveAnimation};
   animation-duration: 2.5s;
   transform-origin: 70% 70%;
