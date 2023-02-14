@@ -120,7 +120,7 @@ export const NavBar = () => {
                             <MobileTitle onClick={() => navigate("/")}>
                                 {siteName}
                             </MobileTitle>
-                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/0xNDO">
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
                                 <TwitterLogoMobile src={twitterLogo} />
                             </a>
                         </Box>
@@ -131,7 +131,7 @@ export const NavBar = () => {
                             >
                                 {siteName}
                             </DesktopTitle>
-                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/0xNDO">
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
                                 <TwitterLogoDesktop src={twitterLogo} />
                             </a>
                             {tabs.map((tab, index) => (
