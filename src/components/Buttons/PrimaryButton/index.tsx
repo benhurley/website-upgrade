@@ -11,5 +11,5 @@ padding: 20px 40px 20px 40px;
 font-size: 14px;
 font-family: 'Kdam Thmor Pro', sans-serif;
 cursor: pointer;
-box-shadow: 5px 5px white;
+box-shadow: 4px 4px white;
 `

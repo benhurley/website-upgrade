@@ -10,7 +10,7 @@ height: auto;
 border: 1px solid;
 border-color: whtite;
 border-radius: 30px;
-box-shadow: 5px 5px white;
+box-shadow: 4px 4px white;
 &:hover {
     transform: scale(1.02);
     transition: transform 0.5s ease;
@@ -41,7 +41,6 @@ text-decoration-color: black;
 `;
 
 type cardProps = {
-    key: number,
     href: string,
     imgUrl: string,
     imgAlt: string,
@@ -49,10 +48,10 @@ type cardProps = {
     description: string,
 }
 
-export const Card = ({ key, href, imgUrl, imgAlt, title, description }: cardProps) => {
+export const Card = ({ href, imgUrl, imgAlt, title, description }: cardProps) => {
     return (
         <a target="_blank" rel="noopener noreferrer" href={href}>
-            <Container key={key} data-testId="card">
+            <Container data-testid="card">
                 <Image src={imgUrl} alt={imgAlt} />
                 <Title>{title}</Title>
                 <Description>{description}</Description>

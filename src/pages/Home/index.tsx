@@ -2,8 +2,10 @@ import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryButton } from '../../components/Buttons/PrimaryButton';
 import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButton';
+import { FadeInComponent } from '../../helpers/FadeInComponent';
 
 const monkeHeadshot = require("../../img/smb.png");
+const hand = require("../../img/hand.png");
 
 const waveAnimation = keyframes`
   0% { transform: rotate( 0.0deg) }
@@ -22,7 +24,6 @@ const Wave = styled.div`
   animation-duration: 2.5s;
   transform-origin: 70% 70%;
   display: inline-block;
-  padding-left: 5px;
 `;
 
 const Container = styled.div`
@@ -57,20 +58,27 @@ const ReachOutButton = styled(SecondaryLinkButton)`
 margin-left: 10px;
 `
 
+const Hand = styled.img`
+height: 35px;
+padding-left: 5px;
+`
+
 export const Home = () => {
   const navigate = useNavigate();
 
   return (
+    <FadeInComponent>
       <Container>
-        <h1>Hey, it's Ben <Wave>👋</Wave></h1>
+        <h1>Hey, it's Ben <Wave><Hand src={hand} alt="waiving hand" /></Wave></h1>
         <AvatarContainer>
           <Image alt="headshot of ben" src={monkeHeadshot} />
         </AvatarContainer>
-        <Description>I build detail-specific experiences to match your brand.</Description>
+        <Description>I create bespoke brand experiences, down to the smallest detail.</Description>
         <CTAContainer>
-          <ShowMeButton onClick={() => navigate("/portfolio")}>Show Me</ShowMeButton>
-          <ReachOutButton href="mailto:webdevbyben@gmail.com">Reach Out</ReachOutButton>
+          <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
+          <ReachOutButton href="mailto:webdevbyben@gmail.com">Contact Me</ReachOutButton>
         </CTAContainer>
       </Container>
+    </FadeInComponent>
   )
 }

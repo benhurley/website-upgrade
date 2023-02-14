@@ -13,9 +13,10 @@ const Grid = styled.div`
 
 export const Portfolio = () => {
     return (
+        <FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (
-                    <FadeInComponent timeout={index * 500}>
+                    <FadeInComponent key={index} timeout={index * 500}>
                         <Card
                             key={index}
                             href={project.url}
@@ -27,5 +28,6 @@ export const Portfolio = () => {
                     </FadeInComponent>
                 ))}
             </Grid>
+        </FadeInComponent>
     );
 }

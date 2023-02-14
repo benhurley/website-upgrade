@@ -17,21 +17,21 @@ const domainData = [
     },
     {
         name: "drinkingplaybook.com",
-        href: "https://sedo.com/search/?keyword=drinkingplaybook.comk&synonyms=false&safe_search=1&kws=right",
+        href: "https://sedo.com/search/?keyword=drinkingplaybook.com&synonyms=false&safe_search=1&kws=right",
     },
 ]
 
 export const Domains = () => {
     return (
-        <>
+        <FadeInComponent>
             <h1>Domains For Sale</h1>
             {domainData.map((domain, index) => (
-                <FadeInComponent timeout={index * 500}>
+                <FadeInComponent key={index} timeout={index * 500}>
                     <LinkContainer>
                         <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href={domain.href}>{domain.name}</PrimaryLinkButton>
                     </LinkContainer>
                 </FadeInComponent>
             ))}
-        </>
+        </FadeInComponent>
     );
 }

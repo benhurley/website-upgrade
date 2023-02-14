@@ -47,15 +47,15 @@ cursor: pointer;
 `
 
 const TwitterLogoDesktop = styled.img`
-position: fixed;
-top: 22px;
-right: 275px;
-height: 25px;
+display: flex;
+padding-top: 24px;
+padding-right: 15px;
+height: 20px;
 `
 
 const TwitterLogoMobile = styled.img`
 position: fixed;
-top: 15px;
+top: 18px;
 right: 25px;
 height: 25px;
 `
@@ -135,7 +135,7 @@ export const NavBar = () => {
                                 <TwitterLogoDesktop src={twitterLogo} />
                             </a>
                             {tabs.map((tab, index) => (
-                                <FadeInComponent timeout={index * 500}>
+                                <FadeInComponent key={index} timeout={index * 500}>
                                     <Button
                                         key={index}
                                         onClick={() => handleTabSelection(tab.path)}
