@@ -142,7 +142,7 @@ export const NavBar = () => {
                                 <LogoDesktop src={twitterLogo} />
                             </a>
                             {tabs.map((tab, index) => (
-                                <FadeInComponent key={index} timeout={index * 500}>
+                                <FadeInComponent key={index} timeout={index * 400}>
                                     <Button
                                         key={index}
                                         onClick={() => handleTabSelection(tab.path)}

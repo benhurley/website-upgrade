@@ -16,7 +16,7 @@ export const Portfolio = () => {
         <FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (
-                    <FadeInComponent key={index} timeout={index * 500}>
+                    <FadeInComponent key={index} timeout={index * 400}>
                         <Card
                             key={index}
                             href={project.url}

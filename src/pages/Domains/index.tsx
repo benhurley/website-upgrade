@@ -26,7 +26,7 @@ export const Domains = () => {
         <FadeInComponent>
             <h1>Domains For Sale</h1>
             {domainData.map((domain, index) => (
-                <FadeInComponent key={index} timeout={index * 500}>
+                <FadeInComponent key={index} timeout={index * 400}>
                     <LinkContainer>
                         <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href={domain.href}>{domain.name}</PrimaryLinkButton>
                     </LinkContainer>
