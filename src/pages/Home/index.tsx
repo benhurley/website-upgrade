@@ -64,7 +64,7 @@ export const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsFlipped(false)
-    }, 3750)
+    }, 4000)
   }, [])
 
   return (
