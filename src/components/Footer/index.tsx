@@ -11,7 +11,7 @@ font-size: 10px
 export const Footer = () => {
     return (
         <Container>
-            <p>2023, All Rights Reserved.</p>
+            <p>Created with ♥ by Ben, 2023.</p>
         </Container>
     )
 }
