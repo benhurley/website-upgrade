@@ -74,6 +74,7 @@ export const Home = () => {
         <FadeInComponent>
           <AvatarContainer>
             <ReactCardFlip
+              infinite
               isFlipped={isFlipped}
               flipDirection="horizontal"
               flipSpeedFrontToBack={2}
