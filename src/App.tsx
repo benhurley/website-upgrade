@@ -11,7 +11,7 @@ const backgroundImg = require('./img/background.png')
 const GlobalStyles = createGlobalStyle`
   body {
     background-image: url(${backgroundImg});
-    background-size: cover;
+    background-size: auto;
     background-color: #000;
   }
 `;
