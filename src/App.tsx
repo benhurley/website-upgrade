@@ -23,7 +23,7 @@ const AppContainer = styled.div`
   color: white;
   overflow-x: hidden;
   color: white;
-  padding: 5em 10px 5em 10px;
+  padding: 4em 10px 4em 10px;
   line-height: 2;
 `;
 
