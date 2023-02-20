@@ -1,32 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
 import { SecondaryButton } from '../../components/Buttons/SecondaryButton';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
+import ReactCardFlip from 'react-card-flip';
 
 const monkeHeadshot = require("../../img/smb.png");
 const benHeadshot = require("../../img/ben.png");
 const hand = require("../../img/hand.png");
-
-const waveAnimation = keyframes`
-  0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(14.0deg) scale(1.3); }  /* The following five values can be played with to make the waving more or less extreme */
- 20% { transform: rotate(-8.0deg) scale(1.3); }
- 30% { transform: rotate(14.0deg) scale(1.3); }
- 40% { transform: rotate(-4.0deg) scale(1.3); }
- 50% { transform: rotate(10.0deg) scale(1.3); }
- 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-100% { transform: rotate( 0.0deg) }
-`;
-
-const Wave = styled.div`
-  animation-delay: 2.25s;
-  animation-name: ${waveAnimation};
-  animation-duration: 2.5s;
-  transform-origin: 70% 70%;
-  display: inline-block;
-`;
 
 const Container = styled.div`
 overflowX: hidden;
@@ -41,10 +23,8 @@ border-radius: 100%;
 height: 175px;
 width: 175px;
 cursor: pointer;
-&:hover {
-  transform: scale(1.02);
-  transition: transform 0.5s ease;
-}
+border: 2px solid;
+border-color: white;
 `
 
 const Description = styled.h3`
@@ -73,18 +53,43 @@ padding-left: 5px;
 
 export const Home = () => {
   const navigate = useNavigate();
-  const [imgSrc, setImgSrc] = useState(benHeadshot);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsFlipped(true)
+    }, 2000)
+  }, [])
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsFlipped(false)
+    }, 3500)
+  }, [])
 
   return (
     <FadeInComponent>
       <Container>
-        <h1>Hey, it's Ben <Wave><Hand src={hand} alt="waiving hand" /></Wave></h1>
-        <AvatarContainer>
-          <Image 
-            alt={imgSrc === benHeadshot ? "headshot of ben" : "ben's solana monke business nft"} 
-            src={imgSrc} onClick={() => imgSrc === benHeadshot ? setImgSrc(monkeHeadshot) : setImgSrc(benHeadshot)} 
-          />
-        </AvatarContainer>
+        <h1>Hey, it's Ben <Hand src={hand} alt="waiving hand" /></h1>
+        <FadeInComponent>
+          <AvatarContainer>
+            <ReactCardFlip
+              isFlipped={isFlipped}
+              flipDirection="horizontal"
+              flipSpeedFrontToBack={2}
+              flipSpeedBackToFront={2}
+            >
+              <Image
+                alt={"headshot of ben"}
+                src={benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+              />
+              <Image
+                alt={"ben's solana monke business nft"}
+                src={monkeHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+              />
+            </ReactCardFlip>
+          </AvatarContainer>
+        </FadeInComponent>
         <Description>I create bespoke brand experiences, down to the smallest detail.</Description>
         <CTAContainer>
           <ReachOutButton href="mailto:webdevbyben@gmail.com">Contact Me</ReachOutButton>
