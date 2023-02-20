@@ -14,7 +14,6 @@ const GlobalStyles = createGlobalStyle`
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
-    min-height: 100vh;
   }
 `;
 
@@ -24,7 +23,7 @@ const AppContainer = styled.div`
   color: white;
   overflow-x: hidden;
   color: white;
-  padding: 60px 10px 100px 10px;
+  padding: 5em 10px 5em 10px;
   line-height: 2;
 `;
 

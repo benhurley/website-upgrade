@@ -14,6 +14,7 @@ import { FadeInComponent } from '../../helpers/FadeInComponent';
 import { useNavigate } from 'react-router-dom';
 
 const twitterLogo = require('../../img/twitterLogo.png')
+const githubLogo = require('../../img/githubLogo.png')
 
 const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: 'Domains', path: '/domains' }];
 const siteName = 'justben.fyi';
@@ -39,24 +40,24 @@ const MobileTitle = styled(Typography)`
 display: flex;
 justify-content: center;
 align-items: center;
-padding-right: 55px;
+padding-left: 35px;
 text-transform: uppercase;
 font-family: Kdam Thmor Pro, sans-serif !important;
 flex-grow: 1;
 cursor: pointer;
 `
 
-const TwitterLogoDesktop = styled.img`
+const LogoDesktop = styled.img`
 display: flex;
 padding-top: 24px;
 padding-right: 15px;
 height: 20px;
 `
 
-const TwitterLogoMobile = styled.img`
-position: fixed;
-top: 18px;
-right: 25px;
+const LogoMobile = styled.img`
+display: flex;
+padding-top: 10px;
+padding-right: 12px;
 height: 25px;
 `
 
@@ -120,8 +121,11 @@ export const NavBar = () => {
                             <MobileTitle onClick={() => navigate("/")}>
                                 {siteName}
                             </MobileTitle>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
+                                <LogoMobile src={githubLogo} />
+                            </a>
                             <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
-                                <TwitterLogoMobile src={twitterLogo} />
+                                <LogoMobile src={twitterLogo} />
                             </a>
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -131,8 +135,11 @@ export const NavBar = () => {
                             >
                                 {siteName}
                             </DesktopTitle>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
+                                <LogoDesktop src={githubLogo} />
+                            </a>
                             <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
-                                <TwitterLogoDesktop src={twitterLogo} />
+                                <LogoDesktop src={twitterLogo} />
                             </a>
                             {tabs.map((tab, index) => (
                                 <FadeInComponent key={index} timeout={index * 500}>

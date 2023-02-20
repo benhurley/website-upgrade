@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
-import { PrimaryButton } from '../../components/Buttons/PrimaryButton';
-import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButton';
+import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
+import { SecondaryButton } from '../../components/Buttons/SecondaryButton';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 
 const monkeHeadshot = require("../../img/smb.png");
@@ -21,7 +21,7 @@ const waveAnimation = keyframes`
 `;
 
 const Wave = styled.div`
-  animation-delay: 1s;
+  animation-delay: 2.25s;
   animation-name: ${waveAnimation};
   animation-duration: 2.5s;
   transform-origin: 70% 70%;
@@ -58,12 +58,12 @@ const CTAContainer = styled.div`
 display: inline-block;
 `
 
-const ShowMeButton = styled(PrimaryButton)`
-margin-right: 10px;
+const ShowMeButton = styled(SecondaryButton)`
+margin-left: 10px;
 `
 
-const ReachOutButton = styled(SecondaryLinkButton)`
-margin-left: 10px;
+const ReachOutButton = styled(PrimaryLinkButton)`
+margin-right: 10px;
 `
 
 const Hand = styled.img`
@@ -87,8 +87,8 @@ export const Home = () => {
         </AvatarContainer>
         <Description>I create bespoke brand experiences, down to the smallest detail.</Description>
         <CTAContainer>
-          <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
           <ReachOutButton href="mailto:webdevbyben@gmail.com">Contact Me</ReachOutButton>
+          <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
         </CTAContainer>
       </Container>
     </FadeInComponent>

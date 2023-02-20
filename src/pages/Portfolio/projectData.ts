@@ -15,7 +15,7 @@ export const projectData = [
         imgUrl: BonobosScreenshot,
         imgAlt: "Bonobos homepage",
         title: "Bonobos",
-        description: "An upscale, e-commerce-driven apparel business for menswear.",
+        description: "An upscale, e-commerce-driven apparel subsidiary of Walmart that sells menswear.",
         url: "https://bonobos.com"
     },
     {
