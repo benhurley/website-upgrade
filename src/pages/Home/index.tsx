@@ -91,7 +91,7 @@ export const Home = () => {
             </ReactCardFlip>
           </AvatarContainer>
         </FadeInComponent>
-        <Description>I create bespoke brand experiences, down to the smallest detail.</Description>
+        <Description>I build custom brand experiences on the internet.</Description>
         <CTAContainer>
           <ReachOutButton href="mailto:webdevbyben@gmail.com">Contact Me</ReachOutButton>
           <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
