@@ -15,6 +15,7 @@ import { useNavigate } from 'react-router-dom';
 
 const twitterLogo = require('../../img/twitterLogo.png')
 const githubLogo = require('../../img/githubLogo.png')
+const mediumLogo = require('../../img/mediumLogo.png')
 
 const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: 'Domains', path: '/domains' }];
 const siteName = 'justben.fyi';
@@ -36,28 +37,23 @@ flex-grow: 1;
 cursor: pointer;
 `
 
-const MobileTitle = styled(Typography)`
-display: flex;
-justify-content: center;
-align-items: center;
-padding-left: 35px;
-text-transform: uppercase;
-font-family: Kdam Thmor Pro, sans-serif !important;
-flex-grow: 1;
-cursor: pointer;
-`
-
 const LogoDesktop = styled.img`
 display: flex;
-padding-top: 24px;
+padding-top: 20px;
 padding-right: 15px;
-height: 20px;
+height: 25px;
+`
+
+const LogoContainer = styled.div`
+display: flex;
+justify-content: end;
+width: 100%;
 `
 
 const LogoMobile = styled.img`
 display: flex;
 padding-top: 10px;
-padding-right: 12px;
+padding-right: 15px;
 height: 25px;
 `
 
@@ -118,31 +114,21 @@ export const NavBar = () => {
                                     </MenuItem>
                                 ))}
                             </Menu>
-                            <MobileTitle onClick={() => navigate("/")}>
-                                {siteName}
-                            </MobileTitle>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
-                                <LogoMobile src={githubLogo} />
-                            </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
-                                <LogoMobile src={twitterLogo} />
-                            </a>
+                            <LogoContainer>
+                                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
+                                    <LogoMobile src={mediumLogo} />
+                                </a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
+                                    <LogoMobile src={githubLogo} />
+                                </a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
+                                    <LogoMobile src={twitterLogo} />
+                                </a>
+                            </LogoContainer>
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            <DesktopTitle
-                                variant="h6"
-                                onClick={() => navigate("/")}
-                            >
-                                {siteName}
-                            </DesktopTitle>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
-                                <LogoDesktop src={githubLogo} />
-                            </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
-                                <LogoDesktop src={twitterLogo} />
-                            </a>
                             {tabs.map((tab, index) => (
-                                <FadeInComponent key={index} timeout={index * 400}>
+                                <FadeInComponent key={index}>
                                     <Button
                                         key={index}
                                         onClick={() => handleTabSelection(tab.path)}
@@ -152,6 +138,17 @@ export const NavBar = () => {
                                     </Button>
                                 </FadeInComponent>
                             ))}
+                            <LogoContainer>
+                                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
+                                    <LogoDesktop src={mediumLogo} />
+                                </a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
+                                    <LogoDesktop src={githubLogo} />
+                                </a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
+                                    <LogoDesktop src={twitterLogo} />
+                                </a>
+                            </LogoContainer>
                         </Box>
                     </Toolbar>
                 </Container>
