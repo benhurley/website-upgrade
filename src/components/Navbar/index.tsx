@@ -18,23 +18,11 @@ const githubLogo = require('../../img/githubLogo.png')
 const mediumLogo = require('../../img/mediumLogo.png')
 
 const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: 'Domains', path: '/domains' }];
-const siteName = 'justben.fyi';
 
 const MUINavBar = styled(AppBar)`
 position: sticky;
 background-color: black !important;
 font-family: 'Kdam Thmor Pro', sans-serif;
-`
-
-const DesktopTitle = styled(Typography)`
-display: flex;
-align-items: center;
-padding-right: 20px;
-text-transform: uppercase;
-font-family: Kdam Thmor Pro, sans-serif !important;
-letter-spacing: .3rem;
-flex-grow: 1;
-cursor: pointer;
 `
 
 const LogoDesktop = styled.img`
