@@ -29,7 +29,7 @@ const IconDesktop = styled.img`
 display: flex;
 padding-top: 20px;
 padding-left: 25px;
-height: 25px;
+height: 20px;
 `
 
 const LogoContainer = styled.div`
