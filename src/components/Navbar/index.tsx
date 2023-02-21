@@ -25,10 +25,10 @@ background-color: black !important;
 font-family: 'Kdam Thmor Pro', sans-serif;
 `
 
-const LogoDesktop = styled.img`
+const IconDesktop = styled.img`
 display: flex;
 padding-top: 20px;
-padding-right: 25px;
+padding-left: 25px;
 height: 25px;
 `
 
@@ -38,10 +38,10 @@ justify-content: end;
 width: 100%;
 `
 
-const LogoMobile = styled.img`
+const IconMobile = styled.img`
 display: flex;
-padding-top: 10px;
-padding-right: 25px;
+padding-top: 12px;
+padding-left: 25px;
 height: 20px;
 `
 
@@ -104,13 +104,13 @@ export const NavBar = () => {
                             </Menu>
                             <LogoContainer>
                                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
-                                    <LogoMobile src={mediumLogo} />
+                                    <IconMobile src={mediumLogo} />
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
-                                    <LogoMobile src={githubLogo} />
+                                    <IconMobile src={githubLogo} />
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
-                                    <LogoMobile src={twitterLogo} />
+                                    <IconMobile src={twitterLogo} />
                                 </a>
                             </LogoContainer>
                         </Box>
@@ -128,13 +128,13 @@ export const NavBar = () => {
                             ))}
                             <LogoContainer>
                                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
-                                    <LogoDesktop src={mediumLogo} />
+                                    <IconDesktop src={mediumLogo} />
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
-                                    <LogoDesktop src={githubLogo} />
+                                    <IconDesktop src={githubLogo} />
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
-                                    <LogoDesktop src={twitterLogo} />
+                                    <IconDesktop src={twitterLogo} />
                                 </a>
                             </LogoContainer>
                         </Box>
