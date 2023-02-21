@@ -27,9 +27,15 @@ border: 2px solid;
 border-color: white;
 `
 
+const Description = styled.h3`
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px 10px 20px 10px;
+`
+
 const CTAContainer = styled.div`
 display: inline-block;
-padding: 20px 10px 20px 10px;
 `
 
 const ShowMeButton = styled(SecondaryButton)`
@@ -85,6 +91,7 @@ export const Home = () => {
             </ReactCardFlip>
           </AvatarContainer>
         </FadeInComponent>
+        <Description>I design and build websites.</Description>
         <CTAContainer>
           <ReachOutButton href="mailto:webdevbyben@gmail.com">Contact Me</ReachOutButton>
           <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
