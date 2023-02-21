@@ -44,6 +44,8 @@ margin-left: 10px;
 
 const ReachOutButton = styled(PrimaryLinkButton)`
 margin-right: 10px;
+padding-left: 55px;
+padding-right: 55px;
 `
 
 const Hand = styled.img`
@@ -93,7 +95,7 @@ export const Home = () => {
         </FadeInComponent>
         <Description>I design and build websites.</Description>
         <CTAContainer>
-          <ReachOutButton href="mailto:webdevbyben@gmail.com">Contact Me</ReachOutButton>
+          <ReachOutButton href="mailto:webdevbyben@gmail.com">Email</ReachOutButton>
           <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
         </CTAContainer>
       </Container>
