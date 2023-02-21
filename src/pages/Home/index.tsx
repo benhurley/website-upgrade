@@ -20,22 +20,16 @@ margin-bottom: 20px;
 
 const Image = styled.img`
 border-radius: 100%;
-height: 175px;
-width: 175px;
+height: 200px;
+width: 200px;
 cursor: pointer;
 border: 2px solid;
 border-color: white;
 `
 
-const Description = styled.h3`
-max-width: 700px;
-margin-left: auto;
-margin-right: auto;
-padding: 10px 10px 20px 10px;
-`
-
 const CTAContainer = styled.div`
 display: inline-block;
+padding: 20px 10px 20px 10px;
 `
 
 const ShowMeButton = styled(SecondaryButton)`
@@ -91,7 +85,6 @@ export const Home = () => {
             </ReactCardFlip>
           </AvatarContainer>
         </FadeInComponent>
-        <Description>I build tailor-made brand experiences for the online world.</Description>
         <CTAContainer>
           <ReachOutButton href="mailto:webdevbyben@gmail.com">Contact Me</ReachOutButton>
           <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
