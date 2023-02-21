@@ -28,7 +28,7 @@ font-family: 'Kdam Thmor Pro', sans-serif;
 const LogoDesktop = styled.img`
 display: flex;
 padding-top: 20px;
-padding-right: 15px;
+padding-right: 25px;
 height: 25px;
 `
 
@@ -41,7 +41,7 @@ width: 100%;
 const LogoMobile = styled.img`
 display: flex;
 padding-top: 10px;
-padding-right: 15px;
+padding-right: 25px;
 height: 25px;
 `
 
