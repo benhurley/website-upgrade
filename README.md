@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9d902113-9ec1-42f2-a5d1-4438f5c23622/deploy-status)](https://app.netlify.com/sites/justben/deploys)
+
 # justben.fyi
 
 An updated version of my online résumé using a new design, typeescript, and styled components.
