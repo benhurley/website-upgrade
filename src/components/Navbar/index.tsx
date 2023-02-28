@@ -109,7 +109,7 @@ export const NavBar = () => {
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
                                     <IconMobile src={githubLogo} />
                                 </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
+                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/justbenfyi">
                                     <IconMobile src={twitterLogo} />
                                 </a>
                             </LogoContainer>
@@ -133,7 +133,7 @@ export const NavBar = () => {
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
                                     <IconDesktop src={githubLogo} />
                                 </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/10x_ben">
+                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/justbenfyi">
                                     <IconDesktop src={twitterLogo} />
                                 </a>
                             </LogoContainer>

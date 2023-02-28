@@ -8,9 +8,9 @@ background-color: black;
 color: white;
 height: auto;
 border: 1px solid;
-border-color: whtite;
+border-color: gray;
 border-radius: 30px;
-box-shadow: 4px 4px white;
+box-shadow: 8px 8px gray;
 &:hover {
     transform: scale(1.02);
     transition: transform 0.5s ease;
