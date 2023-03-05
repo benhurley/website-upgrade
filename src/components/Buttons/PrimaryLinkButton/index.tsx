@@ -9,7 +9,7 @@ padding: 20px 40px 20px 40px;
 font-size: 14px;
 cursor: pointer;
 background: #000000;
-border: 1px solid gray;
-box-shadow: 4px 4px gray;
+border: 1px solid #43464B;
+box-shadow: 4px 4px #43464B;
 border-radius: 100px;
 `

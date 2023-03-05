@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Badge } from '../Badge';
 
 const Container = styled.div`
 width: 275px;
@@ -8,9 +9,9 @@ background-color: black;
 color: white;
 height: auto;
 border: 1px solid;
-border-color: gray;
+border-color: #43464B;
 border-radius: 30px;
-box-shadow: 8px 8px gray;
+box-shadow: 8px 8px #43464B;
 &:hover {
     transform: scale(1.02);
     transition: transform 0.5s ease;
@@ -21,6 +22,8 @@ const Image = styled.img`
 border-radius: 10px;
 width: 250px;
 margin-top: 10px;
+border: solid 1px;
+border-color: #43464B;
 `;
 
 const Title = styled.h2`
@@ -46,12 +49,16 @@ type cardProps = {
     imgAlt: string,
     title: string,
     description: string,
+    badges: string[],
 }
 
-export const Card = ({ href, imgUrl, imgAlt, title, description }: cardProps) => {
+export const Card = ({ href, imgUrl, imgAlt, title, description, badges }: cardProps) => {
     return (
         <a target="_blank" rel="noopener noreferrer" href={href}>
             <Container data-testid="card">
+                {badges.map((badge) => 
+                    <Badge text={badge} />
+                )}
                 <Image src={imgUrl} alt={imgAlt} />
                 <Title>{title}</Title>
                 <Description>{description}</Description>
