@@ -33,7 +33,7 @@ export const projectData = [
         imgUrl: CryptoCostScreenshot,
         imgAlt: "Cryptocost homepage",
         title: "Crypto Cost Engine",
-        description: "Query historical prices for common crypto coins for an estimation in USD.",
+        description: "Gives a cost-basis estimate in USD for a given cryptocurrency purchase.",
         url: "https://cryptocost.netlify.app",
         badges: ["Creator", "Designer"],
     },
