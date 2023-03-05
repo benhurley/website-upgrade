@@ -41,8 +41,8 @@ export const projectData = [
         imgUrl: JustBenFYI,
         imgAlt: "Ben's Portfolio",
         title: "Ben's Portfolio",
-        description: "My little corner of the internet, made with React and designed by yours truly.",
-        url: "https://github.com/benhurley/website-upgrade",
+        description: "My little corner of the internet. Made with React and designed in Figma by yours truly.",
+        url: "https://www.figma.com/file/nDKHo006pyCyPuOlweSIFZ/Design-System?node-id=0%3A1&t=n5H7ynu73OUXOcV6-1",
         badges: [{ name: "Creator", color: "#add8e6" }, { name: "Designer", color: "#ffdab9" },],
     },
 ]
