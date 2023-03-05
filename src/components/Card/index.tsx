@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Badge } from '../Badge';
+import { Badge, BadgeProps } from '../Badge';
 
 const Container = styled.div`
 width: 275px;
@@ -49,7 +49,7 @@ type cardProps = {
     imgAlt: string,
     title: string,
     description: string,
-    badges: string[],
+    badges: BadgeProps[],
 }
 
 export const Card = ({ href, imgUrl, imgAlt, title, description, badges }: cardProps) => {
@@ -57,7 +57,7 @@ export const Card = ({ href, imgUrl, imgAlt, title, description, badges }: cardP
         <a target="_blank" rel="noopener noreferrer" href={href}>
             <Container data-testid="card">
                 {badges.map((badge) => 
-                    <Badge text={badge} />
+                    <Badge name={badge.name} color={badge.color} />
                 )}
                 <Image src={imgUrl} alt={imgAlt} />
                 <Title>{title}</Title>

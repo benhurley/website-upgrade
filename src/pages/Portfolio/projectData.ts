@@ -11,7 +11,7 @@ export const projectData = [
         title: "Daily Harvest",
         description: "A plant-based meal delivery service providing a variety of ready-to-eat food.",
         url: "https://daily-harvest.com",
-        badges: ["Contributor", "Designer"],
+        badges: [{ name: "Contributor", color: "#90ee90", }, { name: "Designer", color: "#ffdab9" },],
     },
     {
         imgUrl: BonobosScreenshot,
@@ -19,7 +19,7 @@ export const projectData = [
         title: "Bonobos",
         description: "An upscale, e-commerce-driven apparel subsidiary of Walmart that sells menswear.",
         url: "https://bonobos.com",
-        badges: ["Contributor"],
+        badges: [{ name: "Contributor", color: "#90ee90" },],
     },
     {
         imgUrl: NippiesScreenshot,
@@ -27,7 +27,7 @@ export const projectData = [
         title: "Nippies",
         description: "A collection of 100 misfit yeti characters on the Solana Blockchain.",
         url: "https://nippi.es",
-        badges: ["Creator"],
+        badges: [{ name: "Creator", color: "#add8e6" },],
     },
     {
         imgUrl: CryptoCostScreenshot,
@@ -35,7 +35,7 @@ export const projectData = [
         title: "Crypto Cost Engine",
         description: "Gives a cost-basis estimate in USD for a given cryptocurrency purchase.",
         url: "https://cryptocost.netlify.app",
-        badges: ["Creator", "Designer"],
+        badges: [ {name: "Creator", color: "#add8e6" }, { name: "Designer", color: "#ffdab9" },],
     },
     {
         imgUrl: JustBenFYI,
@@ -43,6 +43,6 @@ export const projectData = [
         title: "Ben's Portfolio",
         description: "My little corner of the internet, made with React and designed by yours truly.",
         url: "https://github.com/benhurley/website-upgrade",
-        badges: ["Creator", "Designer"],
+        badges: [{ name: "Creator", color: "#add8e6" }, { name: "Designer", color: "#ffdab9" },],
     },
 ]

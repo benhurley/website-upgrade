@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-type BadgeProps = {
-    text: string,
+export type BadgeProps = {
+    name: string,
+    color: string,
 }
 const Container = styled.div`
 display: table-cell;
@@ -38,14 +39,13 @@ const Text = styled.span`
 display: inline-block;
 `
 
-export const Badge = ({ text }: BadgeProps) => {
-    const badgeColor = text.includes("Contributor") ? "#90ee90" : text === "Creator" ? "#add8e6" : "#ffdab9";
+export const Badge = ({ name, color }: BadgeProps) => {
     return (
         <Container>
             <BadgeWrapper>
                 <StyledBadge>
-                    <Circle color={badgeColor} />
-                    <Text>{text}</Text>
+                    <Circle color={color} />
+                    <Text>{name}</Text>
                 </StyledBadge>
             </BadgeWrapper>
         </Container>
