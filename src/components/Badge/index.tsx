@@ -5,7 +5,7 @@ type BadgeProps = {
 }
 const Container = styled.div`
 display: table-cell;
-padding-left: 15px;
+padding-left: 12px;
 `
 
 const BadgeWrapper = styled.div`
@@ -21,7 +21,7 @@ font-weight: bold;
 padding: 3px 15px;
 border-radius: 20px;
 text-decoration: none;
-margin: -5px 0px 5px 0px;
+margin-bottom: 5px;
 `
 
 const Circle = styled.div`
