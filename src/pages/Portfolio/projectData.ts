@@ -11,7 +11,7 @@ export const projectData = [
         title: "Daily Harvest",
         description: "A plant-based meal delivery service providing a variety of ready-to-eat food.",
         url: "https://daily-harvest.com",
-        badges: [{ name: "Contributor", color: "#90ee90", }, { name: "Designer", color: "#ffdab9" },],
+        badges: [{ name: "Dev", color: "#90ee90", }, { name: "Design", color: "#add8e6" },],
     },
     {
         imgUrl: BonobosScreenshot,
@@ -19,7 +19,7 @@ export const projectData = [
         title: "Bonobos",
         description: "An upscale, e-commerce-driven apparel subsidiary of Walmart that sells menswear.",
         url: "https://bonobos.com",
-        badges: [{ name: "Contributor", color: "#90ee90" },],
+        badges: [{ name: "Dev", color: "#90ee90" },],
     },
     {
         imgUrl: NippiesScreenshot,
@@ -27,7 +27,7 @@ export const projectData = [
         title: "Nippies",
         description: "A collection of 100 misfit yeti characters on the Solana Blockchain.",
         url: "https://nippi.es",
-        badges: [{ name: "Creator", color: "#add8e6" },],
+        badges: [{ name: "Founding Dev", color: "#ffdab9" },],
     },
     {
         imgUrl: CryptoCostScreenshot,
@@ -35,7 +35,7 @@ export const projectData = [
         title: "Crypto Cost Engine",
         description: "Gives a cost-basis estimate in USD for a given cryptocurrency purchase.",
         url: "https://cryptocost.netlify.app",
-        badges: [ {name: "Creator", color: "#add8e6" }, { name: "Designer", color: "#ffdab9" },],
+        badges: [{ name: "Founding Dev", color: "#ffdab9" }, { name: "Design", color: "#add8e6" },],
     },
     {
         imgUrl: JustBenFYI,
@@ -43,6 +43,6 @@ export const projectData = [
         title: "Ben's Portfolio",
         description: "My little corner of the internet. Made with React and designed in Figma by yours truly.",
         url: "https://www.figma.com/file/nDKHo006pyCyPuOlweSIFZ/Design-System?node-id=0%3A1&t=n5H7ynu73OUXOcV6-1",
-        badges: [{ name: "Creator", color: "#add8e6" }, { name: "Designer", color: "#ffdab9" },],
+        badges: [{ name: "Founding Dev", color: "#ffdab9" }, { name: "Design", color: "#add8e6" },],
     },
 ]

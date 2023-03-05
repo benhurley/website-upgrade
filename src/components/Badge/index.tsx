@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Tooltip from '@mui/material/Tooltip';
 
 export type BadgeProps = {
     name: string,
@@ -17,9 +18,9 @@ align-items: center;
 const StyledBadge = styled.div`
 background-color: #43464B;
 color: white;
-font-size: 12px;
+font-size: 10px;
 font-weight: bold;
-padding: 3px 15px;
+padding: 3px 10px;
 border-radius: 20px;
 text-decoration: none;
 margin-bottom: 5px;
@@ -27,11 +28,11 @@ margin-bottom: 5px;
 
 const Circle = styled.div`
 display: inline-block;
-width: 10px;
-height: 10px;
+width: 8px;
+height: 8px;
 border-radius: 50%;
 background-color: ${props => props.color};
-margin-right: 10px;
+margin-right: 5px;
 text-decoration: none;
 `
 
@@ -40,13 +41,16 @@ display: inline-block;
 `
 
 export const Badge = ({ name, color }: BadgeProps) => {
+    const description = name === ("Founding Dev") ? "I built this website from scratch." : name === "Design" ? "I've designed components on this website." : name === "Dev" ? "I've contributed to this website as a developer." : null;
     return (
         <Container>
             <BadgeWrapper>
+            <Tooltip title={description} placement="top" arrow>
                 <StyledBadge>
                     <Circle color={color} />
                     <Text>{name}</Text>
                 </StyledBadge>
+            </Tooltip>
             </BadgeWrapper>
         </Container>
     )
