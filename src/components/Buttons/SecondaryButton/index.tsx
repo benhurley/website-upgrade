@@ -5,7 +5,7 @@ text-transform: uppercase;
 background: white;
 color: black;
 border-radius: 100px;
-border: none;
+border: 1px solid #43464B;
 padding: 20px 40px 20px 40px;
 font-size: 14px;
 font-family: 'Kdam Thmor Pro', sans-serif;
