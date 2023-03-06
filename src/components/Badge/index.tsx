@@ -41,7 +41,7 @@ display: inline-block;
 `
 
 export const Badge = ({ name, color }: BadgeProps) => {
-    const description = name === ("Founding Dev") ? "I built this website from scratch." : name === "Design" ? "I've designed components on this website." : name === "Dev" ? "I've contributed to this website as a developer." : null;
+    const description = name === ("Founding Dev") ? "I built this site from scratch." : name === "Design" ? "I designed components on this site." : name === "Dev" ? "I added functionality to this site." : null;
     return (
         <Container>
             <BadgeWrapper>
