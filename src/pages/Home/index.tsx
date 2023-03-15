@@ -95,7 +95,7 @@ export const Home = () => {
         </FadeInComponent>
         <Description>I build and design websites.</Description>
         <CTAContainer>
-          <ReachOutButton href="mailto:webdevbyben@gmail.com">Email</ReachOutButton>
+          <ReachOutButton href="mailto:justbenfyi@pm.me">Email</ReachOutButton>
           <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
         </CTAContainer>
       </Container>
