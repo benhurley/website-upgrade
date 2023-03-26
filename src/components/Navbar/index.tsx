@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import { useNavigate } from 'react-router-dom';
 
-const twitterLogo = require('../../img/twitterLogo.png')
+const linkedinLogo = require('../../img/linkedinLogo.png')
 const githubLogo = require('../../img/githubLogo.png')
 const mediumLogo = require('../../img/mediumLogo.png')
 
@@ -106,11 +106,11 @@ export const NavBar = () => {
                                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
                                     <IconMobile src={mediumLogo} />
                                 </a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/benjamin-hurley">
+                                    <IconMobile src={linkedinLogo} />
+                                </a>
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
                                     <IconMobile src={githubLogo} />
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/justbenfyi">
-                                    <IconMobile src={twitterLogo} />
                                 </a>
                             </LogoContainer>
                         </Box>
@@ -130,11 +130,11 @@ export const NavBar = () => {
                                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
                                     <IconDesktop src={mediumLogo} />
                                 </a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/benjamin-hurley">
+                                    <IconDesktop src={linkedinLogo} />
+                                </a>
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
                                     <IconDesktop src={githubLogo} />
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/justbenfyi">
-                                    <IconDesktop src={twitterLogo} />
                                 </a>
                             </LogoContainer>
                         </Box>
