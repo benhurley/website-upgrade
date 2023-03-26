@@ -6,7 +6,7 @@ import { SecondaryButton } from '../../components/Buttons/SecondaryButton';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import ReactCardFlip from 'react-card-flip';
 
-const monkeHeadshot = require("../../img/smb.png");
+const nftHeadshot = require("../../img/nft.png");
 const benHeadshot = require("../../img/ben.png");
 const hand = require("../../img/hand.png");
 
@@ -87,8 +87,8 @@ export const Home = () => {
                 src={benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
               />
               <Image
-                alt={"ben's solana monke business nft"}
-                src={monkeHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+                alt={"ben's solana nft profile picture"}
+                src={nftHeadshot} onClick={() => setIsFlipped(!isFlipped)}
               />
             </ReactCardFlip>
           </AvatarContainer>
