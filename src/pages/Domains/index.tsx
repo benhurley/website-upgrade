@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { PrimaryLinkButton } from "../../components/Buttons/PrimaryLinkButton";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
-import SlideInText from "../../helpers/SlideInText";
+import { SlideInText } from "../../helpers/SlideInText";
 
 const LinkContainer = styled.div`
 margin: 70px 0px 70px 0px;

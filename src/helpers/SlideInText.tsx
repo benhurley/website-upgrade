@@ -27,7 +27,7 @@ type SlideInTextProps = {
   delay?: number;
 }
 
-const SlideInText: React.FC<SlideInTextProps> = ({ size, text, delay = 0 }) => {
+export const SlideInText: React.FC<SlideInTextProps> = ({ size, text, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -49,5 +49,3 @@ const SlideInText: React.FC<SlideInTextProps> = ({ size, text, delay = 0 }) => {
     </SlideInTextWrapper>
   );
 };
-
-export default SlideInText;

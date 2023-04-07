@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Card } from "../../components/Card";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
-import SlideInText from "../../helpers/SlideInText";
+import { SlideInText } from "../../helpers/SlideInText";
 import { projectData } from "./projectData";
 
 const Grid = styled.div`
