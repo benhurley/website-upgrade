@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import HeaderSwitch from './HeaderSwitch';
-// Animation styles
+
 const slideInFromLeft = keyframes`
   0% {
     transform: translateX(-100%);
