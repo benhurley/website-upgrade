@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PrimaryLinkButton } from "../../components/Buttons/PrimaryLinkButton";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
+import SlideInText from "../../helpers/SlideInText";
 
 const LinkContainer = styled.div`
 margin: 70px 0px 70px 0px;
@@ -24,7 +25,9 @@ const domainData = [
 export const Domains = () => {
     return (
         <FadeInComponent>
-            <h1>Domains For Sale</h1>
+            <FadeInComponent timeout={750}>
+                <SlideInText text="My Domains" size="h1" />
+            </FadeInComponent>
             {domainData.map((domain, index) => (
                 <FadeInComponent key={index} timeout={index * 400}>
                     <LinkContainer>

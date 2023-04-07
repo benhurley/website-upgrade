@@ -15,13 +15,13 @@ export const FadeInComponent = ({ children, timeout = 100 } : FadeInComponentPro
   }, [timeout]);
 
   return (
-    <div
+    <span
       style={{
         opacity: fadeIn ? 1 : 0,
         transition: 'opacity 1s',
       }}
     >
       {children}
-    </div>
+    </span>
   );
 };

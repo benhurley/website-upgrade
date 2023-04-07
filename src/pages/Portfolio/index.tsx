@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Card } from "../../components/Card";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
+import SlideInText from "../../helpers/SlideInText";
 import { projectData } from "./projectData";
 
 const Grid = styled.div`
@@ -14,6 +15,9 @@ const Grid = styled.div`
 export const Portfolio = () => {
     return (
         <FadeInComponent>
+            <FadeInComponent timeout={750}>
+                <SlideInText text="My Portfolio" size="h1" />
+            </FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
