@@ -54,7 +54,7 @@ export const Home = () => {
         <FadeInComponent timeout={750}>
           <SlideInText text="Hey, it&apos;s Ben" size="h1" />
         </FadeInComponent>
-        <FadeInComponent>
+        <FadeInComponent timeout={500}>
           <AvatarContainer>
             <ReactCardFlip
               infinite
@@ -74,14 +74,14 @@ export const Home = () => {
             </ReactCardFlip>
           </AvatarContainer>
         </FadeInComponent>
-        <FadeInComponent timeout={1750}>
-          <SlideInText text="I build and design websites" size="h3" delay={1000} />
+        <FadeInComponent timeout={1500}>
+          <SlideInText text="I build and design websites" size="h3" delay={750} />
         </FadeInComponent>
         <CTAContainer>
-          <FadeInComponent timeout={3000}>
+          <FadeInComponent timeout={2750}>
             <ReachOutButton href="mailto:justbenfyi@pm.me">Email</ReachOutButton>
           </FadeInComponent>
-          <FadeInComponent timeout={3500}>
+          <FadeInComponent timeout={2750}>
             <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
           </FadeInComponent>
         </CTAContainer>
