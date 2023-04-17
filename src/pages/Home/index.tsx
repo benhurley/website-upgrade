@@ -20,8 +20,8 @@ margin-bottom: 20px;
 
 const Image = styled.img`
 border-radius: 100%;
-height: 200px;
-width: 200px;
+height: 125px;
+width: 125px;
 cursor: pointer;
 border: 2px solid;
 border-color: white;
