@@ -65,6 +65,7 @@ export const NavBar = () => {
             position: 'fixed',
             height: '100%',
             width: '50%',
+            maxWidth: '250px',
             left: '0'
         },
         bmMenu: {
