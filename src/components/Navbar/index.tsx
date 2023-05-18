@@ -66,7 +66,8 @@ export const NavBar = () => {
             height: '100%',
             width: '50%',
             maxWidth: '250px',
-            left: '0'
+            left: '0',
+            borderRight: '0.5px solid #44464B'
         },
         bmMenu: {
             background: 'black',
@@ -78,13 +79,16 @@ export const NavBar = () => {
         },
         bmItemList: {
             color: '#b8b7ad',
-            padding: '0.8em',
+            padding: '0.5em',
         },
         bmItem: {
             color: 'white',
-            margin: '0.5em',
+            margin: '0.5em 0',
             textDecoration: 'none',
         },
+        bmOverlay: {
+            background: 'rgba(0, 0, 0, 0.4)'
+        }
     }
 
     return (

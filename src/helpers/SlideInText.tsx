@@ -16,7 +16,7 @@ const slideUpFadeIn = keyframes`
 const SlideInTextWrapper = styled.div<{ isVisible: boolean }>`
   position: relative;
   animation-name: ${({ isVisible }) => (isVisible ? slideUpFadeIn : null)};
-  animation-duration: 1.5s;
+  animation-duration: 1.25s;
   animation-fill-mode: forwards;
   opacity: 0;
 `;
