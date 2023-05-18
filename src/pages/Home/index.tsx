@@ -6,6 +6,7 @@ import { SecondaryButton } from '../../components/Buttons/SecondaryButton';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import ReactCardFlip from 'react-card-flip';
 import { SlideInText } from '../../helpers/SlideInText';
+import { FadeInSpin } from '../../helpers/FadeInSpin';
 
 const nftHeadshot = require("../../img/nft.png");
 const benHeadshot = require("../../img/ben.png");
@@ -20,14 +21,15 @@ margin-bottom: 20px;
 
 const Image = styled.img`
 border-radius: 100%;
-height: 125px;
-width: 125px;
+height: 150px;
+width: 150px;
 cursor: pointer;
 border: 2px solid;
 border-color: white;
 `
 
 const CTAContainer = styled.div`
+margin-top: 10px;
 display: inline-block;
 line-height: 78px;
 `
@@ -51,10 +53,9 @@ export const Home = () => {
   return (
     <FadeInComponent>
       <Container>
-        <FadeInComponent timeout={750}>
+        <FadeInComponent timeout={500}>
           <SlideInText text="Hey, it&apos;s Ben" size="h1" />
         </FadeInComponent>
-        <FadeInComponent timeout={500}>
           <AvatarContainer>
             <ReactCardFlip
               infinite
@@ -73,17 +74,16 @@ export const Home = () => {
               />
             </ReactCardFlip>
           </AvatarContainer>
-        </FadeInComponent>
         <FadeInComponent timeout={1500}>
           <SlideInText text="I build and design websites" size="h3" delay={750} />
         </FadeInComponent>
         <CTAContainer>
-          <FadeInComponent timeout={2750}>
+          <FadeInSpin timeout={2600}>
             <ReachOutButton href="mailto:justbenfyi@pm.me">Email</ReachOutButton>
-          </FadeInComponent>
-          <FadeInComponent timeout={2750}>
+          </FadeInSpin>
+          <FadeInSpin timeout={3250} startDegrees='45'>
             <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
-          </FadeInComponent>
+          </FadeInSpin>
         </CTAContainer>
       </Container>
     </FadeInComponent>

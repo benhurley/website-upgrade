@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import HeaderSwitch from './HeaderSwitch';
 
-const slideInFromLeft = keyframes`
+const slideUpFadeIn = keyframes`
   0% {
-    transform: translateX(-100%);
+    transform: translateY(100%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
 `;
 
 const SlideInTextWrapper = styled.div<{ isVisible: boolean }>`
   position: relative;
-  animation-name: ${({ isVisible }) => (isVisible ? slideInFromLeft : null)};
-  animation-duration: 1.25s;
+  animation-name: ${({ isVisible }) => (isVisible ? slideUpFadeIn : null)};
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 `;

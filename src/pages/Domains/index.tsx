@@ -16,16 +16,12 @@ const domainData = [
         name: "voteforbezos.com",
         href: "https://sedo.com/search/?keyword=voteforbezos.com&synonyms=false&safe_search=1&kws=right",
     },
-    {
-        name: "drinkingplaybook.com",
-        href: "https://sedo.com/search/?keyword=drinkingplaybook.com&synonyms=false&safe_search=1&kws=right",
-    },
 ]
 
 export const Domains = () => {
     return (
         <FadeInComponent>
-            <FadeInComponent timeout={750}>
+            <FadeInComponent timeout={250}>
                 <SlideInText text="My Domains" size="h1" />
             </FadeInComponent>
             {domainData.map((domain, index) => (

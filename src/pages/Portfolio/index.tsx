@@ -15,7 +15,7 @@ const Grid = styled.div`
 export const Portfolio = () => {
     return (
         <FadeInComponent>
-            <FadeInComponent timeout={750}>
+            <FadeInComponent timeout={250}>
                 <SlideInText text="My Portfolio" size="h1" />
             </FadeInComponent>
             <Grid>

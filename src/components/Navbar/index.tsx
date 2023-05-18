@@ -2,16 +2,15 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
+
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import styled from 'styled-components';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import { useNavigate } from 'react-router-dom';
+import { slide as Menu } from 'react-burger-menu';
+import { IconButton } from '@mui/material';
 
 const linkedinLogo = require('../../img/linkedinLogo.png')
 const githubLogo = require('../../img/githubLogo.png')
@@ -47,19 +46,44 @@ height: 20px;
 
 export const NavBar = () => {
     const navigate = useNavigate();
-    const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-
-    const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElNav(event.currentTarget);
-    };
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
+    const [menuOpen, setMenuOpen] = React.useState(false);
 
     const handleTabSelection = (tabPath: string) => {
         navigate(tabPath);
-        handleCloseNavMenu();
+        setTimeout(() => setMenuOpen(false), 200)
+    }
+
+    var styles = {
+        bmCrossButton: {
+            height: '24px',
+            width: '24px'
+        },
+        bmCross: {
+            background: 'white'
+        },
+        bmMenuWrap: {
+            position: 'fixed',
+            height: '100%',
+            width: '50%',
+            left: '0'
+        },
+        bmMenu: {
+            background: 'black',
+            padding: '2em 1.5em 0',
+            overflow: 'none !important'
+        },
+        bmMorphShape: {
+            fill: 'white'
+        },
+        bmItemList: {
+            color: '#b8b7ad',
+            padding: '0.8em',
+        },
+        bmItem: {
+            color: 'white',
+            margin: '0.5em',
+            textDecoration: 'none',
+        },
     }
 
     return (
@@ -73,33 +97,27 @@ export const NavBar = () => {
                                 aria-label="account of current user"
                                 aria-controls="menu-appbar"
                                 aria-haspopup="true"
-                                onClick={handleOpenNavMenu}
+                                onClick={() => setMenuOpen(!menuOpen)}
                                 color="inherit"
                             >
                                 <MenuIcon />
                             </IconButton>
                             <Menu
-                                id="menu-appbar"
-                                anchorEl={anchorElNav}
-                                anchorOrigin={{
-                                    vertical: 'bottom',
-                                    horizontal: 'left',
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'left',
-                                }}
-                                open={Boolean(anchorElNav)}
-                                onClose={handleCloseNavMenu}
-                                sx={{
-                                    display: { xs: 'block', md: 'none' },
-                                }}
+                                isOpen={menuOpen}
+                                onStateChange={() => setMenuOpen(menuOpen)}
+                                styles={styles}
+                                customBurgerIcon={false}
                             >
                                 {tabs.map((tab, index) => (
-                                    <MenuItem key={index} onClick={() => handleTabSelection(tab.path)}>
-                                        <Typography textAlign="center">{tab.name}</Typography>
-                                    </MenuItem>
+                                    <FadeInComponent key={index}>
+                                        <Button
+                                            key={index}
+                                            onClick={() => handleTabSelection(tab.path)}
+                                            sx={{ my: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20 }}
+                                        >
+                                            {tab.name}
+                                        </Button>
+                                    </FadeInComponent>
                                 ))}
                             </Menu>
                             <LogoContainer>
