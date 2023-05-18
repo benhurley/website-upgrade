@@ -78,10 +78,10 @@ export const Home = () => {
           <SlideInText text="I build and design websites" size="h3" delay={750} />
         </FadeInComponent>
         <CTAContainer>
-          <FadeInSpin timeout={2600}>
+          <FadeInSpin timeout={2400} startDegrees='-25'>
             <ReachOutButton href="mailto:justbenfyi@pm.me">Email</ReachOutButton>
           </FadeInSpin>
-          <FadeInSpin timeout={3250} startDegrees='45'>
+          <FadeInSpin timeout={2800} startDegrees='25'>
             <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
           </FadeInSpin>
         </CTAContainer>
