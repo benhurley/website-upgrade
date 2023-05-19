@@ -85,6 +85,7 @@ export const NavBar = () => {
             color: 'white',
             margin: '0.5em 0',
             textDecoration: 'none',
+            cursor: 'pointer',
         },
         bmOverlay: {
             background: 'rgba(0, 0, 0, 0.4)'
@@ -114,15 +115,17 @@ export const NavBar = () => {
                                 customBurgerIcon={false}
                             >
                                 {tabs.map((tab, index) => (
-                                    <FadeInComponent key={index}>
-                                        <Button
-                                            key={index}
-                                            onClick={() => handleTabSelection(tab.path)}
-                                            sx={{ my: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20 }}
-                                        >
-                                            {tab.name}
-                                        </Button>
-                                    </FadeInComponent>
+                                    <div onClick={() => handleTabSelection(tab.path)}>
+                                        <FadeInComponent key={index}>
+                                            <Button
+                                                key={index}
+                                                onClick={() => handleTabSelection(tab.path)}
+                                                sx={{ my: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20 }}
+                                            >
+                                                {tab.name}
+                                            </Button>
+                                        </FadeInComponent>
+                                    </div>
                                 ))}
                             </Menu>
                             <LogoContainer>
