@@ -4,7 +4,7 @@ import HeaderSwitch from './HeaderSwitch';
 
 const slideUpFadeIn = keyframes`
   0% {
-    transform: translateY(100%);
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
