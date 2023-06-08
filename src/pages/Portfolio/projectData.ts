@@ -17,7 +17,7 @@ export const projectData = [
         imgUrl: BonobosScreenshot,
         imgAlt: "Bonobos homepage",
         title: "Bonobos",
-        description: "An upscale, e-commerce-driven apparel subsidiary of Walmart that sells menswear.",
+        description: "An upscale, e-commerce-driven apparel subsidiary of Express that sells menswear.",
         url: "https://bonobos.com",
         badges: [{ name: "Dev", color: "#90ee90" },],
     },
