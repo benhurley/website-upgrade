@@ -6,7 +6,7 @@ import { projectData } from "./projectData";
 
 const Grid = styled.div`
     max-width: 1050px;
-    margin: 20px auto 0px auto;
+    margin: 20px auto 40px;
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -16,7 +16,7 @@ export const Portfolio = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="My Portfolio" size="h1" />
+                <SlideInText text="Dev Portfolio" size="h1" />
             </FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (
@@ -28,7 +28,7 @@ export const Portfolio = () => {
                             imgUrl={project.imgUrl}
                             title={project.title}
                             description={project.description}
-                            badges={project.badges}
+                            skills={project.skills}
                         />
                     </FadeInComponent>
                 ))}

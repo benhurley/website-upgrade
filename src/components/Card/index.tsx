@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { Badge, BadgeProps } from '../Badge';
 
 const Container = styled.div`
 width: 275px;
+min-height: 300px;
 padding: 24px;
 margin: auto;
 background-color: black;
@@ -20,13 +20,12 @@ box-shadow: 8px 8px #43464B;
 
 const Image = styled.img`
 border-radius: 10px;
-width: 250px;
-margin-top: 10px;
-border: solid 1px;
-border-color: #43464B;
+width: 275px;
+height: 125px;
 `;
 
 const Title = styled.h2`
+margin-top: 10px;
 margin-bottom: 10px;
 font-family: 'Kdam Thmor Pro', sans-serif;
 text-decoration: underline;
@@ -35,12 +34,22 @@ text-decoration-color: black;
 
 const Description = styled.p`
 font-size: 16px;
-padding-left: 23px;
-padding-right: 23px;
 line-height: 1.2;
 font-family: 'Kdam Thmor Pro', sans-serif;
 text-decoration: underline;
 text-decoration-color: black;
+`;
+
+const Skills = styled.p`
+font-size: 12px;
+padding-left: 23px;
+padding-right: 23px;
+padding-top: 16px;
+line-height: 1.2;
+font-family: 'Kdam Thmor Pro', sans-serif;
+text-decoration: underline;
+text-decoration-color: black;
+font-style: italic;
 `;
 
 type cardProps = {
@@ -49,19 +58,17 @@ type cardProps = {
     imgAlt: string,
     title: string,
     description: string,
-    badges: BadgeProps[],
+    skills: string,
 }
 
-export const Card = ({ href, imgUrl, imgAlt, title, description, badges }: cardProps) => {
+export const Card = ({ href, imgUrl, imgAlt, title, description, skills }: cardProps) => {
     return (
         <a target="_blank" rel="noopener noreferrer" href={href}>
             <Container data-testid="card">
-                {badges.map((badge) => 
-                    <Badge name={badge.name} />
-                )}
                 <Image src={imgUrl} alt={imgAlt} />
                 <Title>{title}</Title>
                 <Description>{description}</Description>
+                <Skills>{skills}</Skills>
             </Container>
         </a>);
 }

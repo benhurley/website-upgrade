@@ -77,7 +77,7 @@ padding-right: 55px;
 
 export const Home = () => {
   const navigate = useNavigate();
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(window.location.href.includes("justben") ? true : false);
 
   return (
     <FadeInComponent>
@@ -112,12 +112,12 @@ export const Home = () => {
           <SlideInText text="I build and design websites" size="h3" delay={2400} />
         </FadeInComponent>
         <CTAContainer>
-          <FadeInSpin timeout={3200} startDegrees='-25'>
+          <FadeInComponent timeout={3400}>
             <ReachOutButton href="mailto:justbenfyi@pm.me">Email</ReachOutButton>
-          </FadeInSpin>
-          <FadeInSpin timeout={3600} startDegrees='25'>
+          </FadeInComponent>
+          <FadeInComponent timeout={3400}>
             <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
-          </FadeInSpin>
+          </FadeInComponent>
         </CTAContainer>
       </Container>
     </FadeInComponent>

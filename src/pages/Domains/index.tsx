@@ -22,7 +22,7 @@ export const Domains = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="My Domains" size="h1" />
+                <SlideInText text="Domains For Sale" size="h1" />
             </FadeInComponent>
             {domainData.map((domain, index) => (
                 <FadeInComponent key={index} timeout={index * 400}>

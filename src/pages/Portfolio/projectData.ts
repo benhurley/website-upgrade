@@ -3,55 +3,46 @@ const SVPLYCHVNScreenshot = require('../../img/svply.png');
 const CryptoCostScreenshot = require('../../img/cryptocost.png')
 const DHScreenshot = require('../../img/dh.png')
 const BonobosScreenshot = require('../../img/bonobos.png')
-const JustBenFYI = require('../../img/justbenfyi.png')
 
 export const projectData = [
     {
         imgUrl: DHScreenshot,
         imgAlt: "Daily Harvest homepage",
-        title: "Daily Harvest",
-        description: "A plant-based meal delivery service providing a variety of ready-to-eat food.",
+        title: "dailyharvest.com",
+        description: "Chef-crafted, ready-when-you-are food built on fruits + veggies.",
         url: "https://daily-harvest.com",
-        badges: [{ name: "Lead Dev" }, { name: "Design" },],
+        skills: "React, Typescript, Redux, Contentful, Styled Components, Python, GCP"
     },
     {
         imgUrl: BonobosScreenshot,
         imgAlt: "Bonobos homepage",
-        title: "Bonobos",
-        description: "An upscale, e-commerce-driven apparel subsidiary of Express that sells menswear.",
+        title: "bonobos.com",
+        description: "An upscale menswear apparel subsidiary of Express, Inc.",
         url: "https://bonobos.com",
-        badges: [{ name: "Dev" },],
+        skills: "React, Redux, Contentful, Constructor.io, Heroku, AWS"
     },
     {
         imgUrl: NippiesScreenshot,
         imgAlt: "Nippies by @ScubaSteveArt",
-        title: "Nippies",
-        description: "A collection of 100 misfit yeti characters on the Solana Blockchain.",
+        title: "nippi.es",
+        description: "100 hand-drawn yeti cartoons wreaking havoc on Solana and Bitcoin users.",
         url: "https://nippi.es",
-        badges: [{ name: "Creator" },],
-    },
-        {
-        imgUrl: SVPLYCHVNScreenshot,
-        imgAlt: "Supply Chain by Daramola",
-        title: "SVPLY CHVN",
-        description: "A Web3 Music Experiment. Curated by Artist and Music Producer Daramola.",
-        url: "https://svplychvn.com",
-        badges: [{ name: "Lead Dev" }, { name: "Design" }],
+        skills: "React, Styled Components, Netlify"
     },
     {
-        imgUrl: JustBenFYI,
-        imgAlt: "Ben's Portfolio",
-        title: "Ben's Portfolio",
-        description: "My little corner of the internet. Made with React and designed in Figma by yours truly.",
-        url: "https://www.figma.com/file/nDKHo006pyCyPuOlweSIFZ/Design-System?node-id=0%3A1&t=n5H7ynu73OUXOcV6-1",
-        badges: [{ name: "Creator" }, { name: "Design" },],
+        imgUrl: SVPLYCHVNScreenshot,
+        imgAlt: "Supply Chain by Daramola",
+        title: "svplychvn.com",
+        description: "A Web3 Music Experiment by Sony Music Publishing Artist and Music Producer Daramola.",
+        url: "https://svplychvn.com",
+        skills: "T3 Stack (Typescript, NextJS, Tailwind)"
     },
     {
         imgUrl: CryptoCostScreenshot,
         imgAlt: "Cryptocost homepage",
-        title: "Crypto Cost Engine",
+        title: "Crypto Cost",
         description: "Gives a cost-basis estimate in USD for a given cryptocurrency purchase.",
         url: "https://cryptocost.netlify.app",
-        badges: [{ name: "Creator" }, { name: "Design" },],
+        skills: "React, Typescript, React Query, Styled Components, Netlify"
     },
 ]
