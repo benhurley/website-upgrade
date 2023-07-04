@@ -57,7 +57,7 @@ export const Card = ({ href, imgUrl, imgAlt, title, description, badges }: cardP
         <a target="_blank" rel="noopener noreferrer" href={href}>
             <Container data-testid="card">
                 {badges.map((badge) => 
-                    <Badge name={badge.name} color={badge.color} />
+                    <Badge name={badge.name} />
                 )}
                 <Image src={imgUrl} alt={imgAlt} />
                 <Title>{title}</Title>
