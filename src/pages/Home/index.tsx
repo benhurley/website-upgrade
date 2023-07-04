@@ -6,7 +6,6 @@ import { SecondaryButton } from '../../components/Buttons/SecondaryButton';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import ReactCardFlip from 'react-card-flip';
 import { SlideInText } from '../../helpers/SlideInText';
-import { FadeInSpin } from '../../helpers/FadeInSpin';
 
 const nftHeadshot = require("../../img/nft.png");
 const benHeadshot = require("../../img/ben.png");
