@@ -35,13 +35,13 @@ export const projectData = [
         title: "svplychvn.com",
         description: "A Web3 Music Experiment by Sony Music Publishing Artist and Music Producer Daramola.",
         url: "https://svplychvn.com",
-        skills: "T3 Stack (Typescript, NextJS, Tailwind), Figma"
+        skills: "T3 Stack (Typescript, NextJS, Tailwind)"
     },
     {
         imgUrl: CryptoCostScreenshot,
         imgAlt: "Cryptocost homepage",
         title: "Crypto Cost",
-        description: "Gives a cost-basis estimate in USD for a given cryptocurrency purchase.",
+        description: "Provides a USD cost-basis estimate for any past cryptocurrency purchase.",
         url: "https://cryptocost.netlify.app",
         skills: "React, Typescript, React Query, Styled Components, Netlify"
     },
