@@ -25,7 +25,7 @@ export const projectData = [
         imgUrl: NippiesScreenshot,
         imgAlt: "Nippies by @ScubaSteveArt",
         title: "nippi.es",
-        description: "100 hand-drawn yeti cartoons wreaking havoc on Solana and Bitcoin users.",
+        description: "A one-a-day, hand-drawn art parody that accidentally resulted in 100 nipple-clad creatures.",
         url: "https://nippi.es",
         skills: "React, Styled Components, Netlify"
     },
@@ -35,7 +35,7 @@ export const projectData = [
         title: "svplychvn.com",
         description: "A Web3 Music Experiment by Sony Music Publishing Artist and Music Producer Daramola.",
         url: "https://svplychvn.com",
-        skills: "T3 Stack (Typescript, NextJS, Tailwind)"
+        skills: "T3 Stack (Typescript, NextJS, Tailwind), Figma"
     },
     {
         imgUrl: CryptoCostScreenshot,
