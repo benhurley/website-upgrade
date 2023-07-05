@@ -5,8 +5,9 @@ import { Portfolio } from './pages/Portfolio';
 import { Domains } from './pages/Domains';
 import { Footer } from './components/Footer';
 import styled, { createGlobalStyle } from "styled-components";
-
-const backgroundImg = require('./img/background.png')
+import backgroundImg from "./img/background.png";
+import { preloadImages } from './helpers/preloadImages';
+import { useEffect } from 'react';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -27,6 +28,10 @@ const AppContainer = styled.div`
 `;
 
 function App() {
+  useEffect(() => {
+    preloadImages();
+  }, [])
+
   return (
     <>
       <GlobalStyles />
