@@ -1,8 +1,8 @@
-const NippiesScreenshot = require('../../img/nippies.png');
-const SVPLYCHVNScreenshot = require('../../img/svply.png');
-const CryptoCostScreenshot = require('../../img/cryptocost.png')
-const DHScreenshot = require('../../img/dh.png')
-const BonobosScreenshot = require('../../img/bonobos.png')
+import NippiesScreenshot from "../../img/nippies.png";
+import SVPLYCHVNScreenshot from "../../img/svply.png";
+import CryptoCostScreenshot from "../../img/cryptocost.png";
+import DHScreenshot from "../../img/dh.png";
+import BonobosScreenshot from "../../img/bonobos.png";
 
 export const projectData = [
     {

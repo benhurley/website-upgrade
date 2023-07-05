@@ -7,9 +7,9 @@ import { FadeInComponent } from '../../helpers/FadeInComponent';
 import ReactCardFlip from 'react-card-flip';
 import { SlideInText } from '../../helpers/SlideInText';
 
-const nftHeadshot = require("../../img/nft.png");
-const benHeadshot = require("../../img/ben.png");
-const hand = require("../../img/hand.png");
+import nftHeadshot from "../../img/nft.png";
+import benHeadshot from "../../img/ben.png";
+import hand from "../../img/hand.png";
 
 const waveAnimation = keyframes`
   0% { transform: rotate( 0.0deg) }
@@ -76,7 +76,8 @@ padding-right: 55px;
 
 export const Home = () => {
   const navigate = useNavigate();
-  const [isFlipped, setIsFlipped] = useState(window.location.href.includes("justben") ? true : false);
+  const [isFlipped, setIsFlipped] = useState(false);
+  const isJustBenDomain = window.location.href.includes("justben");
 
   return (
     <FadeInComponent>
@@ -98,12 +99,12 @@ export const Home = () => {
             flipSpeedBackToFront={2}
           >
             <Image
-              alt={"headshot of ben"}
-              src={benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+              alt={isJustBenDomain ? "ben's solana nft profile picture" : "headshot of ben"}
+              src={isJustBenDomain ? nftHeadshot : benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
             />
             <Image
-              alt={"ben's solana nft profile picture"}
-              src={nftHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+              alt={isJustBenDomain ? "headshot of ben" : "ben's solana nft profile picture"}
+              src={isJustBenDomain ? benHeadshot : nftHeadshot} onClick={() => setIsFlipped(!isFlipped)}
             />
           </ReactCardFlip>
         </AvatarContainer>

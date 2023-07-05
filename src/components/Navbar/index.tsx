@@ -12,9 +12,9 @@ import { useNavigate } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import { IconButton } from '@mui/material';
 
-const linkedinLogo = require('../../img/linkedinLogo.png')
-const githubLogo = require('../../img/githubLogo.png')
-const mediumLogo = require('../../img/mediumLogo.png')
+import linkedinLogo from "../../img/linkedinLogo.png";
+import githubLogo from "../../img/githubLogo.png";
+import mediumLogo from "../../img/mediumLogo.png";
 
 const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: 'Domains', path: '/domains' }];
 
@@ -53,7 +53,7 @@ export const NavBar = () => {
         setTimeout(() => setMenuOpen(false), 200)
     }
 
-    var styles = {
+    const muiStyleOverrides = {
         bmCrossButton: {
             height: '24px',
             width: '24px'
@@ -111,7 +111,7 @@ export const NavBar = () => {
                             <Menu
                                 isOpen={menuOpen}
                                 onStateChange={() => setMenuOpen(menuOpen)}
-                                styles={styles}
+                                styles={muiStyleOverrides}
                                 customBurgerIcon={false}
                             >
                                 {tabs.map((tab, index) => (
