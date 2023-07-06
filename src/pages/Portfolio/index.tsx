@@ -23,12 +23,7 @@ export const Portfolio = () => {
                     <FadeInComponent key={index} timeout={index * 400}>
                         <Card
                             key={index}
-                            href={project.url}
-                            imgAlt={project.imgAlt}
-                            imgUrl={project.imgUrl}
-                            title={project.title}
-                            description={project.description}
-                            role={project.role}
+                            project={project}
                         />
                     </FadeInComponent>
                 ))}

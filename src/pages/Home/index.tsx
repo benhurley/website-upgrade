@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
-import { SecondaryButton } from '../../components/Buttons/SecondaryButton';
+import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButton';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import ReactCardFlip from 'react-card-flip';
 import { SlideInText } from '../../helpers/SlideInText';
@@ -62,7 +62,7 @@ display: inline-block;
 line-height: 78px;
 `
 
-const ShowMeButton = styled(SecondaryButton)`
+const ShowMeButton = styled(SecondaryLinkButton)`
 margin-left: 10px;
 margin-right: 10px;
 `

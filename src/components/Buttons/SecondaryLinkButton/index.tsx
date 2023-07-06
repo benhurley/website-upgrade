@@ -12,4 +12,7 @@ font-size: 14px;
 font-family: 'Kdam Thmor Pro', sans-serif;
 cursor: pointer;
 box-shadow: 4px 4px #43464B;
+&:hover {
+    background: #e5e5e5;
+}
 `

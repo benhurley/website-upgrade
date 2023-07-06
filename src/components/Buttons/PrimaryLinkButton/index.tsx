@@ -12,4 +12,7 @@ background: #000000;
 border: 1px solid #43464B;
 box-shadow: 4px 4px #43464B;
 border-radius: 100px;
+&:hover {
+    background: #0c0d0c;
+}
 `

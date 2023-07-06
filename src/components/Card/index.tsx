@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { frameworkMap } from '../../helpers/frameworkMap';
 
 const Container = styled.div`
 width: 275px;
@@ -30,6 +31,7 @@ margin-bottom: 10px;
 font-family: 'Kdam Thmor Pro', sans-serif;
 text-decoration: underline;
 text-decoration-color: black;
+color: white;
 `;
 
 const Description = styled.p`
@@ -40,35 +42,59 @@ text-decoration: underline;
 text-decoration-color: black;
 `;
 
+const RoleContainer = styled.div`
+display: table;
+align-items: center;
+margin-top: -22px;
+margin-bottom: 4px;
+`
+
 const Role = styled.p`
-padding: 1px 10px;
+display: inline-block;
+padding: 1px 12px;
 border-radius: 50px;
 width: fit-content;
-text-decoration: underline;
-text-decoration-color: #43464B;
-background-color: #43464B;
-color: white;
-font-size: 12px;
-margin-top: -10px;
+text-decoration-color: #F5F5F5;
+background-color: #F5F5F5;
+color: black;
+font-size: 11px;
+box-shadow: 2px 2px #43464B;
 `;
 
+const Framework = styled.img`
+display: inline-block;
+vertical-align: middle;
+width: 22px;
+margin-right: 8px;
+`
+
 type cardProps = {
-    href: string,
-    imgUrl: string,
-    imgAlt: string,
-    title: string,
-    description: string,
-    role: string,
+    project: {
+        url: string,
+        imgUrl: string,
+        imgAlt: string,
+        title: string,
+        description: string,
+        role: string,
+        framework: string,
+    }
 }
 
-export const Card = ({ href, imgUrl, imgAlt, title, description, role }: cardProps) => {
+export const Card = ({ project }: cardProps) => {
+    const { url, imgUrl, imgAlt, title, description, role, framework } = project;
     return (
-        <a target="_blank" rel="noopener noreferrer" href={href}>
-            <Container data-testid="card">
+        <Container data-testid="card">
+            <RoleContainer>
+                <a href={frameworkMap[framework].url} target="_blank" rel="noopener noreferrer">
+                    <Framework src={frameworkMap[framework].imgUrl} alt={framework} />
+                </a>
                 <Role>{role}</Role>
+            </RoleContainer>
+            <a target="_blank" rel="noopener noreferrer" href={url}>
                 <Image src={imgUrl} alt={imgAlt} />
                 <Title>{title}</Title>
-                <Description>{description}</Description>
-            </Container>
-        </a>);
+            </a>
+            <Description>{description}</Description>
+        </Container>
+    );
 }

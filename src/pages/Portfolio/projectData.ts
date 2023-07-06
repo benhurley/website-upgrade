@@ -11,6 +11,7 @@ export const projectData = [
         title: "dailyharvest.com",
         description: "Chef-crafted, ready-when-you-are food built on fruits + veggies.",
         url: "https://daily-harvest.com",
+        framework: "Remix",
         role: "Lead Dev"
     },
     {
@@ -19,7 +20,8 @@ export const projectData = [
         title: "bonobos.com",
         description: "An upscale menswear apparel subsidiary of Express, Inc.",
         url: "https://bonobos.com",
-        role: "Contributor"
+        framework: "React",
+        role: "Dev"
     },
     {
         imgUrl: NippiesScreenshot,
@@ -27,6 +29,7 @@ export const projectData = [
         title: "nippi.es",
         description: "A hand-drawn art parody that resulted in 100 nipple-clad creatures.",
         url: "https://nippi.es",
+        framework: "React",
         role: "Creator"
     },
     {
@@ -35,6 +38,7 @@ export const projectData = [
         title: "svplychvn.com",
         description: "A Web3 Music Experiment by Artist and Music Producer Daramola.",
         url: "https://svplychvn.com",
+        framework: "T3",
         role: "Lead Dev"
     },
     {
@@ -43,6 +47,7 @@ export const projectData = [
         title: "Crypto Cost",
         description: "Provides a USD cost-basis estimate for any past cryptocurrency purchase.",
         url: "https://cryptocost.netlify.app",
+        framework: "React",
         role: "Creator"
     },
 ]
