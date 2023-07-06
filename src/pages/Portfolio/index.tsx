@@ -28,7 +28,7 @@ export const Portfolio = () => {
                             imgUrl={project.imgUrl}
                             title={project.title}
                             description={project.description}
-                            skills={project.skills}
+                            role={project.role}
                         />
                     </FadeInComponent>
                 ))}
