@@ -14,8 +14,7 @@ border-color: #43464B;
 border-radius: 30px;
 box-shadow: 8px 8px #43464B;
 &:hover {
-    transform: scale(1.02);
-    transition: transform 0.5s ease;
+    background: #0c0d0c;
 }
 `
 
@@ -40,6 +39,7 @@ line-height: 1.2;
 font-family: 'Kdam Thmor Pro', sans-serif;
 text-decoration: underline;
 text-decoration-color: black;
+color: white;
 `;
 
 const RoleContainer = styled.div`
@@ -93,8 +93,8 @@ export const Card = ({ project }: cardProps) => {
             <a target="_blank" rel="noopener noreferrer" href={url}>
                 <Image src={imgUrl} alt={imgAlt} />
                 <Title>{title}</Title>
+                <Description>{description}</Description>
             </a>
-            <Description>{description}</Description>
         </Container>
     );
 }
