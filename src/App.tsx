@@ -27,8 +27,13 @@ const AppContainer = styled.div`
   line-height: 2;
 `;
 
+const isBCGdomain = window.location.href.includes("bigcigarguy");
+
 function App() {
   useEffect(() => {
+    if (isBCGdomain) {
+      window.location.href = "https://bonfire.com/store/bigcigarguy/";
+    }
     preloadImages();
   }, [])
 
