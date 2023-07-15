@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
@@ -78,61 +78,47 @@ export const Home = () => {
   const navigate = useNavigate();
   const [isFlipped, setIsFlipped] = useState(false);
   const isJustBenDomain = window.location.href.includes("justben");
-  const isBCGdomain = window.location.href.includes("bigcigarguy");
-
-  useEffect(() => {
-    if (isBCGdomain) {
-      window.location.href = "https://bonfire.com/store/bigcigarguy/";
-    }
-  }, [isBCGdomain])
-
-  const HomepageContent = () => (<>
-    <FadeInComponent timeout={500}>
-      <WaveContainer>
-        <SlideInText text="Hey, it&apos;s Ben" size="h1" />
-        <FadeInComponent timeout={1000}>
-          <Wave><Hand src={hand} alt="waiving hand" /></Wave>
-        </FadeInComponent>
-      </WaveContainer>
-    </FadeInComponent>
-    <AvatarContainer>
-      <ReactCardFlip
-        infinite
-        isFlipped={isFlipped}
-        flipDirection="horizontal"
-        flipSpeedFrontToBack={2}
-        flipSpeedBackToFront={2}
-      >
-        <Image
-          alt={isJustBenDomain ? "ben's solana nft profile picture" : "headshot of ben"}
-          src={isJustBenDomain ? nftHeadshot : benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
-        />
-        <Image
-          alt={isJustBenDomain ? "headshot of ben" : "ben's solana nft profile picture"}
-          src={isJustBenDomain ? benHeadshot : nftHeadshot} onClick={() => setIsFlipped(!isFlipped)}
-        />
-      </ReactCardFlip>
-    </AvatarContainer>
-    <FadeInComponent timeout={2400}>
-      <SlideInText text="I build and design websites" size="h3" delay={2400} />
-    </FadeInComponent>
-    <CTAContainer>
-      <FadeInComponent timeout={3400}>
-        <ReachOutButton href="mailto:justbenfyi@pm.me">Email</ReachOutButton>
-      </FadeInComponent>
-      <FadeInComponent timeout={3400}>
-        <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
-      </FadeInComponent>
-    </CTAContainer>
-  </>)
 
   return (
     <FadeInComponent>
       <Container>
-        {isBCGdomain ?
-          <SlideInText text="Redirecting to Big Cigar Guy" size="h1" />
-          : <HomepageContent />
-        }
+        <FadeInComponent timeout={500}>
+          <WaveContainer>
+            <SlideInText text="Hey, it&apos;s Ben" size="h1" />
+            <FadeInComponent timeout={1000}>
+              <Wave><Hand src={hand} alt="waiving hand" /></Wave>
+            </FadeInComponent>
+          </WaveContainer>
+        </FadeInComponent>
+        <AvatarContainer>
+          <ReactCardFlip
+            infinite
+            isFlipped={isFlipped}
+            flipDirection="horizontal"
+            flipSpeedFrontToBack={2}
+            flipSpeedBackToFront={2}
+          >
+            <Image
+              alt={isJustBenDomain ? "ben's solana nft profile picture" : "headshot of ben"}
+              src={isJustBenDomain ? nftHeadshot : benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+            />
+            <Image
+              alt={isJustBenDomain ? "headshot of ben" : "ben's solana nft profile picture"}
+              src={isJustBenDomain ? benHeadshot : nftHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+            />
+          </ReactCardFlip>
+        </AvatarContainer>
+        <FadeInComponent timeout={2400}>
+          <SlideInText text="I build and design websites" size="h3" delay={2400} />
+        </FadeInComponent>
+        <CTAContainer>
+          <FadeInComponent timeout={3400}>
+            <ReachOutButton href="mailto:justbenfyi@pm.me">Email</ReachOutButton>
+          </FadeInComponent>
+          <FadeInComponent timeout={3400}>
+            <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
+          </FadeInComponent>
+        </CTAContainer>
       </Container>
     </FadeInComponent>
   )
