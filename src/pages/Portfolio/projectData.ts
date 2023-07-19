@@ -3,6 +3,7 @@ import SVPLYCHVNScreenshot from "../../img/svply.png";
 import CryptoCostScreenshot from "../../img/cryptocost.png";
 import DHScreenshot from "../../img/dh.png";
 import BonobosScreenshot from "../../img/bonobos.png";
+import NYCScreenshot from "../../img/nycRestaurants.png";
 
 export const projectData = [
     {
@@ -33,6 +34,15 @@ export const projectData = [
         role: "Creator"
     },
     {
+        imgUrl: CryptoCostScreenshot,
+        imgAlt: "Cryptocost homepage",
+        title: "Crypto Cost",
+        description: "Provides a USD cost-basis estimate for any past cryptocurrency purchase.",
+        url: "https://cryptocost.netlify.app",
+        framework: "React",
+        role: "Creator"
+    },
+    {
         imgUrl: SVPLYCHVNScreenshot,
         imgAlt: "Supply Chain by Daramola",
         title: "svplychvn.com",
@@ -42,11 +52,11 @@ export const projectData = [
         role: "Lead Dev"
     },
     {
-        imgUrl: CryptoCostScreenshot,
-        imgAlt: "Cryptocost homepage",
-        title: "Crypto Cost",
-        description: "Provides a USD cost-basis estimate for any past cryptocurrency purchase.",
-        url: "https://cryptocost.netlify.app",
+        imgUrl: NYCScreenshot,
+        imgAlt: "NYC Restaurant Info homepage",
+        title: "NYC Restaurant Info",
+        description: "Near-real-time restaurant inspection data across all 5 NYC boroughs.",
+        url: "https://nyc-restaurant-info.netlify.app",
         framework: "React",
         role: "Creator"
     },
