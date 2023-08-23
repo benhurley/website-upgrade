@@ -4,6 +4,7 @@ import CryptoCostScreenshot from "../../img/cryptocost.png";
 import DHScreenshot from "../../img/dh.png";
 import BonobosScreenshot from "../../img/bonobos.png";
 import NYCScreenshot from "../../img/nycRestaurants.png";
+import PTScreenshot from "../../img/prettyTickets.png";
 
 export const projectData = [
     {
@@ -25,10 +26,19 @@ export const projectData = [
         role: "Dev"
     },
     {
+        imgUrl: PTScreenshot,
+        imgAlt: "Pretty Tickets Homepage",
+        title: "prettytickets.com",
+        description: "Transform your event purchases into beautiful digital tickets.",
+        url: "https://prettytickets.com",
+        framework: "React",
+        role: "Creator"
+    },
+    {
         imgUrl: NippiesScreenshot,
         imgAlt: "Nippies by @ScubaSteveArt",
         title: "nippi.es",
-        description: "A hand-drawn art parody that resulted in 100 nipple-clad creatures.",
+        description: "A boutique collection of 100 misfit yeti characters on Solana and Bitcoin.",
         url: "https://nippi.es",
         framework: "React",
         role: "Creator"
