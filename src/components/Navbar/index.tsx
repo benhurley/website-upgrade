@@ -47,6 +47,7 @@ height: 20px;
 export const NavBar = () => {
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = React.useState(false);
+    const isJustBenDomain = window.location.href.includes("justben");
 
     const handleTabSelection = (tabPath: string) => {
         navigate(tabPath);
@@ -128,7 +129,7 @@ export const NavBar = () => {
                                     </div>
                                 ))}
                             </Menu>
-                            <LogoContainer>
+                            {!isJustBenDomain && <LogoContainer>
                                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
                                     <IconMobile src={mediumLogo} />
                                 </a>
@@ -138,7 +139,7 @@ export const NavBar = () => {
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
                                     <IconMobile src={githubLogo} />
                                 </a>
-                            </LogoContainer>
+                            </LogoContainer>}
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {tabs.map((tab, index) => (
