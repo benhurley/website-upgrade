@@ -153,7 +153,7 @@ export const NavBar = () => {
                                     </Button>
                                 </FadeInComponent>
                             ))}
-                            <LogoContainer>
+                            {!isJustBenDomain && <LogoContainer>
                                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
                                     <IconDesktop src={mediumLogo} />
                                 </a>
@@ -163,7 +163,7 @@ export const NavBar = () => {
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
                                     <IconDesktop src={githubLogo} />
                                 </a>
-                            </LogoContainer>
+                            </LogoContainer>}
                         </Box>
                     </Toolbar>
                 </Container>
