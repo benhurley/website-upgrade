@@ -18,10 +18,16 @@ box-shadow: 8px 8px #43464B;
 }
 `
 
-const Image = styled.img`
+const ImageRectangle = styled.img`
 border-radius: 10px;
 width: 275px;
 height: 125px;
+`;
+
+const ImageSquare = styled.img`
+border-radius: 10px;
+width: 250px;
+height: 250px;
 `;
 
 const Title = styled.h2`
@@ -69,29 +75,31 @@ margin-right: 8px;
 `
 
 type cardProps = {
-    project: {
+    item: {
         url: string,
         imgUrl: string,
         imgAlt: string,
         title: string,
         description: string,
-        role: string,
-        framework: string,
-    }
+        role?: string,
+        framework?: string,
+    },
+    imageShape?: 'square' | 'rectangle'
 }
 
-export const Card = ({ project }: cardProps) => {
-    const { url, imgUrl, imgAlt, title, description, role, framework } = project;
+export const Card = ({ item, imageShape = 'rectangle' }: cardProps) => {
+    const { url, imgUrl, imgAlt, title, description, role, framework } = item;
     return (
         <Container data-testid="card">
-            <RoleContainer>
+            {role && framework && <RoleContainer>
                 <a href={frameworkMap[framework].url} target="_blank" rel="noopener noreferrer">
                     <Framework src={frameworkMap[framework].imgUrl} alt={framework} />
                 </a>
                 <Role>{role}</Role>
-            </RoleContainer>
+            </RoleContainer>}
             <a target="_blank" rel="noopener noreferrer" href={url}>
-                <Image src={imgUrl} alt={imgAlt} />
+                {imageShape === 'square' && <ImageSquare src={imgUrl} alt={imgAlt} />}
+                {imageShape === 'rectangle' && <ImageRectangle src={imgUrl} alt={imgAlt} />}
                 <Title>{title}</Title>
                 <Description>{description}</Description>
             </a>

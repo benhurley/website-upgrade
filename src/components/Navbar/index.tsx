@@ -16,7 +16,7 @@ import linkedinLogo from "../../img/linkedinLogo.png";
 import githubLogo from "../../img/githubLogo.png";
 import mediumLogo from "../../img/mediumLogo.png";
 
-const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: 'Domains', path: '/domains' }];
+const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: "GPTs", path: "/gpts" }, { name: 'Domains', path: '/domains' }];
 
 const MUINavBar = styled(AppBar)`
 position: sticky;

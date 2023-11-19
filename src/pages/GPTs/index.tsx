@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Card } from "../../components/Card";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
-import { projectData } from "./projectData";
+import { gptData } from "./gptData";
 
 const Grid = styled.div`
     max-width: 1050px;
@@ -12,18 +12,26 @@ const Grid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `
 
-export const Portfolio = () => {
+const Text = styled.p`
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+`
+
+export const GPTs = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Dev Portfolio" size="h1" />
+                <SlideInText text="My GPTs" size="h1" />
             </FadeInComponent>
+            <Text>If you are a ChatGPT Plus subscriber, you can use access any of my custom GPTs for free. Enjoy!</Text>
             <Grid>
-                {projectData.map((project, index) => (
+                {gptData.map((gpt, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
                         <Card
                             key={index}
-                            item={project}
+                            item={gpt}
+                            imageShape="square"
                         />
                     </FadeInComponent>
                 ))}
