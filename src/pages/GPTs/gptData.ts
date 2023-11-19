@@ -4,6 +4,7 @@ import MechanicMate from "../../img/MechanicMate.webp";
 import ParentalWisdom from "../../img/parentalWison.webp";
 import PriceGPT from "../../img/priceGPT.webp";
 import Vinobot from "../../img/vinobot.webp";
+import GolfGPT from "../../img/golf.webp";
 
 export const gptData = [
     {
@@ -33,6 +34,13 @@ export const gptData = [
         title: "Mechanic Mate",
         description: "Your virtual mechanic for diagnosing car noises, getting ready for service visits, and beyond.",
         url: "https://chat.openai.com/g/g-rUgFfFwbm-mechanic-mate",
+    },
+    {
+        imgUrl: GolfGPT,
+        imgAlt: "GolfGPT logo",
+        title: "GolfGPT",
+        description: "Your expert caddy for hole-specific golf strategies.",
+        url: "https://chat.openai.com/g/g-MTjrTCeoU-golfgpt",
     },
     {
         imgUrl: BillBalancer,
