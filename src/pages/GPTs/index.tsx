@@ -24,7 +24,7 @@ export const GPTs = () => {
             <FadeInComponent timeout={250}>
                 <SlideInText text="My GPTs" size="h1" />
             </FadeInComponent>
-            <Text>If you are a ChatGPT Plus subscriber, you can use access any of my custom GPTs for free. Enjoy!</Text>
+            <Text>If you are a ChatGPT Plus subscriber, you can use any of my custom GPTs for free. Enjoy!</Text>
             <Grid>
                 {gptData.map((gpt, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
