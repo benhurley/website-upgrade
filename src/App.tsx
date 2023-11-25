@@ -9,6 +9,7 @@ import backgroundImg from "./img/background.png";
 import { preloadImages } from './helpers/preloadImages';
 import { useEffect } from 'react';
 import { GPTs } from './pages/GPTs';
+import { Contact } from './pages/Contact';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/domains" element={<Domains />} />
             <Route path="/gpts" element={<GPTs />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path='*' element={<Home />} />
           </Routes>
         </Router>

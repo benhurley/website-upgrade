@@ -113,10 +113,10 @@ export const Home = () => {
         </FadeInComponent>
         <CTAContainer>
           <FadeInComponent timeout={3400}>
-            <ReachOutButton href="mailto:justbenfyi@pm.me">Email</ReachOutButton>
+            <ReachOutButton href="/portfolio">Portfolio</ReachOutButton>
           </FadeInComponent>
           <FadeInComponent timeout={3400}>
-            <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
+            <ShowMeButton onClick={() => navigate("/gpts")}>Custom GPTs</ShowMeButton>
           </FadeInComponent>
         </CTAContainer>
       </Container>
