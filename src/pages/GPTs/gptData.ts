@@ -5,6 +5,7 @@ import ParentalWisdom from "../../img/parentalWison.webp";
 import PriceGPT from "../../img/priceGPT.webp";
 import Vinobot from "../../img/vinobot.webp";
 import GolfGPT from "../../img/golf.webp";
+import MealPrep from "../../img/mealPrep.webp";
 
 export const gptData = [
     {
@@ -50,6 +51,15 @@ export const gptData = [
         url: "https://chat.openai.com/g/g-ucFQS1rNs-bill-balancer",
     },
     {
+
+        imgUrl: MealPrep,
+        imgAlt: "Meal Prep logo",
+        title: "Meal Prep",
+        description: "Your personal guide to easy, tasty meal planning.",
+        url: "https://chat.openai.com/g/g-bXtgna2gk-meal-prep",
+    },
+    {
+
         imgUrl: ParentalWisdom,
         imgAlt: "Parental Wisdom logo",
         title: "Parental Wisdom",
