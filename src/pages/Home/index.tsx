@@ -7,7 +7,7 @@ import { FadeInComponent } from '../../helpers/FadeInComponent';
 import ReactCardFlip from 'react-card-flip';
 import { SlideInText } from '../../helpers/SlideInText';
 
-import nftHeadshot from "../../img/nft.png";
+import artHeadshot from "../../img/me.webp";
 import benHeadshot from "../../img/ben.png";
 import hand from "../../img/hand.png";
 
@@ -99,12 +99,12 @@ export const Home = () => {
             flipSpeedBackToFront={2}
           >
             <Image
-              alt={isJustBenDomain ? "ben's solana nft profile picture" : "headshot of ben"}
-              src={isJustBenDomain ? nftHeadshot : benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+              alt={isJustBenDomain ? "ben's art profile picture" : "headshot of ben"}
+              src={isJustBenDomain ? artHeadshot : benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
             />
             <Image
-              alt={isJustBenDomain ? "headshot of ben" : "ben's solana nft profile picture"}
-              src={isJustBenDomain ? benHeadshot : nftHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+              alt={isJustBenDomain ? "headshot of ben" : "ben's art profile picture"}
+              src={isJustBenDomain ? benHeadshot : artHeadshot} onClick={() => setIsFlipped(!isFlipped)}
             />
           </ReactCardFlip>
         </AvatarContainer>
@@ -113,10 +113,10 @@ export const Home = () => {
         </FadeInComponent>
         <CTAContainer>
           <FadeInComponent timeout={3400}>
-            <ReachOutButton href="/portfolio">Portfolio</ReachOutButton>
+            <ReachOutButton href="/gpts">GPTs</ReachOutButton>
           </FadeInComponent>
           <FadeInComponent timeout={3400}>
-            <ShowMeButton onClick={() => navigate("/gpts")}>Custom GPTs</ShowMeButton>
+            <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
           </FadeInComponent>
         </CTAContainer>
       </Container>

@@ -6,6 +6,7 @@ import PriceGPT from "../../img/priceGPT.webp";
 import Vinobot from "../../img/vinobot.webp";
 import GolfGPT from "../../img/golf.webp";
 import MealPrep from "../../img/mealPrep.webp";
+import DesignSystemWizard from "../../img/wizard.webp";
 
 export const gptData = [
     {
@@ -35,6 +36,13 @@ export const gptData = [
         title: "Mechanic Mate",
         description: "Your virtual mechanic for diagnosing car noises, getting ready for service visits, and beyond.",
         url: "https://chat.openai.com/g/g-rUgFfFwbm-mechanic-mate",
+    },
+    {
+        imgUrl: DesignSystemWizard,
+        imgAlt: "Design System Wizard logo",
+        title: "Design System Wizard",
+        description: "Expert in cohesive brand design systems, logos, and assets.",
+        url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
     },
     {
         imgUrl: GolfGPT,
