@@ -109,14 +109,14 @@ export const Home = () => {
           </ReactCardFlip>
         </AvatarContainer>
         <FadeInComponent timeout={2400}>
-          <SlideInText text="I build and design websites" size="h3" delay={2400} />
+          <SlideInText text="I build GPTs and Websites" size="h3" delay={2400} />
         </FadeInComponent>
         <CTAContainer>
           <FadeInComponent timeout={3400}>
             <ReachOutButton href="/gpts">GPTs</ReachOutButton>
           </FadeInComponent>
           <FadeInComponent timeout={3400}>
-            <ShowMeButton onClick={() => navigate("/portfolio")}>Portfolio</ShowMeButton>
+            <ShowMeButton onClick={() => navigate("/portfolio")}>Websites</ShowMeButton>
           </FadeInComponent>
         </CTAContainer>
       </Container>
