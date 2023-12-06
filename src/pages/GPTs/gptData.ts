@@ -7,6 +7,7 @@ import Vinobot from "../../img/vinobot.webp";
 import GolfGPT from "../../img/golf.webp";
 import MealPrep from "../../img/mealPrep.webp";
 import DesignSystemWizard from "../../img/wizard.webp";
+import ManualFinder from "../../img/manualFinder.webp";
 
 export const gptData = [
     {
@@ -24,13 +25,6 @@ export const gptData = [
         url: "https://chat.openai.com/g/g-12q0jqkhd-game-genius",
     },
     {
-        imgUrl: PriceGPT,
-        imgAlt: "PriceGPT logo",
-        title: "PriceGPT",
-        description: "Expert in valuing collectibles like cards, memorabilia, and vintage items (educational purposes only).",
-        url: "https://chat.openai.com/g/g-cJr2T7PdJ-pricegpt",
-    },
-    {
         imgUrl: MechanicMate,
         imgAlt: "Mechanic Mate logo",
         title: "Mechanic Mate",
@@ -43,6 +37,20 @@ export const gptData = [
         title: "Design System Wizard",
         description: "Expert in cohesive brand design systems, logos, and assets.",
         url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
+    },
+    {
+        imgUrl: PriceGPT,
+        imgAlt: "PriceGPT logo",
+        title: "PriceGPT",
+        description: "Expert in valuing collectibles like cards, memorabilia, and vintage items (educational purposes only).",
+        url: "https://chat.openai.com/g/g-cJr2T7PdJ-pricegpt",
+    },
+    {
+        imgUrl: ManualFinder,
+        imgAlt: "Manual Finder logo",
+        title: "Manual Finder",
+        description: "Find user guides or manuals for any product.",
+        url: "https://chat.openai.com/g/g-NJxDPYdRc-manual-finder",
     },
     {
         imgUrl: GolfGPT,
