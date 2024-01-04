@@ -148,7 +148,7 @@ export const NavBar = () => {
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {tabs.map((tab, index) => {
                                 return tab.path.includes('https') ?
-                                    (<a style={{ marginLeft: 8, marginRight: 8, color: 'white', display: 'flex', alignItems: 'center', fontFamily: 'Kdam Thmor Pro, sans-serif', textDecoration: 'none', fontSize: 14 }}
+                                    (<a style={{ marginLeft: 8, marginRight: 8, color: 'white', display: 'flex', alignItems: 'center', fontFamily: 'Kdam Thmor Pro, sans-serif', textDecoration: 'none', fontSize: 14, minWidth: 100 }}
                                         aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
                                     :
                                     (
