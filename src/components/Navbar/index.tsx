@@ -16,7 +16,7 @@ import linkedinLogo from "../../img/linkedinLogo.png";
 import githubLogo from "../../img/githubLogo.png";
 import mediumLogo from "../../img/mediumLogo.png";
 
-const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: "GPTs", path: "/gpts" }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }];
+const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: "GPTs", path: "/gpts" }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }, { name: 'SEND COFFEE', path: 'https://pay.justben.fyi' }];
 
 const MUINavBar = styled(AppBar)`
 position: sticky;
@@ -115,19 +115,23 @@ export const NavBar = () => {
                                 styles={muiStyleOverrides}
                                 customBurgerIcon={false}
                             >
-                                {tabs.map((tab, index) => (
-                                    <div onClick={() => handleTabSelection(tab.path)}>
-                                        <FadeInComponent key={index}>
-                                            <Button
-                                                key={index}
-                                                onClick={() => handleTabSelection(tab.path)}
-                                                sx={{ my: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20 }}
-                                            >
-                                                {tab.name}
-                                            </Button>
-                                        </FadeInComponent>
-                                    </div>
-                                ))}
+                                {tabs.map((tab, index) => {
+                                    return tab.path.includes('https') ?
+                                        (<a style={{ marginTop: 3, marginBottom: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20 }}
+                                            aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
+                                        :
+                                        (<div onClick={() => handleTabSelection(tab.path)}>
+                                            <FadeInComponent key={index}>
+                                                <Button
+                                                    key={index}
+                                                    onClick={() => handleTabSelection(tab.path)}
+                                                    sx={{ my: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20 }}
+                                                >
+                                                    {tab.name}
+                                                </Button>
+                                            </FadeInComponent>
+                                        </div>)
+                                })}
                             </Menu>
                             {!isJustBenDomain && <LogoContainer>
                                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
@@ -142,17 +146,23 @@ export const NavBar = () => {
                             </LogoContainer>}
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            {tabs.map((tab, index) => (
-                                <FadeInComponent key={index}>
-                                    <Button
-                                        key={index}
-                                        onClick={() => handleTabSelection(tab.path)}
-                                        sx={{ my: 2, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif' }}
-                                    >
-                                        {tab.name}
-                                    </Button>
-                                </FadeInComponent>
-                            ))}
+                            {tabs.map((tab, index) => {
+                                return tab.path.includes('https') ?
+                                    (<a style={{ marginLeft: 8, marginRight: 8, color: 'white', display: 'flex', alignItems: 'center', fontFamily: 'Kdam Thmor Pro, sans-serif', textDecoration: 'none', fontSize: 14 }}
+                                        aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
+                                    :
+                                    (
+                                        <FadeInComponent key={index}>
+                                            <Button
+                                                key={index}
+                                                onClick={() => handleTabSelection(tab.path)}
+                                                sx={{ my: 2, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif' }}
+                                            >
+                                                {tab.name}
+                                            </Button>
+                                        </FadeInComponent>
+                                    )
+                            })}
                             {!isJustBenDomain && <LogoContainer>
                                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
                                     <IconDesktop src={mediumLogo} />
