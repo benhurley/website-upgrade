@@ -1,14 +1,14 @@
 import { NavBar } from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from './pages/Home';
-import { Portfolio } from './pages/Portfolio';
+import { Websites } from './pages/Websites';
 import { Domains } from './pages/Domains';
 import { Footer } from './components/Footer';
 import styled, { createGlobalStyle } from "styled-components";
 import backgroundImg from "./img/background.png";
 import { preloadImages } from './helpers/preloadImages';
 import { useEffect } from 'react';
-import { GPTs } from './pages/GPTs';
+import { Chatbots } from './pages/Chatbots';
 import { Contact } from './pages/Contact';
 
 const GlobalStyles = createGlobalStyle`
@@ -42,9 +42,9 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/websites" element={<Websites />} />
             <Route path="/domains" element={<Domains />} />
-            <Route path="/gpts" element={<GPTs />} />
+            <Route path="/chatbots" element={<Chatbots />} />
             <Route path="/contact" element={<Contact />} />
             <Route path='*' element={<Home />} />
           </Routes>

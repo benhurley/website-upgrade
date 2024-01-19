@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
 import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButton';
@@ -62,20 +61,19 @@ display: inline-block;
 line-height: 78px;
 `
 
-const ShowMeButton = styled(SecondaryLinkButton)`
+const ChatbotsButton = styled(SecondaryLinkButton)`
 margin-left: 10px;
 margin-right: 10px;
 `
 
-const ReachOutButton = styled(PrimaryLinkButton)`
+const WebsitesButton = styled(PrimaryLinkButton)`
 margin-left: 10px;
 margin-right: 10px;
-padding-left: 55px;
-padding-right: 55px;
+padding-left: 45px;
+padding-right: 45px;
 `
 
 export const Home = () => {
-  const navigate = useNavigate();
   const [isFlipped, setIsFlipped] = useState(false);
   const isJustBenDomain = window.location.href.includes("justben");
 
@@ -109,14 +107,14 @@ export const Home = () => {
           </ReactCardFlip>
         </AvatarContainer>
         <FadeInComponent timeout={2400}>
-          <SlideInText text="I build GPTs and Websites" size="h3" delay={2400} />
+          <SlideInText text="I build Websites & AI Chatbots" size="h3" delay={2400} />
         </FadeInComponent>
         <CTAContainer>
           <FadeInComponent timeout={3400}>
-            <ReachOutButton href="/gpts">GPTs</ReachOutButton>
+            <WebsitesButton href="/websites">Websites</WebsitesButton>
           </FadeInComponent>
           <FadeInComponent timeout={3400}>
-            <ShowMeButton onClick={() => navigate("/portfolio")}>Websites</ShowMeButton>
+            <ChatbotsButton href="/chatbots">Chatbots</ChatbotsButton>
           </FadeInComponent>
         </CTAContainer>
       </Container>

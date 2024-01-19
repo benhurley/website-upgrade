@@ -12,11 +12,11 @@ const Grid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `
 
-export const Portfolio = () => {
+export const Websites = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Dev Portfolio" size="h1" />
+                <SlideInText text="Website Portflio" size="h1" />
             </FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (

@@ -11,11 +11,11 @@ export const Contact = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Contact Me" size="h1" />
+                <SlideInText text="Contact" size="h1" />
             </FadeInComponent>
                 <FadeInComponent timeout={400}>
                     <LinkContainer>
-                    <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Email</PrimaryLinkButton>
+                    <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Send me an email</PrimaryLinkButton>
                     </LinkContainer>
                 </FadeInComponent>
         </FadeInComponent>

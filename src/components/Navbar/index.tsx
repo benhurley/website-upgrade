@@ -16,7 +16,7 @@ import linkedinLogo from "../../img/linkedinLogo.png";
 import githubLogo from "../../img/githubLogo.png";
 import mediumLogo from "../../img/mediumLogo.png";
 
-const tabs = [{ name: 'Home', path: '/' }, { name: 'Portfolio', path: '/portfolio' }, { name: "GPTs", path: "/gpts" }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }, { name: 'SEND COFFEE', path: 'https://pay.justben.fyi' }];
+const tabs = [{ name: 'Home', path: '/' }, { name: 'Websites', path: '/websites' }, { name: "Chatbots", path: "/chatbots" }, { name: 'Domains', path: '/domains' }, { name: 'Send Coffee', path: 'https://pay.justben.fyi' }, { name: 'Contact', path: '/contact' }];
 
 const MUINavBar = styled(AppBar)`
 position: sticky;
@@ -117,7 +117,7 @@ export const NavBar = () => {
                             >
                                 {tabs.map((tab, index) => {
                                     return tab.path.includes('https') ?
-                                        (<a style={{ marginTop: 3, marginBottom: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20 }}
+                                        (<a style={{ marginTop: 3, marginBottom: 3, color: 'white', display: 'flex', justifyContent: 'left', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20, textTransform: 'uppercase' }}
                                             aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
                                         :
                                         (<div onClick={() => handleTabSelection(tab.path)}>
@@ -148,7 +148,7 @@ export const NavBar = () => {
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {tabs.map((tab, index) => {
                                 return tab.path.includes('https') ?
-                                    (<a style={{ marginLeft: 8, marginRight: 8, color: 'white', display: 'flex', alignItems: 'center', fontFamily: 'Kdam Thmor Pro, sans-serif', textDecoration: 'none', fontSize: 14, minWidth: 100 }}
+                                    (<a style={{ marginLeft: 8, marginRight: -2, color: 'white', display: 'flex', alignItems: 'center', fontFamily: 'Kdam Thmor Pro, sans-serif', textDecoration: 'none', fontSize: 14, minWidth: 100, textTransform: 'uppercase' }}
                                         aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
                                     :
                                     (
