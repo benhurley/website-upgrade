@@ -16,7 +16,7 @@ import linkedinLogo from "../../img/linkedinLogo.png";
 import githubLogo from "../../img/githubLogo.png";
 import mediumLogo from "../../img/mediumLogo.png";
 
-const tabs = [{ name: 'Home', path: '/' }, { name: 'Websites', path: '/websites' }, { name: "Chatbots", path: "/chatbots" }, { name: 'Domains', path: '/domains' }, { name: 'Send Coffee', path: 'https://pay.justben.fyi' }, { name: 'Contact', path: '/contact' }];
+const tabs = [{ name: 'Home', path: '/' }, { name: 'Websites', path: '/websites' }, { name: "Chatbots", path: "/chatbots" }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }, { name: 'Send Coffee', path: 'https://pay.justben.fyi' }];
 
 const MUINavBar = styled(AppBar)`
 position: sticky;
