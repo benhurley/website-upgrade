@@ -34,9 +34,6 @@ const StyledIframe = styled.iframe`
   width: 100%; // Adjusts iframe width to the parent container
   min-height: 400px; // Set a minimum height
   margin: 10px;
-  @media (max-width: 1000px) {
-    min-height: 300px; // Set a minimum height
-}
 `;
 
 const Text = styled.p`
