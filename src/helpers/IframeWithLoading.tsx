@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RingLoader } from 'react-spinners';
+import { PuffLoader } from 'react-spinners';
 import styled from 'styled-components';
 
 interface IframeWithLoadingProps {
@@ -11,6 +11,12 @@ const LoadingContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+`
+
+const Container = styled.div`
+margin: 10px;
 `
 
 const IframeWithLoading: React.FC<IframeWithLoadingProps> = ({ title, src }) => {
@@ -21,14 +27,14 @@ const IframeWithLoading: React.FC<IframeWithLoadingProps> = ({ title, src }) => 
   };
 
   return (
-    <div>
+    <Container>
       {isLoading && (
         <LoadingContainer>
-          <RingLoader color="white" />
+          <PuffLoader color="white" speedMultiplier={0.6}/>
         </LoadingContainer>
       )}
-      <iframe title={title} src={src} onLoad={handleLoad} style={{ position: 'relative', width: '300px', height: '400px', border: 'none', display: isLoading ? 'none' : 'block'}} />
-    </div>
+      <iframe loading="lazy" title={title} src={src} onLoad={handleLoad} style={{ position: 'relative', width: '300px', height: '400px', border: 'none', display: isLoading ? 'none' : 'block'}} />
+    </Container>
   );
 };
 
