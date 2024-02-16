@@ -3,6 +3,39 @@ import { Card } from "../../components/Card";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { gptData } from "./gptData";
+import FeaturedImg from "../../img/featuredGolfgpt.webp";
+
+const Row = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  max-width: 1000px;
+  margin-bottom: 50px;
+`;
+
+const Col = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+`;
 
 const Grid = styled.div`
     max-width: 1050px;
@@ -12,32 +45,27 @@ const Grid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `
 
-const IframeContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 20px;
-  @media (max-width: 1000px) {
-    flex-direction: column;
-  }
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-`;
+const SpotlightTitle = styled.h3`
+`
 
-const StyledIframe = styled.iframe`
-  border: none;
-  border-radius: 20px;
-  flex: 1;
-  padding: 10px;
-  width: 100%; // Adjusts iframe width to the parent container
-  min-height: 400px; // Set a minimum height
-  margin: 10px;
-`;
+const SpotlightCTA = styled.a`
+color: white;
+text-decoration: none;
 
-const Text = styled.p`
-    margin: 20px;
+&:hover {
+    text-decoration: underline;
+}
+`
+
+const SpotlightImg = styled.img`
+margin-top: 20px;
+border-radius: 10px;
+width: 100%;
+`
+
+const SpotlightImgCaption = styled.p`
+margin-top: -8px;
+font-size: 12px;
 `
 
 export const Chatbots = () => {
@@ -46,20 +74,35 @@ export const Chatbots = () => {
             <FadeInComponent timeout={250}>
                 <SlideInText text="Chatbots" size="h1" />
             </FadeInComponent>
-            <Text>Try my most popular AI bots below (requires a free <a target="_blank" rel="noopener noreferrer" href="https://pmfm.ai/">pmfm.ai</a> account)</Text>
-            <IframeContainer>
-                <StyledIframe title="vinobot" src="https://paymeformyai.com/embed/Vinobot?nologin=true" />
-                <StyledIframe title="mechanic-mate" src="https://paymeformyai.com/embed/MechanicMate?nologin=true" />
-                <StyledIframe title="game-genius" src="https://paymeformyai.com/embed/GameGenius?nologin=true" />
-            </IframeContainer>
-            <Text>If you are a ChatGPT Plus subscriber, you can use any of my custom GPTs for free. Enjoy!</Text>
+            <Row>
+                <Col>
+                    <SpotlightTitle>
+                        Featured by {" "}
+                        <SpotlightCTA href="https://openai.com" target="_blank" rel="noopener noreferrer">
+                            Open AI
+                        </SpotlightCTA>
+                        <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
+                            <SpotlightImg src={FeaturedImg} />
+                        </SpotlightCTA>
+                        <SpotlightImgCaption>(
+                            <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
+                                GPT Store
+                            </SpotlightCTA>
+                            {" "}screenshot from 2/16/24)
+                        </SpotlightImgCaption>
+                    </SpotlightTitle>
+                </Col>
+                <Col>
+                    <Card key='gpt-spotlight' item={gptData[0]} imageShape="round" />
+                </Col>
+            </Row>
             <Grid>
-                {gptData.map((gpt, index) => (
+                {gptData.slice(1).map((gpt, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
                         <Card
                             key={index}
                             item={gpt}
-                            imageShape="square"
+                            imageShape="round"
                         />
                     </FadeInComponent>
                 ))}

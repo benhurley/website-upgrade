@@ -30,6 +30,12 @@ width: 250px;
 height: 250px;
 `;
 
+const ImageRound = styled.img`
+border-radius: 50%;
+width: 175px;
+height: 175px;
+`;
+
 const Title = styled.h2`
 margin-top: 10px;
 margin-bottom: 10px;
@@ -84,7 +90,7 @@ type cardProps = {
         role?: string,
         framework?: string,
     },
-    imageShape?: 'square' | 'rectangle'
+    imageShape?: 'square' | 'rectangle' | 'round'
 }
 
 export const Card = ({ item, imageShape = 'rectangle' }: cardProps) => {
@@ -100,6 +106,7 @@ export const Card = ({ item, imageShape = 'rectangle' }: cardProps) => {
             <a target="_blank" rel="noopener noreferrer" href={url}>
                 {imageShape === 'square' && <ImageSquare src={imgUrl} alt={imgAlt} />}
                 {imageShape === 'rectangle' && <ImageRectangle src={imgUrl} alt={imgAlt} />}
+                {imageShape === 'round' && <ImageRound src={imgUrl} alt={imgAlt} />}
                 <Title>{title}</Title>
                 <Description>{description}</Description>
             </a>

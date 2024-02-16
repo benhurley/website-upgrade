@@ -11,6 +11,13 @@ import ManualFinder from "../../img/manualFinder.webp";
 
 export const gptData = [
     {
+        imgUrl: GolfGPT,
+        imgAlt: "GolfGPT logo",
+        title: "GolfGPT",
+        description: "Your expert caddy for hole-specific golf strategies.",
+        url: "https://chat.openai.com/g/g-MTjrTCeoU-golfgpt",
+    },
+    {
         imgUrl: Vinobot,
         imgAlt: "Vinobot logo",
         title: "Vinobot",
@@ -28,7 +35,7 @@ export const gptData = [
         imgUrl: MechanicMate,
         imgAlt: "Mechanic Mate logo",
         title: "Mechanic Mate",
-        description: "Your virtual mechanic for diagnosing car noises, getting ready for service visits, and beyond.",
+        description: "A virtual mechanic for diagnosing car problems (educational-only).",
         url: "https://chat.openai.com/g/g-rUgFfFwbm-mechanic-mate",
     },
     {
@@ -42,7 +49,7 @@ export const gptData = [
         imgUrl: PriceGPT,
         imgAlt: "PriceGPT logo",
         title: "PriceGPT",
-        description: "Expert in valuing collectibles like cards, memorabilia, and vintage items (educational purposes only).",
+        description: "An expert in valuing collectibles and vintage items (educational-only).",
         url: "https://chat.openai.com/g/g-cJr2T7PdJ-pricegpt",
     },
     {
@@ -51,13 +58,6 @@ export const gptData = [
         title: "Manual Finder",
         description: "Find user guides or manuals for any product.",
         url: "https://chat.openai.com/g/g-NJxDPYdRc-manual-finder",
-    },
-    {
-        imgUrl: GolfGPT,
-        imgAlt: "GolfGPT logo",
-        title: "GolfGPT",
-        description: "Your expert caddy for hole-specific golf strategies.",
-        url: "https://chat.openai.com/g/g-MTjrTCeoU-golfgpt",
     },
     {
         imgUrl: BillBalancer,
