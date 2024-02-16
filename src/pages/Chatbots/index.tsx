@@ -10,14 +10,12 @@ const Row = styled.div`
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 40px;
-  padding-left: 40px;
+  max-width: 1000px;
+  margin-bottom: 50px;
 
   @media (max-width: 768px) {
     flex-direction: column;
   }
-  max-width: 1000px;
-  margin-bottom: 50px;
 `;
 
 const Col = styled.div`
