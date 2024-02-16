@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { PrimaryLinkButton } from "../../components/Buttons/PrimaryLinkButton";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
+import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
 
 const LinkContainer = styled.div`
 margin: 70px 0px 70px 0px;
@@ -15,7 +15,7 @@ export const Contact = () => {
             </FadeInComponent>
                 <FadeInComponent timeout={400}>
                     <LinkContainer>
-                    <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Send me an email</PrimaryLinkButton>
+                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Email Me</SecondaryLinkButton>
                     </LinkContainer>
                 </FadeInComponent>
         </FadeInComponent>

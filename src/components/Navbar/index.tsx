@@ -16,7 +16,7 @@ import linkedinLogo from "../../img/linkedinLogo.png";
 import githubLogo from "../../img/githubLogo.png";
 import mediumLogo from "../../img/mediumLogo.png";
 
-const tabs = [{ name: 'Home', path: '/' }, { name: 'Websites', path: '/websites' }, { name: "Chatbots", path: "/chatbots" }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }, { name: 'Send Coffee', path: 'https://pay.justben.fyi' }];
+const tabs = [{ name: 'Home', path: '/' }, { name: 'Websites', path: '/websites' }, { name: "Chatbots", path: "/chatbots" }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }, { name: 'Donate', path: 'https://pay.justben.fyi' }];
 
 const MUINavBar = styled(AppBar)`
 position: sticky;
@@ -117,7 +117,7 @@ export const NavBar = () => {
                             >
                                 {tabs.map((tab, index) => {
                                     return tab.path.includes('https') ?
-                                        (<a style={{ marginTop: 3, marginBottom: 3, color: 'white', display: 'flex', justifyContent: 'left', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20, textTransform: 'uppercase' }}
+                                        (<a style={{ marginTop: 3, marginBottom: 3, marginLeft: 8, color: 'white', display: 'flex', justifyContent: 'left', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20, textTransform: 'uppercase' }}
                                             aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
                                         :
                                         (<div onClick={() => handleTabSelection(tab.path)}>
