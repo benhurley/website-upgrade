@@ -76,30 +76,31 @@ export const Chatbots = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Chatbots" size="h1" />
-            </FadeInComponent>
-            <Row>
-                <Col>
-                    <SpotlightTitle>
-                        Featured by {" "}
-                        <SpotlightCTA href="https://openai.com" target="_blank" rel="noopener noreferrer">
-                            Open AI
-                        </SpotlightCTA>
-                        <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
-                            <SpotlightImg src={FeaturedImg} />
-                        </SpotlightCTA>
-                        <SpotlightImgCaption>(
-                            <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
-                                GPT Store
+                <SlideInText text="Chatbot Portfolio" size="h1" />
+
+                <Row>
+                    <Col>
+                        <SpotlightTitle>
+                            Featured by {" "}
+                            <SpotlightCTA href="https://openai.com" target="_blank" rel="noopener noreferrer">
+                                Open AI
                             </SpotlightCTA>
-                            {" "}screenshot from 2/16/24)
-                        </SpotlightImgCaption>
-                    </SpotlightTitle>
-                </Col>
-                <Col>
-                    <Card key='gpt-spotlight' item={gptData[0]} imageShape="round" />
-                </Col>
-            </Row>
+                            <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
+                                <SpotlightImg src={FeaturedImg} />
+                            </SpotlightCTA>
+                            <SpotlightImgCaption>(
+                                <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
+                                    GPT Store
+                                </SpotlightCTA>
+                                {" "}screenshot from 2/16/24)
+                            </SpotlightImgCaption>
+                        </SpotlightTitle>
+                    </Col>
+                    <Col>
+                        <Card key='gpt-spotlight' item={gptData[0]} imageShape="round" />
+                    </Col>
+                </Row>
+            </FadeInComponent>
             <Grid>
                 {gptData.slice(1).map((gpt, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
