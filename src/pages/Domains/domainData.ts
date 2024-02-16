@@ -1,19 +1,19 @@
 export const domainData = [
     {
         name: "soralaunch.com",
-        href: "#",
+        href: "https://sedo.com/search/?keyword=soralaunch.com&synonyms=false&safe_search=1&kws=right",
     },
     {
         name: "sorastop.com",
-        href: "#",
+        href: "https://sedo.com/search/?keyword=sorastop.com&synonyms=false&safe_search=1&kws=right",
     },
     {
         name: "soraspam.com",
-        href: "#",
+        href: "https://sedo.com/search/?keyword=soraspam.com&synonyms=false&safe_search=1&kws=right",
     },
     {
         name: "sorasequel.com",
-        href: "#",
+        href: "https://sedo.com/search/?keyword=sorasequel.com&synonyms=false&safe_search=1&kws=right",
     },
     {
         name: "unchained.fyi",
