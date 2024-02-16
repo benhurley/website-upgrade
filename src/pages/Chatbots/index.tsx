@@ -4,6 +4,7 @@ import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { gptData } from "./gptData";
 import FeaturedImg from "../../img/featuredGolfgpt.webp";
+import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
 
 const Row = styled.div`
   display: flex;
@@ -66,6 +67,11 @@ margin-top: -8px;
 font-size: 12px;
 `
 
+const LinkContainer = styled.div`
+  display: inline-grid;
+  margin: 16px;
+`;
+
 export const Chatbots = () => {
     return (
         <FadeInComponent>
@@ -105,6 +111,12 @@ export const Chatbots = () => {
                     </FadeInComponent>
                 ))}
             </Grid>
+            <FadeInComponent timeout={gptData.length * 400}>
+                <LinkContainer>
+                    <h2>Chatbot questions?</h2>
+                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Email Me</SecondaryLinkButton>
+                </LinkContainer>
+            </FadeInComponent>
         </FadeInComponent>
     );
 }

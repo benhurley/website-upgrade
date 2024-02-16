@@ -3,6 +3,7 @@ import { Card } from "../../components/Card";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { projectData } from "./projectData";
+import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
 
 const Grid = styled.div`
     max-width: 1050px;
@@ -11,6 +12,11 @@ const Grid = styled.div`
     gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `
+
+const LinkContainer = styled.div`
+  display: inline-grid;
+  margin: 16px;
+`;
 
 export const Websites = () => {
     return (
@@ -28,6 +34,12 @@ export const Websites = () => {
                     </FadeInComponent>
                 ))}
             </Grid>
+            <FadeInComponent timeout={projectData.length * 400}>
+                <LinkContainer>
+                    <h2>Website questions?</h2>
+                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Email Me</SecondaryLinkButton>
+                </LinkContainer>
+            </FadeInComponent>
         </FadeInComponent>
     );
 }
