@@ -23,6 +23,7 @@ export const gptData = [
         title: "Vinobot",
         description: "Digital sommelier for specific wine bottle recommendations.",
         url: "https://chat.openai.com/g/g-EoBW5i2gu-vinobot",
+        subdomain: "https://vinobot.justben.fyi",
     },
     {
         imgUrl: GameGenius,

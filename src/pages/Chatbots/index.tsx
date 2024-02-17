@@ -60,6 +60,7 @@ const SpotlightImg = styled.img`
 margin-top: 20px;
 border-radius: 10px;
 width: 100%;
+max-width: 350px;
 `
 
 const SpotlightImgCaption = styled.p`

@@ -89,6 +89,7 @@ type cardProps = {
         description: string,
         role?: string,
         framework?: string,
+        subdomain?: string,
     },
     imageShape?: 'square' | 'rectangle' | 'round'
 }
