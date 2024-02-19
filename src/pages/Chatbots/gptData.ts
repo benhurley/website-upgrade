@@ -31,6 +31,7 @@ export const gptData = [
         title: "Game Genius",
         description: "Your go-to expert for gameplay walkthroughs and cheat codes.",
         url: "https://chat.openai.com/g/g-12q0jqkhd-game-genius",
+        subdomain: "https://gamegenius.justben.fyi",
     },
     {
         imgUrl: MechanicMate,
@@ -38,6 +39,7 @@ export const gptData = [
         title: "Mechanic Mate",
         description: "A virtual mechanic for diagnosing car problems (educational-only).",
         url: "https://chat.openai.com/g/g-rUgFfFwbm-mechanic-mate",
+        subdomain: "https://mechanicmate.justben.fyi",
     },
     {
         imgUrl: DesignSystemWizard,

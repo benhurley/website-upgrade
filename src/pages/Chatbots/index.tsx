@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Card } from "../../components/Card";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { gptData } from "./gptData";
 import FeaturedImg from "../../img/featuredGolfgpt.webp";
 import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
+import { CardWithCTAs } from "../../components/CardWithCTAs";
 
 const Row = styled.div`
   display: flex;
@@ -98,17 +98,25 @@ export const Chatbots = () => {
                         </SpotlightTitle>
                     </Col>
                     <Col>
-                        <Card key='gpt-spotlight' item={gptData[0]} imageShape="round" />
+                        <CardWithCTAs key='gpt-spotlight' item={gptData[0]} imageShape="round" secondaryCTAData={{buttonText: 'ChatGPT+ Version', url: gptData[0].url}}/>
                     </Col>
                 </Row>
             </FadeInComponent>
             <Grid>
                 {gptData.slice(1).map((gpt, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
-                        <Card
+                        <CardWithCTAs
                             key={index}
                             item={gpt}
                             imageShape="round"
+                            primaryCTAData={{
+                                buttonText: "Try for Free",
+                                url: gpt.subdomain,
+                            }}
+                            secondaryCTAData={{
+                                buttonText: "ChatGPT+ Version",
+                                url: gpt.url,
+                            }}
                         />
                     </FadeInComponent>
                 ))}
