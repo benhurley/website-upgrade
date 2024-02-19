@@ -47,6 +47,12 @@ const Grid = styled.div`
 const SpotlightTitle = styled.h3`
 `
 
+const SpotlightSubtitle = styled.p`
+margin-top: -12px;
+font-size: 14px;
+font-style: italic;
+`
+
 const SpotlightCTA = styled.a`
 color: white;
 text-decoration: none;
@@ -56,8 +62,11 @@ text-decoration: none;
 }
 `
 
+const SpotlightCTAUnderlined = styled.a`
+color: white;
+`
+
 const SpotlightImg = styled.img`
-margin-top: 20px;
 border-radius: 10px;
 width: 100%;
 max-width: 350px;
@@ -81,24 +90,31 @@ export const Chatbots = () => {
 
                 <Row>
                     <Col>
-                        <SpotlightTitle>
-                            Featured by {" "}
-                            <SpotlightCTA href="https://openai.com" target="_blank" rel="noopener noreferrer">
-                                Open AI
-                            </SpotlightCTA>
-                            <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
-                                <SpotlightImg src={FeaturedImg} />
-                            </SpotlightCTA>
-                            <SpotlightImgCaption>(
-                                <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
-                                    GPT Store
+                        <div>
+                            <SpotlightTitle>
+                                Featured by {" "}
+                                <SpotlightCTA href="https://openai.com" target="_blank" rel="noopener noreferrer">
+                                    Open AI
                                 </SpotlightCTA>
-                                {" "}screenshot from 2/16/24)
-                            </SpotlightImgCaption>
-                        </SpotlightTitle>
+                                :{" "}
+                                <SpotlightCTAUnderlined href={gptData[0].url} target="_blank" rel="noopener noreferrer">
+                                    GolfGPT
+                                </SpotlightCTAUnderlined>
+                            </SpotlightTitle>
+                            <SpotlightSubtitle>Over 10,000 chats to date, and counting.</SpotlightSubtitle>
+                            <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
+                                    <SpotlightImg src={FeaturedImg} />
+                                </SpotlightCTA>
+                                <SpotlightImgCaption>(
+                                    <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
+                                        GPT Store
+                                    </SpotlightCTA>
+                                    {" "}screenshot from 2/16/24)
+                                </SpotlightImgCaption>
+                        </div>
                     </Col>
                     <Col>
-                        <CardWithCTAs key='gpt-spotlight' item={gptData[0]} imageShape="round" secondaryCTAData={{buttonText: 'ChatGPT+ Version', url: gptData[0].url}}/>
+                        <CardWithCTAs key='gpt-spotlight' item={gptData[0]} imageShape="round" secondaryCTAData={{ buttonText: 'ChatGPT+ Version', url: gptData[0].url }} />
                     </Col>
                 </Row>
             </FadeInComponent>
