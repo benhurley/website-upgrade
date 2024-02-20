@@ -1,5 +1,9 @@
 export const domainData = [
     {
+        name: "prettytickets.com",
+        href: "https://sedo.com/search/?keyword=prettytickets.com&synonyms=false&safe_search=1&kws=right",
+    },
+    {
         name: "soralaunch.com",
         href: "https://sedo.com/search/?keyword=soralaunch.com&synonyms=false&safe_search=1&kws=right",
     },
