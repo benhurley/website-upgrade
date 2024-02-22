@@ -47,6 +47,7 @@ export const gptData = [
         title: "Design System Wizard",
         description: "Expert in cohesive brand design systems, logos, and assets.",
         url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
+        subdomain: "https://dsw.justben.fyi",
     },
     {
         imgUrl: PriceGPT,
