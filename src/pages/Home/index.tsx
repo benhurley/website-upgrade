@@ -106,16 +106,10 @@ export const Home = () => {
             />
           </ReactCardFlip>
         </AvatarContainer>
-        <FadeInComponent timeout={2400}>
-          <SlideInText text="I build Websites & AI Chatbots" size="h3" delay={2400} />
-        </FadeInComponent>
+        <h2>I build Websites & AI Chatbots</h2>
         <CTAContainer>
-          <FadeInComponent timeout={3400}>
-            <WebsitesButton href="/websites">Websites</WebsitesButton>
-          </FadeInComponent>
-          <FadeInComponent timeout={3400}>
-            <ChatbotsButton href="/chatbots">Chatbots</ChatbotsButton>
-          </FadeInComponent>
+          <WebsitesButton href="/websites">Websites</WebsitesButton>
+          <ChatbotsButton href="/chatbots">Chatbots</ChatbotsButton>
         </CTAContainer>
       </Container>
     </FadeInComponent>
