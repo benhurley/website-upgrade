@@ -16,6 +16,7 @@ export const gptData = [
         title: "GolfGPT",
         description: "Your expert caddy for hole-specific golf strategies.",
         url: "https://chat.openai.com/g/g-MTjrTCeoU-golfgpt",
+        subdomain: "https://golfgpt.justben.fyi"
     },
     {
         imgUrl: Vinobot,
@@ -50,6 +51,15 @@ export const gptData = [
         subdomain: "https://dsw.justben.fyi",
     },
     {
+
+        imgUrl: MealPrep,
+        imgAlt: "Meal Prep logo",
+        title: "Meal Prep",
+        description: "Your personal guide to easy, tasty meal planning.",
+        url: "https://chat.openai.com/g/g-bXtgna2gk-meal-prep",
+        subdomain: "https://mealprep.justben.fyi"
+    },
+    {
         imgUrl: PriceGPT,
         imgAlt: "PriceGPT logo",
         title: "PriceGPT",
@@ -69,14 +79,6 @@ export const gptData = [
         title: "Bill Balancer",
         description: "Expert in bill splitting with a focus on practical fairness.",
         url: "https://chat.openai.com/g/g-ucFQS1rNs-bill-balancer",
-    },
-    {
-
-        imgUrl: MealPrep,
-        imgAlt: "Meal Prep logo",
-        title: "Meal Prep",
-        description: "Your personal guide to easy, tasty meal planning.",
-        url: "https://chat.openai.com/g/g-bXtgna2gk-meal-prep",
     },
     {
 

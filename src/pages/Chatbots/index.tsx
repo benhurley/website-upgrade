@@ -114,7 +114,19 @@ export const Chatbots = () => {
                         </div>
                     </Col>
                     <Col>
-                        <CardWithCTAs key='gpt-spotlight' item={gptData[0]} imageShape="round" secondaryCTAData={{ buttonText: 'ChatGPT+ Version', url: gptData[0].url }} />
+                        <CardWithCTAs 
+                            key='gpt-spotlight' 
+                            item={gptData[0]} 
+                            imageShape="round"
+                            primaryCTAData={{
+                                buttonText: "Try for Free",
+                                url: gptData[0].subdomain,
+                            }}
+                            secondaryCTAData={{
+                                buttonText: "ChatGPT+ Version",
+                                url: gptData[0].url
+                            }}
+                        />
                     </Col>
                 </Row>
             </FadeInComponent>
