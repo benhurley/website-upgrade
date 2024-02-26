@@ -27,20 +27,20 @@ export const gptData = [
         subdomain: "https://vinobot.justben.fyi",
     },
     {
-        imgUrl: GameGenius,
-        imgAlt: "Game Genius logo",
-        title: "Game Genius",
-        description: "Your go-to expert for gameplay walkthroughs and cheat codes.",
-        url: "https://chat.openai.com/g/g-12q0jqkhd-game-genius",
-        subdomain: "https://gamegenius.justben.fyi",
-    },
-    {
         imgUrl: MechanicMate,
         imgAlt: "Mechanic Mate logo",
         title: "Mechanic Mate",
         description: "A virtual mechanic for diagnosing car problems (educational-only).",
         url: "https://chat.openai.com/g/g-rUgFfFwbm-mechanic-mate",
         subdomain: "https://mechanicmate.justben.fyi",
+    },
+    {
+        imgUrl: PriceGPT,
+        imgAlt: "PriceGPT logo",
+        title: "PriceGPT",
+        description: "An expert in valuing collectibles and vintage items (educational-only).",
+        url: "https://chat.openai.com/g/g-cJr2T7PdJ-pricegpt",
+        subdomain: 'https://pricegpt.justben.fyi',
     },
     {
         imgUrl: DesignSystemWizard,
@@ -60,11 +60,12 @@ export const gptData = [
         subdomain: "https://mealprep.justben.fyi"
     },
     {
-        imgUrl: PriceGPT,
-        imgAlt: "PriceGPT logo",
-        title: "PriceGPT",
-        description: "An expert in valuing collectibles and vintage items (educational-only).",
-        url: "https://chat.openai.com/g/g-cJr2T7PdJ-pricegpt",
+        imgUrl: GameGenius,
+        imgAlt: "Game Genius logo",
+        title: "Game Genius",
+        description: "Your go-to expert for gameplay walkthroughs and cheat codes.",
+        url: "https://chat.openai.com/g/g-12q0jqkhd-game-genius",
+        subdomain: "https://gamegenius.justben.fyi",
     },
     {
         imgUrl: ManualFinder,

@@ -56,6 +56,12 @@
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
+        <url>
+        <loc>https://pricegpt.justben.fyi</loc>
+        <lastmod>2024-02-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
     <url>
         <loc>https://pay.justben.fyi</loc>
         <lastmod>2024-02-21</lastmod>
