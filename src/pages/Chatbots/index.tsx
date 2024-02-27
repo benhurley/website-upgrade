@@ -44,14 +44,12 @@ const Grid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `
 
-const SpotlightTitle = styled.h3`
+const SpotlightTitle = styled.h2`
 `
 
 const SpotlightSubtitle = styled.p`
 margin-top: -12px;
-font-size: 14px;
-font-style: italic;
-`
+font-size: 14px;`
 
 const SpotlightCTA = styled.a`
 color: white;
@@ -60,10 +58,6 @@ text-decoration: none;
 &:hover {
     text-decoration: underline;
 }
-`
-
-const SpotlightCTAUnderlined = styled.a`
-color: white;
 `
 
 const SpotlightImg = styled.img`
@@ -75,6 +69,7 @@ max-width: 350px;
 const SpotlightImgCaption = styled.p`
 margin-top: -8px;
 font-size: 12px;
+font-style: italic;
 `
 
 const LinkContainer = styled.div`
@@ -82,26 +77,23 @@ const LinkContainer = styled.div`
   margin: 16px;
 `;
 
+
 export const Chatbots = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
                 <SlideInText text="Chatbot Portfolio" size="h1" />
-
                 <Row>
                     <Col>
                         <div>
                             <SpotlightTitle>
-                                Featured by {" "}
-                                <SpotlightCTA href="https://openai.com" target="_blank" rel="noopener noreferrer">
-                                    Open AI
-                                </SpotlightCTA>
-                                :{" "}
-                                <SpotlightCTAUnderlined href={gptData[0].url} target="_blank" rel="noopener noreferrer">
+
+                                Spotlight:{" "}
+                                <SpotlightCTA style={{color: '#38E8B0'}} href={gptData[0].url} target="_blank" rel="noopener noreferrer">
                                     GolfGPT
-                                </SpotlightCTAUnderlined>
+                                </SpotlightCTA>
                             </SpotlightTitle>
-                            <SpotlightSubtitle>10,000+ chats to date</SpotlightSubtitle>
+                            <SpotlightSubtitle>Featured by{" "}<SpotlightCTA href="https://openai.com">OpenAI</SpotlightCTA>{", "}10,000+ chats and counting</SpotlightSubtitle>
                             <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
                                     <SpotlightImg src={FeaturedImg} />
                                 </SpotlightCTA>
@@ -130,6 +122,7 @@ export const Chatbots = () => {
                     </Col>
                 </Row>
             </FadeInComponent>
+            <h2>My Chatbots</h2>
             <Grid>
                 {gptData.slice(1).map((gpt, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
@@ -152,7 +145,7 @@ export const Chatbots = () => {
             <FadeInComponent timeout={gptData.length * 400}>
                 <LinkContainer>
                     <h2>Chatbot questions?</h2>
-                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Email Me</SecondaryLinkButton>
+                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryLinkButton>
                 </LinkContainer>
             </FadeInComponent>
         </FadeInComponent>

@@ -15,7 +15,7 @@ export const Contact = () => {
             </FadeInComponent>
                 <FadeInComponent timeout={400}>
                     <LinkContainer>
-                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Email Me</SecondaryLinkButton>
+                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryLinkButton>
                     </LinkContainer>
                 </FadeInComponent>
         </FadeInComponent>

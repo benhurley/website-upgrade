@@ -1,30 +1,30 @@
 export const domainData = [
     {
         name: "prettytickets.com",
-        href: "https://sedo.com/search/?keyword=prettytickets.com&synonyms=false&safe_search=1&kws=right",
+        href: "https://dan.com/buy-domain/prettytickets.com",
     },
     {
         name: "soralaunch.com",
-        href: "https://sedo.com/search/?keyword=soralaunch.com&synonyms=false&safe_search=1&kws=right",
+        href: "https://dan.com/buy-domain/soralaunch.com",
     },
     {
         name: "sorastop.com",
-        href: "https://sedo.com/search/?keyword=sorastop.com&synonyms=false&safe_search=1&kws=right",
+        href: "https://dan.com/buy-domain/sorastop.com",
     },
     {
         name: "soraspam.com",
-        href: "https://sedo.com/search/?keyword=soraspam.com&synonyms=false&safe_search=1&kws=right",
+        href: "https://dan.com/buy-domain/soraspam.com",
     },
     {
         name: "sorasequel.com",
-        href: "https://sedo.com/search/?keyword=sorasequel.com&synonyms=false&safe_search=1&kws=right",
+        href: "https://dan.com/buy-domain/sorasequel.com",
     },
     {
         name: "unchained.fyi",
-        href: "https://sedo.com/search/?keyword=unchained.fyi&synonyms=false&safe_search=1&kws=right",
+        href: "https://dan.com/buy-domain/unchained.fyi",
     },
     {
         name: "voteforbezos.com",
-        href: "https://sedo.com/search/?keyword=voteforbezos.com&synonyms=false&safe_search=1&kws=right",
+        href: "https://dan.com/buy-domain/voteforbezos.com",
     },
 ];

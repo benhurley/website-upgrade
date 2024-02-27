@@ -18,11 +18,16 @@ const LinkContainer = styled.div`
   margin: 16px;
 `;
 
+const Description = styled.p`
+  margin-bottom: 32px;
+`;
+
 export const Websites = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Website Portflio" size="h1" />
+                <SlideInText text="Website Portfolio" size="h1" />
+                <Description>Explore the web apps I've created (or contributed to) recently:</Description>
             </FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (
@@ -37,7 +42,7 @@ export const Websites = () => {
             <FadeInComponent timeout={projectData.length * 400}>
                 <LinkContainer>
                     <h2>Website questions?</h2>
-                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>Email Me</SecondaryLinkButton>
+                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryLinkButton>
                 </LinkContainer>
             </FadeInComponent>
         </FadeInComponent>
