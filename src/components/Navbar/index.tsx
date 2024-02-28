@@ -85,6 +85,7 @@ export const NavBar = () => {
                                 <MenuIcon />
                             </IconButton>
                             <Menu
+                                id="menu-appbar"
                                 isOpen={menuOpen}
                                 onStateChange={() => setMenuOpen(menuOpen)}
                                 styles={muiStyleOverrides}
