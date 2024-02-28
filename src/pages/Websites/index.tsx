@@ -18,16 +18,11 @@ const LinkContainer = styled.div`
   margin: 16px;
 `;
 
-const Description = styled.p`
-  margin-bottom: 32px;
-`;
-
 export const Websites = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
                 <SlideInText text="Website Portfolio" size="h1" />
-                <Description>Explore the web apps I've created (or contributed to) recently:</Description>
             </FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (
