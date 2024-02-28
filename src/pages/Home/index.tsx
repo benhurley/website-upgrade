@@ -83,7 +83,7 @@ export const Home = () => {
           <WaveContainer>
             <SlideInText text="Hey, it&apos;s Ben" size="h1" />
             <FadeInComponent timeout={1000}>
-              <Wave><Hand src={hand} alt="waiving hand" /></Wave>
+              <Wave><Hand width={35} height={45} src={hand} alt="waiving hand" /></Wave>
             </FadeInComponent>
           </WaveContainer>
         </FadeInComponent>
