@@ -12,10 +12,6 @@ import { useNavigate } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import { IconButton } from '@mui/material';
 
-import linkedinLogo from "../../img/linkedinLogo.png";
-import githubLogo from "../../img/githubLogo.png";
-import mediumLogo from "../../img/mediumLogo.png";
-
 const tabs = [{ name: 'Home', path: '/' }, { name: 'Websites', path: '/websites' }, { name: "Chatbots", path: "/chatbots" }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }, { name: 'Donate', path: 'https://pay.justben.fyi' }];
 
 const MUINavBar = styled(AppBar)`
@@ -24,30 +20,9 @@ background-color: black !important;
 font-family: 'Kdam Thmor Pro', sans-serif;
 `
 
-const IconDesktop = styled.img`
-display: flex;
-padding-top: 20px;
-padding-left: 25px;
-height: 20px;
-`
-
-const LogoContainer = styled.div`
-display: flex;
-justify-content: end;
-width: 100%;
-`
-
-const IconMobile = styled.img`
-display: flex;
-padding-top: 12px;
-padding-left: 25px;
-height: 20px;
-`
-
 export const NavBar = () => {
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = React.useState(false);
-    const isJustBenDomain = window.location.href.includes("justben");
 
     const handleTabSelection = (tabPath: string) => {
         navigate(tabPath);
@@ -133,17 +108,6 @@ export const NavBar = () => {
                                         </div>)
                                 })}
                             </Menu>
-                            {!isJustBenDomain && <LogoContainer>
-                                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
-                                    <IconMobile src={mediumLogo} />
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/benjamin-hurley">
-                                    <IconMobile src={linkedinLogo} />
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
-                                    <IconMobile src={githubLogo} />
-                                </a>
-                            </LogoContainer>}
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {tabs.map((tab, index) => {
@@ -163,17 +127,6 @@ export const NavBar = () => {
                                         </FadeInComponent>
                                     )
                             })}
-                            {!isJustBenDomain && <LogoContainer>
-                                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@benfromtech">
-                                    <IconDesktop src={mediumLogo} />
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/benjamin-hurley">
-                                    <IconDesktop src={linkedinLogo} />
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/benhurley">
-                                    <IconDesktop src={githubLogo} />
-                                </a>
-                            </LogoContainer>}
                         </Box>
                     </Toolbar>
                 </Container>

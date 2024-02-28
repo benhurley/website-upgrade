@@ -1,13 +1,13 @@
-import backgroundImg from "../img/background.png";
-import dhImg from "../img/dh.png";
-import bonobosImg from "../img/bonobos.png";
-import nippiesImg from "../img/nippies.png";
-import svplychvnImg from "../img/svply.png";
-import cryptoCostImg from "../img/cryptocost.png";
+import backgroundImg from "../img/background.webp";
+import dhImg from "../img/dh.webp";
+import bonobosImg from "../img/bonobos.webp";
+import prettyTicketsImg from  '../img/prettyTickets.webp';
+import golfImg from  '../img/golf.webp';
+import featuredGPTImg from "../img/featuredGolfgpt.webp";
 
 export const preloadImages = () => {
   // add any images to preload above fold here
-  const images = [backgroundImg, dhImg, bonobosImg, nippiesImg, svplychvnImg, cryptoCostImg];
+  const images = [backgroundImg, dhImg, bonobosImg, prettyTicketsImg, golfImg, featuredGPTImg];
 
   return images.map((image) => {
     const img = new Image();

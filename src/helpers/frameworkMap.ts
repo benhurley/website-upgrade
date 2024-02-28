@@ -1,6 +1,6 @@
-import ReactLogo from "../img/reactLogo.png";
-import T3Logo from "../img/t3Logo.png";
-import RemixLogo from "../img/remixLogo.png";
+import ReactLogo from "../img/reactLogo.webp";
+import T3Logo from "../img/t3Logo.webp";
+import RemixLogo from "../img/remixLogo.webp";
 
 type FrameworkMap = {
     [key: string]: {

@@ -5,7 +5,7 @@ import { Websites } from './pages/Websites';
 import { Domains } from './pages/Domains';
 import { Footer } from './components/Footer';
 import styled, { createGlobalStyle } from "styled-components";
-import backgroundImg from "./img/background.png";
+import backgroundImg from "./img/background.webp";
 import { preloadImages } from './helpers/preloadImages';
 import { useEffect } from 'react';
 import { Chatbots } from './pages/Chatbots';

@@ -7,8 +7,8 @@ import ReactCardFlip from 'react-card-flip';
 import { SlideInText } from '../../helpers/SlideInText';
 
 import artHeadshot from "../../img/me.webp";
-import benHeadshot from "../../img/ben.png";
-import hand from "../../img/hand.png";
+import artHeadshotReversed from "../../img/me-reversed.webp";
+import hand from "../../img/hand.webp";
 
 const waveAnimation = keyframes`
   0% { transform: rotate( 0.0deg) }
@@ -75,7 +75,6 @@ padding-right: 45px;
 
 export const Home = () => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const isJustBenDomain = window.location.href.includes("justben");
 
   return (
     <FadeInComponent>
@@ -97,12 +96,12 @@ export const Home = () => {
             flipSpeedBackToFront={2}
           >
             <Image
-              alt={isJustBenDomain ? "ben's art profile picture" : "headshot of ben"}
-              src={isJustBenDomain ? artHeadshot : benHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+              alt="ben's ai-generated profile picture (front)"
+              src={artHeadshot} onClick={() => setIsFlipped(!isFlipped)}
             />
             <Image
-              alt={isJustBenDomain ? "headshot of ben" : "ben's art profile picture"}
-              src={isJustBenDomain ? benHeadshot : artHeadshot} onClick={() => setIsFlipped(!isFlipped)}
+              alt="ben's ai-generated profile picture (back)"
+              src={artHeadshotReversed} onClick={() => setIsFlipped(!isFlipped)}
             />
           </ReactCardFlip>
         </AvatarContainer>

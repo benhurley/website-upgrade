@@ -1,10 +1,10 @@
-import NippiesScreenshot from "../../img/nippies.png";
-import SVPLYCHVNScreenshot from "../../img/svply.png";
-import CryptoCostScreenshot from "../../img/cryptocost.png";
-import DHScreenshot from "../../img/dh.png";
-import BonobosScreenshot from "../../img/bonobos.png";
-import NYCScreenshot from "../../img/nycRestaurants.png";
-import PTScreenshot from "../../img/prettyTickets.png";
+import NippiesScreenshot from "../../img/nippies.webp";
+import SVPLYCHVNScreenshot from "../../img/svply.webp";
+import CryptoCostScreenshot from "../../img/cryptocost.webp";
+import DHScreenshot from "../../img/dh.webp";
+import BonobosScreenshot from "../../img/bonobos.webp";
+import NYCScreenshot from "../../img/nycRestaurants.webp";
+import PTScreenshot from "../../img/prettyTickets.webp";
 
 export const projectData = [
     {
