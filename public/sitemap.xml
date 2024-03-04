@@ -27,6 +27,12 @@
 
     <!-- Subdomain URLs -->
     <url>
+        <loc>https://mostwatched.justben.fyi/</loc>
+        <lastmod>2024-03-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://vinobot.justben.fyi/</loc>
         <lastmod>2024-02-16</lastmod>
         <changefreq>weekly</changefreq>
@@ -43,6 +49,12 @@
         <lastmod>2024-02-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cryptocost.justben.fyi/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://dsw.justben.fyi</loc>
@@ -67,5 +79,11 @@
         <lastmod>2024-02-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://nyc.justben.fyi/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
     </url>
 </urlset>
