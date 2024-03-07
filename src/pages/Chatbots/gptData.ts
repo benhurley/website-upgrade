@@ -43,14 +43,6 @@ export const gptData = [
         subdomain: 'https://pricegpt.justben.fyi',
     },
     {
-        imgUrl: DesignSystemWizard,
-        imgAlt: "Design System Wizard logo",
-        title: "Design System Wizard",
-        description: "Expert in cohesive brand design systems, logos, and assets.",
-        url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
-        subdomain: "https://dsw.justben.fyi",
-    },
-    {
 
         imgUrl: MealPrep,
         imgAlt: "Meal Prep logo",
@@ -66,6 +58,13 @@ export const gptData = [
         description: "Your go-to expert for gameplay walkthroughs and cheat codes.",
         url: "https://chat.openai.com/g/g-12q0jqkhd-game-genius",
         subdomain: "https://gamegenius.justben.fyi",
+    },
+    {
+        imgUrl: DesignSystemWizard,
+        imgAlt: "Design System Wizard logo",
+        title: "Design System Wizard",
+        description: "Expert in cohesive brand design systems, logos, and assets.",
+        url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
     },
     {
         imgUrl: ManualFinder,
