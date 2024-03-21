@@ -44,7 +44,12 @@ const Grid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `
 
+const SpotlightWrapper = styled.div`
+margin-bottom: 20px;
+`
+
 const SpotlightTitle = styled.h2`
+margin-top: 0;
 `
 
 const SpotlightSubtitle = styled.p`
@@ -85,9 +90,8 @@ export const Chatbots = () => {
                 <SlideInText text="Chatbot Portfolio" size="h1" />
                 <Row>
                     <Col>
-                        <div>
+                        <SpotlightWrapper>
                             <SpotlightTitle>
-
                                 Spotlight:{" "}
                                 <SpotlightCTA style={{color: '#38E8B0'}} href={gptData[0].url} target="_blank" rel="noopener noreferrer">
                                     GolfGPT
@@ -103,7 +107,7 @@ export const Chatbots = () => {
                                     </SpotlightCTA>
                                     {" "}screenshot from 2/16/24)
                                 </SpotlightImgCaption>
-                        </div>
+                        </SpotlightWrapper>
                     </Col>
                     <Col>
                         <CardWithCTAs 
