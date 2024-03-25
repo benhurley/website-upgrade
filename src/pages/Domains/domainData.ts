@@ -20,10 +20,6 @@ export const domainData = [
         href: "https://dan.com/buy-domain/sorasequel.com",
     },
     {
-        name: "unchained.fyi",
-        href: "https://dan.com/buy-domain/unchained.fyi",
-    },
-    {
         name: "voteforbezos.com",
         href: "https://dan.com/buy-domain/voteforbezos.com",
     },
