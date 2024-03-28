@@ -10,6 +10,7 @@ import { preloadImages } from './helpers/preloadImages';
 import { useEffect } from 'react';
 import { Chatbots } from './pages/Chatbots';
 import { Contact } from './pages/Contact';
+import { About } from './pages/About';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -42,6 +43,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/websites" element={<Websites />} />
             <Route path="/domains" element={<Domains />} />
             <Route path="/chatbots" element={<Chatbots />} />

@@ -3,7 +3,6 @@ import SVPLYCHVNScreenshot from "../../img/svply.webp";
 import CryptoCostScreenshot from "../../img/cryptocost.webp";
 import DHScreenshot from "../../img/dh.webp";
 import BonobosScreenshot from "../../img/bonobos.webp";
-import NYCScreenshot from "../../img/nycRestaurants.webp";
 import PTScreenshot from "../../img/prettyTickets.webp";
 import MostWatchedScreenshot from "../../img/mostwatched.webp";
 
@@ -30,7 +29,7 @@ export const projectData = [
         imgUrl: MostWatchedScreenshot,
         imgAlt: "Most-Watched Homepage",
         title: "Most-Watched",
-        description: "Browse eBay's most-watched items",
+        description: "Search eBay's and view results sorted directly by watch count.",
         url: "https://mostwatched.justben.fyi",
         framework: "NextJS",
         role: "Creator"
@@ -71,13 +70,13 @@ export const projectData = [
         framework: "T3",
         role: "Lead Dev"
     },
-    {
-        imgUrl: NYCScreenshot,
-        imgAlt: "NYC Restaurant Info homepage",
-        title: "NYC Restaurant Info",
-        description: "Near-real-time restaurant inspection data across all 5 NYC boroughs.",
-        url: "https://nyc.justben.fyi",
-        framework: "React",
-        role: "Creator"
-    },
+    // {
+    //     imgUrl: NYCScreenshot,
+    //     imgAlt: "NYC Restaurant Info homepage",
+    //     title: "NYC Restaurant Info",
+    //     description: "Near-real-time restaurant inspection data across all 5 NYC boroughs.",
+    //     url: "https://nyc.justben.fyi",
+    //     framework: "React",
+    //     role: "Creator"
+    // },
 ]

@@ -12,7 +12,15 @@ import { useNavigate } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import { IconButton } from '@mui/material';
 
-const tabs = [{ name: 'Home', path: '/' }, { name: 'Websites', path: '/websites' }, { name: "Chatbots", path: "/chatbots" }, { name: 'Domains', path: '/domains' }, { name: 'Contact', path: '/contact' }, { name: 'Donate', path: 'https://pay.justben.fyi' }];
+const tabs = [
+    { name: 'Home', path: '/' },
+    { name: 'Websites', path: '/websites' },
+    { name: "Chatbots", path: "/chatbots" },
+    { name: 'Domains', path: '/domains' },
+    { name: 'About Me', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Donate', path: 'https://pay.justben.fyi' }
+];
 
 const MUINavBar = styled(AppBar)`
 position: sticky;
