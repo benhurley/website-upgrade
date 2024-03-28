@@ -29,7 +29,7 @@ export const projectData = [
         imgUrl: MostWatchedScreenshot,
         imgAlt: "Most-Watched Homepage",
         title: "Most-Watched",
-        description: "Search eBay's and view results sorted directly by watch count.",
+        description: "Search eBay and view results sorted by watch count.",
         url: "https://mostwatched.justben.fyi",
         framework: "NextJS",
         role: "Creator"
