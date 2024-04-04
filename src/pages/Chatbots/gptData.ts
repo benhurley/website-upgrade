@@ -6,6 +6,7 @@ import PriceGPT from "../../img/priceGPT.webp";
 import Vinobot from "../../img/vinobot.webp";
 import GolfGPT from "../../img/golf.webp";
 import WatchGPT from "../../img/watchGPT.webp";
+import TermsGPT from "../../img/t&c.webp";
 import MealPrep from "../../img/mealPrep.webp";
 import DesignSystemWizard from "../../img/wizard.webp";
 import ManualFinder from "../../img/manualFinder.webp";
@@ -44,6 +45,27 @@ export const gptData = [
         subdomain: 'https://watchgpt.justben.fyi',
     },
     {
+        imgUrl: TermsGPT,
+        imgAlt: "TermsGPT logo",
+        title: "TermsGPT",
+        description: "Deciphers website terms and conditions (educational-use only).",
+        url: "https://chat.openai.com/g/g-owd5egNQW-termsgpt",
+    },
+    {
+        imgUrl: DesignSystemWizard,
+        imgAlt: "Design System Wizard logo",
+        title: "Design System Wizard",
+        description: "Expert in cohesive brand design systems, logos, and assets.",
+        url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
+    },
+    {
+        imgUrl: ManualFinder,
+        imgAlt: "Manual Finder logo",
+        title: "Manual Finder",
+        description: "Find user guides or manuals for any product.",
+        url: "https://chat.openai.com/g/g-NJxDPYdRc-manual-finder",
+    },
+    {
         imgUrl: PriceGPT,
         imgAlt: "PriceGPT logo",
         title: "PriceGPT",
@@ -67,20 +89,6 @@ export const gptData = [
         description: "Your go-to expert for gameplay walkthroughs and cheat codes.",
         url: "https://chat.openai.com/g/g-12q0jqkhd-game-genius",
         subdomain: "https://gamegenius.justben.fyi",
-    },
-    {
-        imgUrl: DesignSystemWizard,
-        imgAlt: "Design System Wizard logo",
-        title: "Design System Wizard",
-        description: "Expert in cohesive brand design systems, logos, and assets.",
-        url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
-    },
-    {
-        imgUrl: ManualFinder,
-        imgAlt: "Manual Finder logo",
-        title: "Manual Finder",
-        description: "Find user guides or manuals for any product.",
-        url: "https://chat.openai.com/g/g-NJxDPYdRc-manual-finder",
     },
     {
         imgUrl: BillBalancer,
