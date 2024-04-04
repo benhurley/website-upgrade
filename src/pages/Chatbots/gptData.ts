@@ -5,6 +5,7 @@ import ParentalWisdom from "../../img/parentalWisdom.webp";
 import PriceGPT from "../../img/priceGPT.webp";
 import Vinobot from "../../img/vinobot.webp";
 import GolfGPT from "../../img/golf.webp";
+import WatchGPT from "../../img/watchGPT.webp";
 import MealPrep from "../../img/mealPrep.webp";
 import DesignSystemWizard from "../../img/wizard.webp";
 import ManualFinder from "../../img/manualFinder.webp";
@@ -33,6 +34,14 @@ export const gptData = [
         description: "A virtual mechanic for diagnosing car problems (educational-only).",
         url: "https://chat.openai.com/g/g-rUgFfFwbm-mechanic-mate",
         subdomain: "https://mechanicmate.justben.fyi",
+    },
+    {
+        imgUrl: WatchGPT,
+        imgAlt: "WatchGPT logo",
+        title: "WatchGPT",
+        description: "Detailed watch insights and spotlights from an expert.",
+        url: "https://chat.openai.com/g/g-yNUvzzdoa-watchgpt",
+        subdomain: 'https://watchgpt.justben.fyi',
     },
     {
         imgUrl: PriceGPT,
