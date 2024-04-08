@@ -4,6 +4,7 @@ import MechanicMate from "../../img/MechanicMate.webp";
 import ParentalWisdom from "../../img/parentalWisdom.webp";
 import PriceGPT from "../../img/priceGPT.webp";
 import Vinobot from "../../img/vinobot.webp";
+import AIG from "../../img/AIG.webp";
 import GolfGPT from "../../img/golf.webp";
 import WatchGPT from "../../img/watchGPT.webp";
 import TermsGPT from "../../img/t&c.webp";
@@ -19,6 +20,14 @@ export const gptData = [
         description: "Your expert caddy for hole-specific golf strategies.",
         url: "https://chat.openai.com/g/g-MTjrTCeoU-golfgpt",
         subdomain: "https://golfgpt.justben.fyi"
+    },
+    {
+        imgUrl: AIG,
+        imgAlt: "AI Image Generator logo",
+        title: "AI Image Generator",
+        description: "Use DALL-E 3 to create an AI image based on your input.",
+        url: 'https://chat.openai.com/g/g-Y0jMX3bu3-ai-image-generator',
+        subdomain: "https://pmfm.ai/AIImageGenerator",
     },
     {
         imgUrl: Vinobot,
