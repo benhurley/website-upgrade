@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import { Chatbots } from './pages/Chatbots';
 import { Contact } from './pages/Contact';
 import { About } from './pages/About';
+import ScrollToTop from './helpers/ScrollToTop';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -40,6 +41,7 @@ function App() {
       <GlobalStyles />
       <AppContainer>
         <Router>
+          <ScrollToTop />
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
