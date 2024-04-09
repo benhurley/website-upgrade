@@ -84,7 +84,7 @@ export const About = () => {
                 </ReactCardFlip>
                 <Container>
                     <Description>
-                        Got my first job at an ad giant, learned about the cloud (AWS).
+                        Got my first job at an Ad giant, learned about "the cloud".
                     </Description>
                     <Description>
                         Went into consulting to focus on building in AWS.
@@ -93,7 +93,7 @@ export const About = () => {
                         Consulting made me go frontend (kicking and screaming).
                     </Description>
                     <Description>
-                        Ended up really liking frontend actually.
+                        Ended up really liking frontend, actually.
                     </Description>
                     <Description>
                         Joined a startup & rebuilt their site over several years.
