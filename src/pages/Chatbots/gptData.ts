@@ -25,9 +25,9 @@ export const gptData = [
         imgUrl: AIG,
         imgAlt: "AI Image Generator logo",
         title: "AI Image Generator",
-        description: "Use DALL-E 3 to create an AI image based on your input.",
+        description: "Hassle-free AI Image Creation using DALLE-3.",
         url: 'https://chat.openai.com/g/g-Y0jMX3bu3-ai-image-generator',
-        subdomain: "https://pmfm.ai/AIImageGenerator",
+        subdomain: "https://imagegenerator.justben.fyi",
     },
     {
         imgUrl: Vinobot,
