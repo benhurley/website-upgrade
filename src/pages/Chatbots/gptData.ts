@@ -79,6 +79,14 @@ export const gptData = [
         subdomain: "https://mealprep.justben.fyi"
     },
     {
+        imgUrl: DesignSystemWizard,
+        imgAlt: "Design System Wizard logo",
+        title: "Design System Wizard",
+        description: "Expert in cohesive brand design systems, logos, and assets.",
+        url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
+        subdomain: "https://dsw.justben.fyi"
+    },
+    {
         imgUrl: TermsGPT,
         imgAlt: "TermsGPT logo",
         title: "TermsGPT",
@@ -98,13 +106,6 @@ export const gptData = [
         title: "Bill Balancer",
         description: "Expert in bill splitting with a focus on practical fairness.",
         url: "https://chat.openai.com/g/g-ucFQS1rNs-bill-balancer",
-    },
-    {
-        imgUrl: DesignSystemWizard,
-        imgAlt: "Design System Wizard logo",
-        title: "Design System Wizard",
-        description: "Expert in cohesive brand design systems, logos, and assets.",
-        url: "https://chat.openai.com/g/g-vDbcaJpiM-design-system-wizard",
     },
     {
 
