@@ -28,7 +28,7 @@ export const Websites = () => {
             <FadeInComponent timeout={250}>
                 <SlideInText text="Website Portfolio" size="h1" />
             </FadeInComponent>
-            <Description>A collection of public-facing websites that I've contributed to or made from scratch.</Description>
+            <Description>Side projects of past and present. Some better than others.</Description>
             <Grid>
                 {projectData.map((project, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>

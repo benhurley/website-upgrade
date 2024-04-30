@@ -1,29 +1,28 @@
 import NippiesScreenshot from "../../img/nippies.webp";
 import SVPLYCHVNScreenshot from "../../img/svply.webp";
 import CryptoCostScreenshot from "../../img/cryptocost.webp";
-import DHScreenshot from "../../img/dh.webp";
-import BonobosScreenshot from "../../img/bonobos.webp";
 import PTScreenshot from "../../img/prettyTickets.webp";
 import MostWatchedScreenshot from "../../img/mostwatched.webp";
+import NYCScreenshot from '../../img/nycRestaurants.webp';
 
 export const projectData = [
     {
-        imgUrl: DHScreenshot,
-        imgAlt: "Daily Harvest homepage",
-        title: "dailyharvest.com",
-        description: "Chef-crafted, ready-when-you-are food built on fruits + veggies.",
-        url: "https://daily-harvest.com",
-        framework: "Remix",
-        role: "Lead Dev"
+        imgUrl: NYCScreenshot,
+        imgAlt: "NYC Restaurant Info homepage",
+        title: "NYC Restaurant Info",
+        description: "Explore NYC Restaurant Grades and Health Reports.",
+        url: "https://nyc.justben.fyi",
+        framework: "React",
+        role: "Creator"
     },
     {
-        imgUrl: BonobosScreenshot,
-        imgAlt: "Bonobos homepage",
-        title: "bonobos.com",
-        description: "An upscale menswear apparel subsidiary of Express, Inc.",
-        url: "https://bonobos.com",
+        imgUrl: PTScreenshot,
+        imgAlt: "Pretty Tickets Homepage",
+        title: "prettytickets.com",
+        description: "Use AI to transform purchases into beautiful commemorative tickets.",
+        url: "https://prettytickets.com",
         framework: "React",
-        role: "Dev"
+        role: "Creator"
     },
     {
         imgUrl: MostWatchedScreenshot,
@@ -40,15 +39,6 @@ export const projectData = [
         title: "Crypto Cost",
         description: "Provides a USD cost-basis estimate for any past cryptocurrency purchase.",
         url: "https://cryptocost.justben.fyi",
-        framework: "React",
-        role: "Creator"
-    },
-    {
-        imgUrl: PTScreenshot,
-        imgAlt: "Pretty Tickets Homepage",
-        title: "prettytickets.com",
-        description: "Use AI to transform purchases into beautiful commemorative tickets.",
-        url: "https://prettytickets.com",
         framework: "React",
         role: "Creator"
     },
@@ -70,13 +60,4 @@ export const projectData = [
         framework: "T3",
         role: "Lead Dev"
     },
-    // {
-    //     imgUrl: NYCScreenshot,
-    //     imgAlt: "NYC Restaurant Info homepage",
-    //     title: "NYC Restaurant Info",
-    //     description: "Near-real-time restaurant inspection data across all 5 NYC boroughs.",
-    //     url: "https://nyc.justben.fyi",
-    //     framework: "React",
-    //     role: "Creator"
-    // },
 ]
