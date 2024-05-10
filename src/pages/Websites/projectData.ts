@@ -4,8 +4,18 @@ import CryptoCostScreenshot from "../../img/cryptocost.webp";
 import PTScreenshot from "../../img/prettyTickets.webp";
 import MostWatchedScreenshot from "../../img/mostwatched.webp";
 import NYCScreenshot from '../../img/nycRestaurants.webp';
+import BCGScreenshot from '../../img/bcg.webp';
 
 export const projectData = [
+    {
+        imgUrl: MostWatchedScreenshot,
+        imgAlt: "Most-Watched Homepage",
+        title: "Most-Watched",
+        description: "Search eBay and view results sorted by watch count.",
+        url: "https://mostwatched.justben.fyi",
+        framework: "NextJS",
+        role: "Creator"
+    },
     {
         imgUrl: NYCScreenshot,
         imgAlt: "NYC Restaurant Info homepage",
@@ -16,21 +26,21 @@ export const projectData = [
         role: "Creator"
     },
     {
+        imgUrl: BCGScreenshot,
+        imgAlt: "BCG Homepage",
+        title: "Big Cigar Guy",
+        description: "A lifestyle brand for the modern-day cigar enthusiast.",
+        url: "https://bigcigarguy.com",
+        framework: "Spring",
+        role: "Creator"
+    },
+    {
         imgUrl: PTScreenshot,
         imgAlt: "Pretty Tickets Homepage",
         title: "prettytickets.com",
         description: "Use AI to transform purchases into beautiful commemorative tickets.",
         url: "https://prettytickets.com",
         framework: "React",
-        role: "Creator"
-    },
-    {
-        imgUrl: MostWatchedScreenshot,
-        imgAlt: "Most-Watched Homepage",
-        title: "Most-Watched",
-        description: "Search eBay and view results sorted by watch count.",
-        url: "https://mostwatched.justben.fyi",
-        framework: "NextJS",
         role: "Creator"
     },
     {

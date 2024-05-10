@@ -2,6 +2,7 @@ import ReactLogo from "../img/reactLogo.webp";
 import T3Logo from "../img/t3Logo.webp";
 import RemixLogo from "../img/remixLogo.webp";
 import NextJSLogo from "../img/nextjsLogo.webp";
+import SpringLogo from "../img/springLogo.webp";
 
 type FrameworkMap = {
     [key: string]: {
@@ -27,4 +28,8 @@ export const frameworkMap: FrameworkMap = {
         imgUrl: RemixLogo,
         url: "https://remix.run"
     },
+    Spring: {
+        imgUrl: SpringLogo,
+        url: "https://teespring.com"
+    }
 }
