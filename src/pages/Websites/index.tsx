@@ -4,6 +4,7 @@ import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { projectData } from "./projectData";
 import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
+import { workData } from "./workData";
 
 const Grid = styled.div`
     max-width: 1050px;
@@ -18,17 +19,28 @@ const LinkContainer = styled.div`
   margin: 16px;
 `;
 
-const Description = styled.p`
-  margin-bottom: 32px;
-`;
-
 export const Websites = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Website Portfolio" size="h1" />
+                <SlideInText text="Websites" size="h1" />
             </FadeInComponent>
-            <Description>Projects of past and present. Some better than others.</Description>
+            <FadeInComponent timeout={250}>
+                <SlideInText text="Highlights" size="h2" />
+            </FadeInComponent>
+            <Grid>
+                {workData.map((project, index) => (
+                    <FadeInComponent key={index} timeout={index * 400}>
+                        <Card
+                            key={index}
+                            item={project}
+                        />
+                    </FadeInComponent>
+                ))}
+            </Grid>
+            <FadeInComponent timeout={250}>
+                <SlideInText text="Personal Projects" size="h2" />
+            </FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>

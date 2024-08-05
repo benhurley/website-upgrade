@@ -1,4 +1,3 @@
-import NippiesScreenshot from "../../img/nippies.webp";
 import SVPLYCHVNScreenshot from "../../img/svply.webp";
 import CryptoCostScreenshot from "../../img/cryptocost.webp";
 import PTScreenshot from "../../img/prettyTickets.webp";
@@ -14,15 +13,6 @@ export const projectData = [
         description: "Search eBay and view results sorted by watch count.",
         url: "https://mostwatched.justben.fyi",
         framework: "NextJS",
-        role: "Creator"
-    },
-    {
-        imgUrl: NippiesScreenshot,
-        imgAlt: "Nippies by @ScubaSteveArt",
-        title: "nippi.es",
-        description: "A boutique collection of 100 misfit yeti characters on Solana and Bitcoin.",
-        url: "https://nippi.es",
-        framework: "React",
         role: "Creator"
     },
     {
