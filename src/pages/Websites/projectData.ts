@@ -18,9 +18,9 @@ export const projectData = [
     {
         imgUrl: PTScreenshot,
         imgAlt: "Pretty Tickets Homepage",
-        title: "prettytickets.com",
+        title: "Pretty Tickets",
         description: "Use AI to transform purchases into beautiful commemorative tickets.",
-        url: "https://prettytickets.com",
+        url: "https://prettytickets.justben.fyi",
         framework: "React",
         role: "Creator"
     },
