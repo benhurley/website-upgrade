@@ -1,17 +1,17 @@
 import SVPLYCHVNScreenshot from "../../img/svply.webp";
 import CryptoCostScreenshot from "../../img/cryptocost.webp";
 import PTScreenshot from "../../img/prettyTickets.webp";
-import MostWatchedScreenshot from "../../img/mostwatched.webp";
+import BidZippy from "../../img/bidzippy.webp";
 import NYCScreenshot from '../../img/nycRestaurants.webp';
 import BCGScreenshot from '../../img/bcg.webp';
 
 export const projectData = [
     {
-        imgUrl: MostWatchedScreenshot,
-        imgAlt: "Most-Watched Homepage",
-        title: "Most-Watched",
-        description: "Search eBay and view results sorted by watch count.",
-        url: "https://mostwatched.justben.fyi",
+        imgUrl: BidZippy,
+        imgAlt: "BidZippy Homepage",
+        title: "BidZippy™",
+        description: "Quickly Find the Best Auctions on eBay.",
+        url: "https://bidzippy.com",
         framework: "NextJS",
         role: "Creator"
     },
