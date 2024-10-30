@@ -54,7 +54,7 @@ margin-top: 0;
 
 const SpotlightSubtitle = styled.p`
 margin-top: -12px;
-font-size: 14px;`
+font-size: 18px;`
 
 const SpotlightCTA = styled.a`
 color: white;
@@ -97,7 +97,7 @@ export const Chatbots = () => {
                                     GolfGPT
                                 </SpotlightCTA>
                             </SpotlightTitle>
-                            <SpotlightSubtitle>Featured by{" "}<SpotlightCTA href="https://openai.com">OpenAI</SpotlightCTA>{", "}10,000+ chats and counting</SpotlightSubtitle>
+                            <SpotlightSubtitle>25,000+ chats to-date</SpotlightSubtitle>
                             <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
                                     <SpotlightImg src={FeaturedImg} />
                                 </SpotlightCTA>
