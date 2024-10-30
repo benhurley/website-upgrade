@@ -97,7 +97,7 @@ export const Chatbots = () => {
                                     GolfGPT
                                 </SpotlightCTA>
                             </SpotlightTitle>
-                            <SpotlightSubtitle>25,000+ chats to-date</SpotlightSubtitle>
+                            <SpotlightSubtitle>25,000+ conversations to-date</SpotlightSubtitle>
                             <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
                                     <SpotlightImg src={FeaturedImg} />
                                 </SpotlightCTA>
