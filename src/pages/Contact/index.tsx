@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
-import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
+import { SecondaryAnchorButton } from "../../components/Buttons/SecondaryLinkButton";
 import ReactCardFlip from 'react-card-flip';
 import { useState } from "react";
 
@@ -47,7 +47,7 @@ export const Contact = () => {
             </ReactCardFlip>
             <FadeInComponent timeout={400}>
                 <LinkContainer>
-                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryLinkButton>
+                    <SecondaryAnchorButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryAnchorButton>
                 </LinkContainer>
             </FadeInComponent>
         </FadeInComponent>

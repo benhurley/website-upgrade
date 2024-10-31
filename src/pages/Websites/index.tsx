@@ -3,7 +3,7 @@ import { Card } from "../../components/Card";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { projectData } from "./projectData";
-import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
+import { SecondaryAnchorButton } from "../../components/Buttons/SecondaryLinkButton";
 import { workData } from "./workData";
 
 const Grid = styled.div`
@@ -54,7 +54,7 @@ export const Websites = () => {
             <FadeInComponent timeout={projectData.length * 400}>
                 <LinkContainer>
                     <h2>Website questions?</h2>
-                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryLinkButton>
+                    <SecondaryAnchorButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryAnchorButton>
                 </LinkContainer>
             </FadeInComponent>
         </FadeInComponent>

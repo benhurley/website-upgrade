@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { PrimaryLinkButton } from "../../components/Buttons/PrimaryLinkButton";
+import { PrimaryAnchorButton, PrimaryLinkButton } from "../../components/Buttons/PrimaryLinkButton";
 import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { domainData } from "./domainData";
-import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
+import { SecondaryAnchorButton, SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
 
 const Grid = styled.div`
 margin-left: auto;
@@ -40,7 +40,7 @@ export const Domains = () => {
                 {domainData.map((domain, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
                         <LinkContainer>
-                            <PrimaryLinkButton rel="noopener noreferrer" target="_blank" href={domain.href}>{domain.name}</PrimaryLinkButton>
+                            <PrimaryAnchorButton rel="noopener noreferrer" target="_blank" href={domain.href}>{domain.name}</PrimaryAnchorButton>
                         </LinkContainer>
                     </FadeInComponent>
                 ))}
@@ -48,7 +48,7 @@ export const Domains = () => {
             <FadeInComponent timeout={domainData.length * 400}>
                 <LinkContainer>
                     <h2>Domain questions?</h2>
-                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryLinkButton>
+                    <SecondaryAnchorButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryAnchorButton>
                 </LinkContainer>
             </FadeInComponent>
         </FadeInComponent>

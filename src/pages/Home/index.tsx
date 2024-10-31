@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
@@ -107,8 +108,8 @@ export const Home = () => {
         </AvatarContainer>
         <h2>I build Websites & AI Chatbots</h2>
         <CTAContainer>
-          <WebsitesButton href="/websites">Websites</WebsitesButton>
-          <ChatbotsButton href="/chatbots">Chatbots</ChatbotsButton>
+          <WebsitesButton to="/websites">Websites</WebsitesButton>
+          <ChatbotsButton to="/chatbots">Chatbots</ChatbotsButton>
         </CTAContainer>
       </Container>
     </FadeInComponent>

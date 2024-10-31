@@ -3,7 +3,7 @@ import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { gptData } from "./gptData";
 import FeaturedImg from "../../img/featuredGolfgpt.webp";
-import { SecondaryLinkButton } from "../../components/Buttons/SecondaryLinkButton";
+import { SecondaryAnchorButton } from "../../components/Buttons/SecondaryLinkButton";
 import { CardWithCTAs } from "../../components/CardWithCTAs";
 
 const Row = styled.div`
@@ -149,7 +149,7 @@ export const Chatbots = () => {
             <FadeInComponent timeout={gptData.length * 400}>
                 <LinkContainer>
                     <h2>Chatbot questions?</h2>
-                    <SecondaryLinkButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryLinkButton>
+                    <SecondaryAnchorButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryAnchorButton>
                 </LinkContainer>
             </FadeInComponent>
         </FadeInComponent>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { frameworkMap } from '../../helpers/frameworkMap';
-import { PrimaryLinkButton } from '../Buttons/PrimaryLinkButton';
-import { SecondaryLinkButton } from '../Buttons/SecondaryLinkButton';
+import { PrimaryAnchorButton } from '../Buttons/PrimaryLinkButton';
+import { SecondaryAnchorButton } from '../Buttons/SecondaryLinkButton';
 
 const Container = styled.div`
 width: 275px;
@@ -130,11 +130,11 @@ export const CardWithCTAs = ({ item, imageShape = 'rectangle', primaryCTAData, s
                 <CTAContainer>
                     {primaryCTAData?.url &&
                         <CTAWrapper>
-                            <SecondaryLinkButton target="_blank" rel="noopener noreferrer" href={primaryCTAData.url} >{primaryCTAData?.buttonText}</SecondaryLinkButton>
+                            <SecondaryAnchorButton target="_blank" rel="noopener noreferrer" href={primaryCTAData.url} >{primaryCTAData?.buttonText}</SecondaryAnchorButton>
                         </CTAWrapper>}
                     {secondaryCTAData?.url &&
                         <CTAWrapper>
-                            <PrimaryLinkButton target="_blank" rel="noopener noreferrer" href={secondaryCTAData?.url}>{secondaryCTAData?.buttonText}</PrimaryLinkButton>
+                            <PrimaryAnchorButton target="_blank" rel="noopener noreferrer" href={secondaryCTAData?.url}>{secondaryCTAData?.buttonText}</PrimaryAnchorButton>
                         </CTAWrapper>}
                 </CTAContainer>
         </Container>
