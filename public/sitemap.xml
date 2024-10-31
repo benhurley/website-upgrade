@@ -6,10 +6,16 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+        <url>
+        <loc>https://www.justben.fyi/websites</loc>
+        <lastmod>2024-02-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
     <url>
         <loc>https://www.justben.fyi/chatbots</loc>
         <lastmod>2024-02-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
@@ -19,29 +25,23 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.justben.fyi/websites</loc>
-        <lastmod>2024-02-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://www.justben.fyi/about</loc>
         <lastmod>2024-02-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
     </url>
     <!-- Subdomain URLs -->
+    <url>
+        <loc>https://bidzippy.com/</loc>
+        <lastmod>2024-10-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
     <url>
         <loc>https://imagegenerator.justben.fyi/</loc>
         <lastmod>2024-04-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-    </url>
-        <url>
-        <loc>https://bidzippy.com/</loc>
-        <lastmod>2024-10-07</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://vinobot.justben.fyi/</loc>
