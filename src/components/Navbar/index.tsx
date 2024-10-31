@@ -17,7 +17,6 @@ const tabs = [
     { name: 'Websites', path: '/websites' },
     { name: "Chatbots", path: "/chatbots" },
     { name: 'Domains', path: '/domains' },
-    { name: 'About Me', path: '/about' },
     { name: 'Contact', path: '/contact' },
     { name: 'Donate', path: 'https://pay.justben.fyi' }
 ];
