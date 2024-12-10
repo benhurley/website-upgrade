@@ -58,20 +58,23 @@ border-color: white;
 
 const CTAContainer = styled.div`
 margin-top: 10px;
-display: inline-block;
-line-height: 78px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1rem;
 `
 
 const ChatbotsButton = styled(SecondaryLinkButton)`
-margin-left: 10px;
-margin-right: 10px;
 `
 
 const WebsitesButton = styled(PrimaryLinkButton)`
-margin-left: 10px;
-margin-right: 10px;
 padding-left: 45px;
 padding-right: 45px;
+`
+
+const Subtitle = styled.h2`
+font-size: 20px;
+margin-bottom: 2rem;
 `
 
 export const Home = () => {
@@ -82,7 +85,7 @@ export const Home = () => {
       <Container>
         <FadeInComponent timeout={500}>
           <WaveContainer>
-            <SlideInText text="Hey, it&apos;s Ben" size="h1" />
+            <SlideInText text="Hey, I&apos;m Ben" size="h1" />
             <FadeInComponent timeout={1000}>
               <Wave><Hand width={35} height={45} src={hand} alt="waiving hand" /></Wave>
             </FadeInComponent>
@@ -106,10 +109,10 @@ export const Home = () => {
             />
           </ReactCardFlip>
         </AvatarContainer>
-        <h2>I build Websites & AI Chatbots</h2>
+        <Subtitle>Your Friendly Digital Architect</Subtitle>
         <CTAContainer>
-          <WebsitesButton to="/websites">Websites</WebsitesButton>
-          <ChatbotsButton to="/chatbots">Chatbots</ChatbotsButton>
+          <WebsitesButton to="/websites">My Websites</WebsitesButton>
+          <ChatbotsButton to="/chatbots">My Chatbots</ChatbotsButton>
         </CTAContainer>
       </Container>
     </FadeInComponent>

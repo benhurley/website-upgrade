@@ -69,15 +69,15 @@ width: fit-content;
 text-decoration-color: #F5F5F5;
 background-color: #F5F5F5;
 color: black;
-font-size: 11px;
+font-size: 14px;
 box-shadow: 2px 2px #43464B;
 `;
 
 const Framework = styled.img`
 display: inline-block;
 vertical-align: middle;
-width: 22px;
-margin-right: 8px;
+width: 30px;
+margin-right: 1rem;
 `
 
 type cardProps = {

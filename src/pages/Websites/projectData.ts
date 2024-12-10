@@ -1,4 +1,3 @@
-import SVPLYCHVNScreenshot from "../../img/svply.webp";
 import CryptoCostScreenshot from "../../img/cryptocost.webp";
 import PTScreenshot from "../../img/prettyTickets.webp";
 import BidZippy from "../../img/bidzippy.webp";
@@ -9,8 +8,8 @@ export const projectData = [
     {
         imgUrl: BidZippy,
         imgAlt: "BidZippy Homepage",
-        title: "BidZippy™",
-        description: "Quickly Find the Best Auctions on eBay.",
+        title: "BidZippy",
+        description: "Quick Filters to find the Best Auctions on eBay.",
         url: "https://bidzippy.com",
         framework: "NextJS",
         role: "Creator"
@@ -30,17 +29,8 @@ export const projectData = [
         title: "Big Cigar Guy",
         description: "A lifestyle brand for the modern-day cigar enthusiast.",
         url: "https://bigcigarguy.com",
-        framework: "Spring",
+        framework: "React",
         role: "Creator"
-    },
-    {
-        imgUrl: SVPLYCHVNScreenshot,
-        imgAlt: "Supply Chain by Daramola",
-        title: "svplychvn.com",
-        description: "A Web3 Music Experiment by Artist and Music Producer Daramola.",
-        url: "https://svplychvn.com",
-        framework: "T3",
-        role: "Lead Dev"
     },
     {
         imgUrl: NYCScreenshot,
