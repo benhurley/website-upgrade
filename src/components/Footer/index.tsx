@@ -11,7 +11,7 @@ font-size: 10px
 export const Footer = () => {
     return (
         <Container>
-            <p>Created with ♥ by Ben, 2024.</p>
+            <p>Created with ♥ by Ben, 2025.</p>
         </Container>
     )
 }
