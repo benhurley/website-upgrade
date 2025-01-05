@@ -3,6 +3,7 @@ import { FadeInComponent } from "../../helpers/FadeInComponent";
 import { SlideInText } from "../../helpers/SlideInText";
 import { productData } from "../Websites/productData";
 import { CardWithCTAs } from "../../components/CardWithCTAs";
+import NPRScreenshot from "../../img/npr.webp";
 
 const Row = styled.div`
   display: flex;
@@ -59,11 +60,24 @@ margin-top: 2rem;
 margin-bottom: 0;
 `
 
+const MaxWidthP = styled.p`
+margin: auto;
+max-width: 70rem;
+margin-bottom: 2rem;
+`
+
+const Citations = styled.div`
+margin: 0 2rem;
+text-align: left;
+margin-top: 2rem;
+`
+
+
 export const Health = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Save Your Balls" size="h1" />
+                <SlideInText text="Ditch the Platic (& Save Your Balls)" size="h1" />
                 <Row>
                     <Col>
                         <HyperLink
@@ -71,7 +85,7 @@ export const Health = () => {
                             rel='noopener noreferrer'
                             href='https://www.npr.org/sections/health-shots/2024/05/22/1252831827/microplastics-testicles-humans-health'
                         >
-                            <RoundedImg src="../../src/img/nrp.webp" />
+                            <RoundedImg src={NPRScreenshot} />
                         </HyperLink>
                     </Col>
                     <Col>
@@ -87,7 +101,7 @@ export const Health = () => {
                 </Row>
             </FadeInComponent>
             <h2>My Non-Plastic Picks</h2>
-            <Disclaimer>Disclaimer: These are affilicate links.</Disclaimer>
+            <Disclaimer>Disclaimer: Amazon affiliate links below.</Disclaimer>
             <Grid>
                 {productData.map((product, index) => (
                     <FadeInComponent key={index} timeout={index * 400}>
@@ -103,6 +117,24 @@ export const Health = () => {
                     </FadeInComponent>
                 ))}
             </Grid>
+            <h2>Why Should I Care?</h2>
+            <MaxWidthP>Microplastics are harmful because they can accumulate in the human body and may lead to various health issues, including cardiovascular problems, reproductive issues, and even cancer. They can also disrupt hormonal and metabolic functions.¹ ²</MaxWidthP>
+            <b>Not to mention, they are <i>literally</i> inside our balls.</b>
+            <Citations>
+            <hr />
+                <div>
+                    <Disclaimer>¹ <HyperLink
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        href='https://www.aamc.org/news/microplastics-are-inside-us-all-what-does-mean-our-health'>aamc.org - Microplastics are inside us all. What does that mean for our health?</HyperLink></Disclaimer>
+                </div>
+                <div>
+                    <Disclaimer>² <HyperLink
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        href='https://www.ewg.org/news-insights/news/2024/03/new-study-links-microplastics-serious-health-harms-humans'>ewg.org - New study links microplastics to serious health harms in humans</HyperLink></Disclaimer>
+                </div>
+            </Citations>
         </FadeInComponent>
     );
 }
