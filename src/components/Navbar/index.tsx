@@ -18,6 +18,7 @@ const tabs = [
     { name: "Chatbots", path: "/chatbots" },
     { name: 'Domains', path: '/domains' },
     { name: 'Contact', path: '/contact' },
+    { name: "Save Your Balls", path: '/saveyourballs'},
     { name: 'Donate', path: 'https://pay.justben.fyi' }
 ];
 
@@ -108,7 +109,7 @@ export const NavBar = () => {
                                                 <Button
                                                     key={index}
                                                     onClick={() => handleTabSelection(tab.path)}
-                                                    sx={{ my: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20 }}
+                                                    sx={{ my: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20, textAlign: 'left'}}
                                                 >
                                                     {tab.name}
                                                 </Button>

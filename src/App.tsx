@@ -12,6 +12,7 @@ import { Chatbots } from './pages/Chatbots';
 import { Contact } from './pages/Contact';
 import { About } from './pages/About';
 import ScrollToTop from './helpers/ScrollToTop';
+import { Health } from './pages/Health';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -49,6 +50,7 @@ function App() {
             <Route path="/websites" element={<Websites />} />
             <Route path="/domains" element={<Domains />} />
             <Route path="/chatbots" element={<Chatbots />} />
+            <Route path="/saveyourballs" element={<Health />} />
             <Route path="/contact" element={<Contact />} />
             <Route path='*' element={<Home />} />
           </Routes>
