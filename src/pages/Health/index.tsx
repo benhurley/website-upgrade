@@ -90,7 +90,7 @@ export const Health = () => {
                         </HyperLink>
                     </Col>
                     <Col>
-                        <p>Microplatics are appearing in human testicles at alarming rates...&nbsp;
+                        <p>Microplastics are appearing in human testicles at alarming rates.&nbsp;
                             <HyperLink
                                 target='_blank'
                                 rel='noopener noreferrer'
