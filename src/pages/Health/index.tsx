@@ -120,7 +120,7 @@ export const Health = () => {
             </Grid>
             <h2>Why Should I Care?</h2>
             <MaxWidthP>Microplastics are harmful because they can accumulate in the human body and may lead to various health issues, including cardiovascular problems, reproductive issues, and even cancer.¹ ²</MaxWidthP>
-            <b>Not to mention, they are <i>literally</i> inside our balls.</b>
+            <b>Also, they are <i>literally</i> inside our balls.</b>
             <Citations>
             <hr />
                 <div>
