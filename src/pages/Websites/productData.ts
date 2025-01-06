@@ -10,6 +10,8 @@ import CuttingBoards from "../../img/products/cuttingBoards.webp";
 import SaucePan from "../../img/products/saucePan.webp";
 import SmallSkillet from "../../img/products/smallSkillet.webp";
 import LargeSkiller from "../../img/products/largeSkillet.webp";
+import ToothbrushHeads from "../../img/products/toothbrushHeads.webp";
+import Boxers from "../../img/products/boxers.webp";
 
 export const productData = [
     {
@@ -74,6 +76,20 @@ export const productData = [
         title: "Steel Sponge Holder",
         description: "Stainless Steel Suction Cup Sponge Caddy. Fits Coconut Sponges.",
         url: "https://amzn.to/4070Oak",
+    },
+    {
+        imgUrl: ToothbrushHeads,
+        imgAlt: "Bamboo Brush Heads",
+        title: "Bamboo Brush Heads",
+        description: "Electric Toothbrush Heads (4-Pack). Philips Sonicare Compatible.",
+        url: "https://amzn.to/4jffa1k",
+    },
+    {
+        imgUrl: Boxers,
+        imgAlt: "Cotton Boxer Briefs",
+        title: "Cotton Boxer Briefs",
+        description: "Calvin Klein Men's 100% Cotton Classics. 5-Pack.",
+        url: "https://amzn.to/3W9fyo1",
     },
     {
         imgUrl: Tenderizer,
