@@ -61,6 +61,7 @@ margin-bottom: 0;
 `
 
 const MaxWidthP = styled.p`
+padding: 0 2rem;
 margin: auto;
 max-width: 70rem;
 margin-bottom: 2rem;
@@ -118,7 +119,7 @@ export const Health = () => {
                 ))}
             </Grid>
             <h2>Why Should I Care?</h2>
-            <MaxWidthP>Microplastics are harmful because they can accumulate in the human body and may lead to various health issues, including cardiovascular problems, reproductive issues, and even cancer. They can also disrupt hormonal and metabolic functions.¹ ²</MaxWidthP>
+            <MaxWidthP>Microplastics are harmful because they can accumulate in the human body and may lead to various health issues, including cardiovascular problems, reproductive issues, and even cancer.¹ ²</MaxWidthP>
             <b>Not to mention, they are <i>literally</i> inside our balls.</b>
             <Citations>
             <hr />
