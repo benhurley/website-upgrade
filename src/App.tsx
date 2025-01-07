@@ -2,7 +2,6 @@ import { NavBar } from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from './pages/Home';
 import { Websites } from './pages/Websites';
-import { Domains } from './pages/Domains';
 import { Footer } from './components/Footer';
 import styled, { createGlobalStyle } from "styled-components";
 import backgroundImg from "./img/background.webp";
@@ -48,7 +47,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/websites" element={<Websites />} />
-            <Route path="/domains" element={<Domains />} />
             <Route path="/chatbots" element={<Chatbots />} />
             <Route path="/saveyourballs" element={<Health />} />
             <Route path="/contact" element={<Contact />} />
