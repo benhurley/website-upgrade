@@ -11,7 +11,7 @@ import hand from "../../img/hand.webp";
 import Marquee from "react-fast-marquee";
 
 import BonobosLogo from "../../img/bonobos.webp";
-import DailyHarvestLogo from "../../img/dhlogo.webp";
+import DailyHarvestLogo from "../../img/dhLogo.webp";
 import RockstarLogo from "../../img/rockstarlogo.webp";
 import NielsenLogo from "../../img/nielsenLogo.webp";
 
