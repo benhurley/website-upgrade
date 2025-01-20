@@ -4,17 +4,21 @@ import { PrimaryAnchorButton } from '../Buttons/PrimaryLinkButton';
 import { SecondaryAnchorButton } from '../Buttons/SecondaryLinkButton';
 
 const Container = styled.div`
-width: 275px;
-min-height: 300px;
-padding: 28px;
-margin: auto;
-background-color: black;
-color: white;
-height: auto;
-border: 1px solid;
-border-color: #43464B;
-border-radius: 30px;
-box-shadow: 8px 8px #43464B;
+  width: 275px;
+  min-height: 300px;
+  padding: 28px;
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  background-color: black;
+  color: white;
+  
+ border: 1.5px solid white;
+  border-radius: 1rem;
+  
+ box-shadow: 8px 8px #43464B;
 `
 
 const ImageRectangle = styled.img`
@@ -38,7 +42,6 @@ height: 175px;
 const Title = styled.h2`
 margin-top: 10px;
 margin-bottom: 10px;
-font-family: 'Kdam Thmor Pro', sans-serif;
 text-decoration: underline;
 text-decoration-color: black;
 color: white;
@@ -47,7 +50,6 @@ color: white;
 const Description = styled.p`
 font-size: 16px;
 line-height: 1.2;
-font-family: 'Kdam Thmor Pro', sans-serif;
 text-decoration: underline;
 text-decoration-color: black;
 color: white;
@@ -62,7 +64,7 @@ margin-bottom: 4px;
 
 const Role = styled.p`
 display: inline-block;
-padding: 1px 12px;
+padding: 0 0.5rem;
 border-radius: 50px;
 width: fit-content;
 text-decoration-color: #F5F5F5;
@@ -81,8 +83,7 @@ margin-right: 8px;
 
 const CTAWrapper = styled.div`
 display: block;
-min-height: 75px;
-margin-top: 10px;
+margin: 2rem 0;
 `
 
 const CTAContainer = styled.div`
@@ -130,11 +131,11 @@ export const CardWithCTAs = ({ item, imageShape = 'rectangle', primaryCTAData, s
                 <CTAContainer>
                     {primaryCTAData?.url &&
                         <CTAWrapper>
-                            <SecondaryAnchorButton target="_blank" rel="noopener noreferrer" href={primaryCTAData.url} >{primaryCTAData?.buttonText}</SecondaryAnchorButton>
+                            <PrimaryAnchorButton target="_blank" rel="noopener noreferrer" href={primaryCTAData.url} >{primaryCTAData?.buttonText}</PrimaryAnchorButton>
                         </CTAWrapper>}
                     {secondaryCTAData?.url &&
                         <CTAWrapper>
-                            <PrimaryAnchorButton target="_blank" rel="noopener noreferrer" href={secondaryCTAData?.url}>{secondaryCTAData?.buttonText}</PrimaryAnchorButton>
+                            <SecondaryAnchorButton target="_blank" rel="noopener noreferrer" href={secondaryCTAData?.url}>{secondaryCTAData?.buttonText}</SecondaryAnchorButton>
                         </CTAWrapper>}
                 </CTAContainer>
         </Container>

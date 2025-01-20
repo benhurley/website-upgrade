@@ -116,10 +116,6 @@ export const Chatbots = () => {
                             imageShape="round"
                             primaryCTAData={{
                                 buttonText: "Try for Free",
-                                url: gptData[0].subdomain,
-                            }}
-                            secondaryCTAData={{
-                                buttonText: "ChatGPT+ Version",
                                 url: gptData[0].url
                             }}
                         />
@@ -135,11 +131,7 @@ export const Chatbots = () => {
                             item={gpt}
                             imageShape="round"
                             primaryCTAData={{
-                                buttonText: "Try for Free",
-                                url: gpt.subdomain,
-                            }}
-                            secondaryCTAData={{
-                                buttonText: "ChatGPT+ Version",
+                                buttonText: `Try for Free`,
                                 url: gpt.url,
                             }}
                         />

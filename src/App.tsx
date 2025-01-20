@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
 
 const AppContainer = styled.div`
   text-align: center;
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   color: white;
   overflow-x: hidden;
   color: white;

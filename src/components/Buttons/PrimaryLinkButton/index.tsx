@@ -2,35 +2,58 @@ import styled from "styled-components"
 import { Link } from 'react-router-dom';
 
 export const PrimaryAnchorButton = styled.a`
-text-transform: uppercase;
-text-decoration: none !important;
-color: white;
-border-radius: 100px;
-padding: 20px 40px 20px 40px;
-font-size: 14px;
-cursor: pointer;
-background: #000000;
-border: 1px solid #43464B;
-box-shadow: 4px 4px #43464B;
-border-radius: 100px;
-&:hover {
-    background: #0c0d0c;
-}
+text-transform: capitalize;
+ padding: 8px 16px;
+ margin: 0;
+ position: relative;
+ top: 0;
+ left: 0;
+ 
+ font-size: 100%;
+ font-weight: 700;
+ line-height: inherit;
+ letter-spacing: inherit;
+ white-space: nowrap;
+ text-decoration: none;
+ 
+ background-color: white;
+ color: black;
+ 
+ border: 1.5px solid white;
+ border-radius: 0.5rem;
+ 
+ box-shadow: 4px 4px #43464B;
+ cursor: pointer;
+ user-select: none;
 `
 
 export const PrimaryLinkButton = styled(Link)`
-text-transform: uppercase;
-text-decoration: none !important;
-color: white;
-border-radius: 100px;
-padding: 20px 40px 20px 40px;
-font-size: 14px;
-cursor: pointer;
-background: #000000;
-border: 1px solid #43464B;
-box-shadow: 4px 4px #43464B;
-border-radius: 100px;
-&:hover {
-    background: #0c0d0c;
-}
-`
+text-transform: capitalize;
+ padding: 8px 16px;
+ margin: 0;
+ position: relative;
+ top: 0;
+ left: 0;
+ 
+ font-size: 100%;
+ font-weight: 700;
+ line-height: inherit;
+ letter-spacing: inherit;
+ white-space: nowrap;
+ text-decoration: none;
+ 
+ background-color: white;
+ color: black;
+ 
+ border: 1.5px solid white;
+ border-radius: 0.5rem;
+ 
+ box-shadow: 4px 4px #43464B;
+ cursor: pointer;
+ user-select: none;
+ transition: all 75ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+  &:hover {
+    transform: translate(2px, 2px);
+  }
+`;

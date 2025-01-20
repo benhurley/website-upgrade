@@ -78,7 +78,7 @@ export const Health = () => {
     return (
         <FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Ditch the Plastic (& Save Your Balls)" size="h1" />
+                <SlideInText text="Ditch the Plastic" size="h1" />
                 <Row>
                     <Col>
                         <HyperLink

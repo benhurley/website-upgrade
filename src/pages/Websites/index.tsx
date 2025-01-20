@@ -5,8 +5,6 @@ import { SlideInText } from "../../helpers/SlideInText";
 import { projectData } from "./projectData";
 import { SecondaryAnchorButton } from "../../components/Buttons/SecondaryLinkButton";
 import { workData } from "./workData";
-import SocialClubLogo from "../../img/socialclub.webp";
-import SouthwestLogo from "../../img/southwest.webp";
 
 const Grid = styled.div`
     max-width: 1050px;
@@ -21,17 +19,6 @@ const LinkContainer = styled.div`
   margin: 16px;
 `;
 
-const LogoSection = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 0 2rem;
-flex-wrap: wrap;
-`
-
-const Logo = styled.img`
-margin: 0 1rem 1rem;
-`
 
 export const Websites = () => {
     return (
@@ -52,17 +39,6 @@ export const Websites = () => {
                     </FadeInComponent>
                 ))}
             </Grid>
-            <FadeInComponent timeout={500}>
-                <SlideInText text="Confidential" size="h2" />
-            </FadeInComponent>
-            <LogoSection>
-                <FadeInComponent timeout={500}>
-                    <Logo alt="social club logo" src={SocialClubLogo} width={250} />
-                </FadeInComponent>
-                <FadeInComponent timeout={500}>
-                    <Logo alt="southwest logo" src={SouthwestLogo} width={250} />
-                </FadeInComponent>
-            </LogoSection>
             <FadeInComponent timeout={750}>
                 <SlideInText text="Side Projects" size="h2" />
             </FadeInComponent>

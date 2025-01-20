@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
@@ -6,10 +5,15 @@ import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButto
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import ReactCardFlip from 'react-card-flip';
 import { SlideInText } from '../../helpers/SlideInText';
-
 import artHeadshot from "../../img/me.webp";
 import artHeadshotReversed from "../../img/me-reversed.webp";
 import hand from "../../img/hand.webp";
+import Marquee from "react-fast-marquee";
+
+import BonobosLogo from "../../img/bonobos.webp";
+import DailyHarvestLogo from "../../img/dhlogo.webp";
+import RockstarLogo from "../../img/rockstarlogo.webp";
+import NielsenLogo from "../../img/nielsenLogo.webp";
 
 const waveAnimation = keyframes`
   0% { transform: rotate( 0.0deg) }
@@ -27,7 +31,7 @@ const WaveContainer = styled.div`
 `
 
 const Wave = styled.div`
-  animation-delay: 1.75s;
+  animation-delay: 2.25s;
   animation-name: ${waveAnimation};
   animation-duration: 2.25s;
   transform-origin: 70% 70%;
@@ -58,6 +62,7 @@ border-color: white;
 
 const CTAContainer = styled.div`
 margin-top: 10px;
+margin-bottom: 8rem;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
@@ -68,17 +73,27 @@ const ChatbotsButton = styled(SecondaryLinkButton)`
 `
 
 const WebsitesButton = styled(PrimaryLinkButton)`
-padding-left: 45px;
-padding-right: 45px;
 `
 
 const Subtitle = styled.h2`
 font-size: 20px;
-margin-bottom: 2rem;
+margin-bottom: 1rem;
 `
 
+const MarqueeWrapper = styled.div`
+display: block;
+justify-content: center;
+margin: auto;
+max-width: 50rem;
+`
+
+const Logo = styled.img<{ height: number }>`
+  margin: 0 2.25rem;
+  height: ${({ height }) => (`${height}px`)};
+`;
+
 export const Home = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(true);
 
   return (
     <FadeInComponent>
@@ -86,7 +101,7 @@ export const Home = () => {
         <FadeInComponent timeout={500}>
           <WaveContainer>
             <SlideInText text="Hey, I&apos;m Ben" size="h1" />
-            <FadeInComponent timeout={1000}>
+            <FadeInComponent timeout={1500}>
               <Wave><Hand width={35} height={45} src={hand} alt="waiving hand" /></Wave>
             </FadeInComponent>
           </WaveContainer>
@@ -114,6 +129,21 @@ export const Home = () => {
           <WebsitesButton to="/websites">My Websites</WebsitesButton>
           <ChatbotsButton to="/chatbots">My Chatbots</ChatbotsButton>
         </CTAContainer>
+        <MarqueeWrapper>
+          <Marquee
+            pauseOnClick
+            pauseOnHover
+            autoFill
+            gradient
+            gradientColor='black'
+            speed={40}
+          >
+            <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
+            <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
+            <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
+            <Logo alt="nielsen logo" src={NielsenLogo} height={30} />
+          </Marquee>
+        </MarqueeWrapper>
       </Container>
     </FadeInComponent>
   )

@@ -41,8 +41,6 @@ margin-right: 10px;
 const WebsitesButton = styled(PrimaryLinkButton)`
 margin-left: 10px;
 margin-right: 10px;
-padding-left: 45px;
-padding-right: 45px;
 `
 
 const Subtitle = styled.h2`

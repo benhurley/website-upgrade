@@ -23,8 +23,7 @@ const tabs = [
 
 const MUINavBar = styled(AppBar)`
 position: sticky;
-background-color: black !important;
-font-family: 'Kdam Thmor Pro', sans-serif;
+background-color: transparent !important;
 `
 
 export const NavBar = () => {
@@ -80,7 +79,7 @@ export const NavBar = () => {
             <MUINavBar>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
                             <IconButton
                                 size="large"
                                 aria-label="account of current user"
@@ -94,13 +93,13 @@ export const NavBar = () => {
                             <Menu
                                 id="menu-appbar"
                                 isOpen={menuOpen}
-                                onStateChange={() => setMenuOpen(menuOpen)}
+                                onClose={() => setMenuOpen(false)}
                                 styles={muiStyleOverrides}
                                 customBurgerIcon={false}
                             >
                                 {tabs.map((tab, index) => {
                                     return tab.path.includes('https') ?
-                                        (<a style={{ marginTop: 3, marginBottom: 3, marginLeft: 8, color: 'white', display: 'flex', justifyContent: 'left', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20, textTransform: 'uppercase' }}
+                                        (<a style={{ marginTop: 3, marginBottom: 3, marginLeft: 8, color: 'white', display: 'flex', justifyContent: 'left', fontSize: 20 }}
                                             aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
                                         :
                                         (<div onClick={() => handleTabSelection(tab.path)}>
@@ -108,7 +107,7 @@ export const NavBar = () => {
                                                 <Button
                                                     key={index}
                                                     onClick={() => handleTabSelection(tab.path)}
-                                                    sx={{ my: 3, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif', fontSize: 20, textAlign: 'left'}}
+                                                    sx={{ my: 3, color: 'white', display: 'block', fontSize: 20, textAlign: 'left', textTransform: 'capitalize'}}
                                                 >
                                                     {tab.name}
                                                 </Button>
@@ -116,25 +115,6 @@ export const NavBar = () => {
                                         </div>)
                                 })}
                             </Menu>
-                        </Box>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            {tabs.map((tab, index) => {
-                                return tab.path.includes('https') ?
-                                    (<a style={{ marginLeft: 8, marginRight: -2, color: 'white', display: 'flex', alignItems: 'center', fontFamily: 'Kdam Thmor Pro, sans-serif', textDecoration: 'none', fontSize: 14, minWidth: 100, textTransform: 'uppercase' }}
-                                        aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
-                                    :
-                                    (
-                                        <FadeInComponent key={index}>
-                                            <Button
-                                                key={index}
-                                                onClick={() => handleTabSelection(tab.path)}
-                                                sx={{ my: 2, color: 'white', display: 'block', fontFamily: 'Kdam Thmor Pro, sans-serif' }}
-                                            >
-                                                {tab.name}
-                                            </Button>
-                                        </FadeInComponent>
-                                    )
-                            })}
                         </Box>
                     </Toolbar>
                 </Container>
