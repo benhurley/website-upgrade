@@ -12,7 +12,7 @@ import Marquee from "react-fast-marquee";
 
 import BonobosLogo from "../../img/bonobos.webp";
 import DailyHarvestLogo from "../../img/dhLogo.webp";
-import RockstarLogo from "../../img/rockstarlogo.webp";
+import RockstarLogo from "../../img/rockstarLogo.webp";
 import NielsenLogo from "../../img/nielsenLogo.webp";
 
 const waveAnimation = keyframes`
