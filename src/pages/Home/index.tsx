@@ -136,7 +136,7 @@ export const Home = () => {
             autoFill
             gradient
             gradientColor='black'
-            speed={40}
+            speed={45}
           >
             <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
             <Logo alt="bonobos logo" src={BonobosLogo} height={30} />

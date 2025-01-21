@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import styled from 'styled-components';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import { useNavigate } from 'react-router-dom';
-import { stack as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import { IconButton } from '@mui/material';
 
 const tabs = [
