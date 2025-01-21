@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import styled from 'styled-components';
 import { FadeInComponent } from '../../helpers/FadeInComponent';
 import { useNavigate } from 'react-router-dom';
-import { slide as Menu } from 'react-burger-menu';
+import { stack as Menu } from 'react-burger-menu';
 import { IconButton } from '@mui/material';
 
 const tabs = [
@@ -77,7 +77,7 @@ export const NavBar = () => {
     return (
         <FadeInComponent>
             <MUINavBar>
-                <Container maxWidth="xl">
+                <Container maxWidth="xl" sx={{backgroundColor: 'black'}}>
                     <Toolbar disableGutters>
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
                             <IconButton
@@ -99,7 +99,7 @@ export const NavBar = () => {
                             >
                                 {tabs.map((tab, index) => {
                                     return tab.path.includes('https') ?
-                                        (<a style={{ marginTop: 3, marginBottom: 3, marginLeft: 8, color: 'white', display: 'flex', justifyContent: 'left', fontSize: 20 }}
+                                        (<a style={{ top: 0,  marginTop: 3, marginBottom: 3, marginLeft: 8, color: 'white', display: 'flex', justifyContent: 'left', fontSize: 20 }}
                                             aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
                                         :
                                         (<div onClick={() => handleTabSelection(tab.path)}>
