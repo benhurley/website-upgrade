@@ -62,7 +62,7 @@ border-color: white;
 
 const CTAContainer = styled.div`
 margin-top: 10px;
-margin-bottom: 8rem;
+margin-bottom: 6rem;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
