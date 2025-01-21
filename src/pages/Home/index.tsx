@@ -133,14 +133,13 @@ export const Home = () => {
           <Marquee
             pauseOnClick
             pauseOnHover
-            autoFill
             gradient
             gradientColor='black'
             speed={45}
           >
             <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
-            <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
             <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
+            <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
             <Logo alt="nielsen logo" src={NielsenLogo} height={30} />
           </Marquee>
         </MarqueeWrapper>
