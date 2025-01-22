@@ -130,21 +130,23 @@ export const Home = () => {
           <WebsitesButton to="/websites">My Websites</WebsitesButton>
           <ChatbotsButton to="/chatbots">My Chatbots</ChatbotsButton>
         </CTAContainer>
-        <MarqueeWrapper>
-          <Marquee
-            pauseOnClick
-            pauseOnHover
-            gradient
-            gradientColor='black'
-            speed={45}
-          >
-            <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
-            <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
-            <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
-            <Logo alt="nielsen logo" src={NielsenLogo} height={30} />
-            <Logo alt="pariveda logo" src={ParivedaLogo} height={25} />
-          </Marquee>
-        </MarqueeWrapper>
+        <FadeInComponent timeout={2900}>
+          <MarqueeWrapper>
+            <Marquee
+              pauseOnClick
+              pauseOnHover
+              gradient
+              gradientColor='black'
+              speed={45}
+            >
+              <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
+              <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
+              <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
+              <Logo alt="nielsen logo" src={NielsenLogo} height={30} />
+              <Logo alt="pariveda logo" src={ParivedaLogo} height={25} />
+            </Marquee>
+          </MarqueeWrapper>
+        </FadeInComponent>
       </Container>
     </FadeInComponent>
   )
