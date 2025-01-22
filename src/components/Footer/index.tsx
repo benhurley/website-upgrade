@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { FadeInComponent } from "../../helpers/FadeInComponent"
 
 const Container = styled.div`
 width: 100%;
@@ -10,8 +11,10 @@ font-size: 10px
 
 export const Footer = () => {
     return (
-        <Container>
-            <p>2025, Created with ♥ by Ben.</p>
-        </Container>
+        <FadeInComponent timeout={2900}>
+            <Container>
+                <p>2025, Created with ♥ by Ben.</p>
+            </Container>
+        </FadeInComponent>
     )
 }
