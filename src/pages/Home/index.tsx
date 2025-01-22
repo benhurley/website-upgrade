@@ -14,6 +14,7 @@ import BonobosLogo from "../../img/bonobos.webp";
 import DailyHarvestLogo from "../../img/dhLogo.webp";
 import RockstarLogo from "../../img/rockstarLogo.webp";
 import NielsenLogo from "../../img/nielsenLogo.webp";
+import ParivedaLogo from "../../img/pariveda.webp";
 
 const waveAnimation = keyframes`
   0% { transform: rotate( 0.0deg) }
@@ -62,7 +63,7 @@ border-color: white;
 
 const CTAContainer = styled.div`
 margin-top: 10px;
-margin-bottom: 6rem;
+margin-bottom: 8rem;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
@@ -137,10 +138,11 @@ export const Home = () => {
             gradientColor='black'
             speed={45}
           >
-            <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
             <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
             <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
+            <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
             <Logo alt="nielsen logo" src={NielsenLogo} height={30} />
+            <Logo alt="pariveda logo" src={ParivedaLogo} height={25} />
           </Marquee>
         </MarqueeWrapper>
       </Container>
