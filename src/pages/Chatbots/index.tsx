@@ -93,26 +93,26 @@ export const Chatbots = () => {
                         <SpotlightWrapper>
                             <SpotlightTitle>
                                 Spotlight:{" "}
-                                <SpotlightCTA style={{color: '#38E8B0'}} href={gptData[0].url} target="_blank" rel="noopener noreferrer">
+                                <SpotlightCTA style={{ color: '#38E8B0' }} href={gptData[0].url} target="_blank" rel="noopener noreferrer">
                                     GolfGPT
                                 </SpotlightCTA>
                             </SpotlightTitle>
                             <SpotlightSubtitle>25,000+ conversations to-date</SpotlightSubtitle>
                             <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
-                                    <SpotlightImg src={FeaturedImg} />
+                                <SpotlightImg src={FeaturedImg} />
+                            </SpotlightCTA>
+                            <SpotlightImgCaption>(
+                                <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
+                                    GPT Store
                                 </SpotlightCTA>
-                                <SpotlightImgCaption>(
-                                    <SpotlightCTA href="https://chat.openai.com/gpts" target="_blank" rel="noopener noreferrer">
-                                        GPT Store
-                                    </SpotlightCTA>
-                                    {" "}screenshot from 2/16/24)
-                                </SpotlightImgCaption>
+                                {" "}screenshot from 2/16/24)
+                            </SpotlightImgCaption>
                         </SpotlightWrapper>
                     </Col>
                     <Col>
-                        <CardWithCTAs 
-                            key='gpt-spotlight' 
-                            item={gptData[0]} 
+                        <CardWithCTAs
+                            key='gpt-spotlight'
+                            item={gptData[0]}
                             imageShape="round"
                             primaryCTAData={{
                                 buttonText: "Try for Free",
@@ -122,22 +122,26 @@ export const Chatbots = () => {
                     </Col>
                 </Row>
             </FadeInComponent>
-            <h2>My Chatbots</h2>
-            <Grid>
-                {gptData.slice(1).map((gpt, index) => (
-                    <FadeInComponent key={index} timeout={index * 400}>
-                        <CardWithCTAs
-                            key={index}
-                            item={gpt}
-                            imageShape="round"
-                            primaryCTAData={{
-                                buttonText: `Try for Free`,
-                                url: gpt.url,
-                            }}
-                        />
-                    </FadeInComponent>
-                ))}
-            </Grid>
+            <FadeInComponent timeout={750}>
+                <h2>My Chatbots</h2>
+            </FadeInComponent>
+            <FadeInComponent>
+                <Grid>
+                    {gptData.slice(1).map((gpt, index) => (
+                        <FadeInComponent key={index} timeout={index * 400}>
+                            <CardWithCTAs
+                                key={index}
+                                item={gpt}
+                                imageShape="round"
+                                primaryCTAData={{
+                                    buttonText: `Try for Free`,
+                                    url: gpt.url,
+                                }}
+                            />
+                        </FadeInComponent>
+                    ))}
+                </Grid>
+            </FadeInComponent>
             <FadeInComponent timeout={gptData.length * 400}>
                 <LinkContainer>
                     <h2>Chatbot questions?</h2>

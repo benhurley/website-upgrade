@@ -27,7 +27,7 @@ export const Websites = () => {
                 <SlideInText text="Websites" size="h1" />
             </FadeInComponent>
             <FadeInComponent timeout={250}>
-                <SlideInText text="Public Showcase" size="h2" />
+                <h2>Public Showcase</h2>
             </FadeInComponent>
             <Grid>
                 {workData.map((project, index) => (
@@ -39,12 +39,13 @@ export const Websites = () => {
                     </FadeInComponent>
                 ))}
             </Grid>
-            <FadeInComponent timeout={750}>
-                <SlideInText text="Side Projects" size="h2" />
+            <br />
+            <FadeInComponent timeout={workData.length * 400}>
+                <h2>Side Projects</h2>
             </FadeInComponent>
             <Grid>
                 {projectData.map((project, index) => (
-                    <FadeInComponent key={index} timeout={index * 400}>
+                    <FadeInComponent key={index} timeout={(workData.length * 400) + (index * 400)}>
                         <Card
                             key={index}
                             item={project}
@@ -52,7 +53,7 @@ export const Websites = () => {
                     </FadeInComponent>
                 ))}
             </Grid>
-            <FadeInComponent timeout={projectData.length * 400}>
+            <FadeInComponent timeout={((workData.length * 400) + (projectData.length * 400))}>
                 <LinkContainer>
                     <h2>Website questions?</h2>
                     <SecondaryAnchorButton rel="noopener noreferrer" target="_blank" href={'mailto:justbenfyi@pm.me'}>send me an email</SecondaryAnchorButton>
