@@ -11,10 +11,8 @@ font-size: 10px
 
 export const Footer = () => {
     return (
-        <FadeInComponent>
-            <Container>
-                <p>2025, Created with ♥ by Ben.</p>
-            </Container>
-        </FadeInComponent>
+        <Container>
+            <p>2025, Created with ♥ by Ben.</p>
+        </Container>
     )
 }
