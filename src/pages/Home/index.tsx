@@ -15,6 +15,7 @@ import DailyHarvestLogo from "../../img/dhLogo.webp";
 import RockstarLogo from "../../img/rockstarLogo.webp";
 import NielsenLogo from "../../img/nielsenLogo.webp";
 import ParivedaLogo from "../../img/pariveda.webp";
+import BenVenturesLogo from "../../img/benventures.webp";
 
 const waveAnimation = keyframes`
   0% { transform: rotate( 0.0deg) }
@@ -82,6 +83,7 @@ margin-bottom: 1rem;
 `
 
 const MarqueeWrapper = styled.div`
+cursor: pointer;
 display: block;
 justify-content: center;
 margin: auto;
@@ -95,7 +97,7 @@ const Logo = styled.img<{ height: number }>`
 
 export const Home = () => {
   const [isFlipped, setIsFlipped] = useState(true);
-
+  const [shouldPlay, setShouldPlay] = useState(true);
   return (
     <FadeInComponent>
       <Container>
@@ -131,19 +133,20 @@ export const Home = () => {
           <ChatbotsButton to="/chatbots">My Chatbots</ChatbotsButton>
         </CTAContainer>
         <FadeInComponent timeout={2900}>
-          <MarqueeWrapper>
+          <MarqueeWrapper onClick={() => setShouldPlay(!shouldPlay)}>
             <Marquee
+            play={shouldPlay}
               pauseOnClick
-              pauseOnHover
               gradient
               gradientColor='black'
               speed={45}
             >
+              <Logo alt="nielsen logo" src={NielsenLogo} height={30} />
+              <Logo alt="pariveda logo" src={ParivedaLogo} height={25} />
+              <Logo alt="ben ventures logo" src={BenVenturesLogo} height={35} />
               <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
               <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
               <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
-              <Logo alt="nielsen logo" src={NielsenLogo} height={30} />
-              <Logo alt="pariveda logo" src={ParivedaLogo} height={25} />
             </Marquee>
           </MarqueeWrapper>
         </FadeInComponent>
