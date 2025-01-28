@@ -15,7 +15,7 @@ import DailyHarvestLogo from "../../img/dhLogo.webp";
 import RockstarLogo from "../../img/rockstarLogo.webp";
 import NielsenLogo from "../../img/nielsenLogo.webp";
 import ParivedaLogo from "../../img/pariveda.webp";
-import BenVenturesLogo from "../../img/benventures.webp";
+import BenVenturesLogo from "../../img/benVentures.webp";
 
 const waveAnimation = keyframes`
   0% { transform: rotate( 0.0deg) }
