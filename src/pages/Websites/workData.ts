@@ -34,6 +34,15 @@ export const workData = [
         role: "Creator"
     },
     {
+        imgUrl: SVPLYCHVNScreenshot,
+        imgAlt: "Supply Chain by Daramola",
+        title: "SVPLY CHVN",
+        description: "A Music Experiment by Grammy Award Winner Daramola.",
+        url: "https://svplychvn.com",
+        framework: "T3",
+        role: "Lead Dev"
+    },
+    {
         imgUrl: SmokeBroScreenshot,
         imgAlt: "Smoke Bro Homepage",
         title: "SmokeBro ®",
@@ -41,15 +50,6 @@ export const workData = [
         url: "https://mysmokebro.com",
         framework: "GoDaddy",
         role: "Creator"
-    },
-    {
-        imgUrl: SVPLYCHVNScreenshot,
-        imgAlt: "Supply Chain by Daramola",
-        title: "SVPLY CHVN",
-        description: "A Music Experiment by Grammy-Nominated Music Producer Daramola.",
-        url: "https://svplychvn.com",
-        framework: "T3",
-        role: "Lead Dev"
     },
     {
         imgUrl: BetaEtaScreenshot,
