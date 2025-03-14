@@ -46,7 +46,7 @@ export const NavBar = () => {
         bmMenuWrap: {
             position: 'fixed',
             height: '100%',
-            width: '50%',
+            width: '55%',
             maxWidth: '250px',
             left: '0',
             borderRight: '0.5px solid #44464B'

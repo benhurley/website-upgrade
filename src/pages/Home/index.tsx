@@ -11,11 +11,12 @@ import hand from "../../img/hand.webp";
 import Marquee from "react-fast-marquee";
 
 import BonobosLogo from "../../img/bonobos.webp";
-import DailyHarvestLogo from "../../img/dhLogo.webp";
+import DailyHarvestLogo from "../../img/dailyharvest.webp";
 import RockstarLogo from "../../img/rockstarLogo.webp";
-import NielsenLogo from "../../img/nielsenLogo.webp";
-import ParivedaLogo from "../../img/pariveda.webp";
-import BenVenturesLogo from "../../img/benVentures.webp";
+import ttmLogo from "../../img/ttmLogo.webp";
+import nippiesLogo from "../../img/nippiesLogo.webp";
+import svplychvnLogo from "../../img/svplychvn.webp";
+import smokebroLogo from "../../img/smokebroLogo.webp";
 
 const waveAnimation = keyframes`
   0% { transform: rotate( 0.0deg) }
@@ -135,18 +136,19 @@ export const Home = () => {
         <FadeInComponent timeout={2900}>
           <MarqueeWrapper onClick={() => setShouldPlay(!shouldPlay)}>
             <Marquee
-            play={shouldPlay}
+              play={shouldPlay}
               pauseOnClick
               gradient
               gradientColor='black'
-              speed={45}
+              speed={50}
             >
-              <Logo alt="nielsen logo" src={NielsenLogo} height={30} />
-              <Logo alt="pariveda logo" src={ParivedaLogo} height={25} />
-              <Logo alt="ben ventures logo" src={BenVenturesLogo} height={35} />
-              <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
               <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
-              <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={30} />
+              <Logo alt="the nippies logo" src={nippiesLogo} height={35} />
+              <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
+              <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={40} />
+              <Logo alt="svply chvn logo" src={svplychvnLogo} height={35} />
+              <Logo alt="smokebro logo" src={smokebroLogo} height={30} />
+              <Logo alt="to the moon logo" src={ttmLogo} height={35} />
             </Marquee>
           </MarqueeWrapper>
         </FadeInComponent>
