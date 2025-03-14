@@ -9,7 +9,10 @@ export const FadeInComponent = ({ children, timeout = 100 }: FadeInComponentProp
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setFadeIn(true), timeout);
+    const timer = setTimeout(() => {
+      requestAnimationFrame(() => setFadeIn(true)); // Forces transition recognition
+    }, timeout);
+
     return () => clearTimeout(timer);
   }, [timeout]);
 
@@ -18,7 +21,8 @@ export const FadeInComponent = ({ children, timeout = 100 }: FadeInComponentProp
       style={{
         opacity: fadeIn ? 1 : 0,
         transition: 'opacity 1s ease-in-out',
-        visibility: fadeIn ? 'visible' : 'hidden', // Ensures proper hiding initially
+        visibility: fadeIn ? 'visible' : 'hidden',
+        transform: fadeIn ? 'translateZ(0)' : 'translateZ(0)', // Forces GPU rendering
       }}
     >
       {children}

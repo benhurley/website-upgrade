@@ -65,7 +65,7 @@ border-color: white;
 
 const CTAContainer = styled.div`
 margin-top: 10px;
-margin-bottom: 8rem;
+margin-bottom: 6rem;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
@@ -86,7 +86,6 @@ margin-bottom: 1rem;
 const MarqueeWrapper = styled.div`
 cursor: pointer;
 display: block;
-justify-content: center;
 margin: auto;
 max-width: 50rem;
 `
@@ -128,7 +127,7 @@ export const Home = () => {
             />
           </ReactCardFlip>
         </AvatarContainer>
-        <Subtitle>Your Friendly Digital Architect</Subtitle>
+        <Subtitle>Your Friendly Design Engineer</Subtitle>
         <CTAContainer>
           <WebsitesButton to="/websites">My Websites</WebsitesButton>
           <ChatbotsButton to="/chatbots">My Chatbots</ChatbotsButton>
@@ -136,11 +135,14 @@ export const Home = () => {
         <FadeInComponent timeout={2900}>
           <MarqueeWrapper onClick={() => setShouldPlay(!shouldPlay)}>
             <Marquee
+              autoFill
               play={shouldPlay}
               pauseOnClick
               gradient
               gradientColor='black'
+              gradientWidth={'10px'}
               speed={50}
+              delay={3}
             >
               <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
               <Logo alt="the nippies logo" src={nippiesLogo} height={35} />
