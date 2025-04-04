@@ -147,9 +147,9 @@ export const Home = () => {
               <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={40} />
               <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
               <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
-              <Logo alt="svply chvn logo" src={svplychvnLogo} height={35} />
+              <Logo alt="to the moon logo" src={ttmLogo} height={40} />
               <Logo alt="smokebro logo" src={smokebroLogo} height={30} />
-              <Logo alt="to the moon logo" src={ttmLogo} height={35} />
+              <Logo alt="svply chvn logo" src={svplychvnLogo} height={35} />
             </Marquee>
           </MarqueeWrapper>
       </Container>

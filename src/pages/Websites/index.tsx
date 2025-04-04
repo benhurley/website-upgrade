@@ -27,7 +27,7 @@ export const Websites = () => {
                 <SlideInText text="Websites" size="h1" />
             </FadeInComponent>
             <FadeInComponent timeout={250}>
-                <h2>Public Showcase</h2>
+                <h2>Featured Websites</h2>
             </FadeInComponent>
             <Grid>
                 {workData.map((project, index) => (

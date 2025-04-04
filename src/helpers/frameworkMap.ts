@@ -4,6 +4,7 @@ import RemixLogo from "../img/remixLogo.webp";
 import NextJSLogo from "../img/nextjsLogo.webp";
 import GoDaddyLogo from "../img/godaddy.webp";
 import WordpressLogo from "../img/wordpress.webp";
+import ShopifyLogo from "../img/shopifyLogo.webp";
 
 type FrameworkMap = {
     [key: string]: {
@@ -32,6 +33,10 @@ export const frameworkMap: FrameworkMap = {
     GoDaddy: {
         imgUrl: GoDaddyLogo,
         url: "https://godaddy.com",
+    },
+    Shopify: {
+        imgUrl: ShopifyLogo,
+        url: "https://shopify.com",
     },
     Wordpress: {
         imgUrl: WordpressLogo,

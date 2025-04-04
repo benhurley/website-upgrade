@@ -4,8 +4,18 @@ import NippiesScreenshot from "../../img/nippies.webp";
 import SVPLYCHVNScreenshot from "../../img/svply.webp";
 import SmokeBroScreenshot from "../../img/smokebro.webp";
 import BetaEtaScreenshot from "../../img/betaeta.webp";
+import TTMScreenshot from "../../img/ttm.webp"
 
 export const workData = [
+    {
+        imgUrl: TTMScreenshot,
+        imgAlt: "TTM Homepage",
+        title: "To The Moon",
+        description: "A New York street brand established by artist Gazoo.",
+        url: "https://shop.uptothemoon.com",
+        framework: "Shopify",
+        role: "Built on Shopify"
+    },
     {
         imgUrl: DHHero,
         imgAlt: "Daily Harvest Smoothies",
@@ -13,7 +23,7 @@ export const workData = [
         description: "Plant-based meals built on organic fruits + vegetables.",
         url: "https://dailyharvest.com",
         framework: "Remix",
-        role: 'Lead Dev + UI/UX',
+        role: 'Contributor',
     },
     {
         imgUrl: BonobosHero,
@@ -22,7 +32,7 @@ export const workData = [
         description: "Men's clothing for all occasions. Subsidary of Express.",
         url: "https://bonobos.com",
         framework: "React",
-        role: "Dev + UI/UX"
+        role: "Contributor"
     },
     {
         imgUrl: NippiesScreenshot,
@@ -31,7 +41,7 @@ export const workData = [
         description: "A boutique collection of 100 misfit yeti characters on Solana and Bitcoin.",
         url: "https://nippi.es",
         framework: "React",
-        role: "Creator"
+        role: "Built with React"
     },
     {
         imgUrl: SVPLYCHVNScreenshot,
@@ -40,7 +50,7 @@ export const workData = [
         description: "A Music Experiment by Grammy Award Winner Daramola.",
         url: "https://svplychvn.com",
         framework: "T3",
-        role: "Lead Dev"
+        role: "Built with T3 Stack"
     },
     {
         imgUrl: SmokeBroScreenshot,
@@ -49,15 +59,15 @@ export const workData = [
         description: "The Ultimate 4-in-1 Cigar Holder, made for golfers.",
         url: "https://mysmokebro.com",
         framework: "GoDaddy",
-        role: "Creator"
+        role: "Built on GoDaddy"
     },
-    {
-        imgUrl: BetaEtaScreenshot,
-        imgAlt: "Westcott Fountain at Florida State University",
-        title: "FSU Beta Eta Alumni",
-        description: "Alumni Chapter of Pi Kappa Phi at Florida State University.",
-        url: "https://betaeta.com",
-        framework: "Wordpress",
-        role: "Creator"
-    },
+    // {
+    //     imgUrl: BetaEtaScreenshot,
+    //     imgAlt: "Westcott Fountain at Florida State University",
+    //     title: "FSU Beta Eta Alumni",
+    //     description: "Alumni Chapter of Pi Kappa Phi at Florida State University.",
+    //     url: "https://betaeta.com",
+    //     framework: "Wordpress",
+    //     role: "Dev"
+    // },
 ]
