@@ -5,6 +5,8 @@ import { Websites } from './pages/Websites';
 import { Footer } from './components/Footer';
 import styled, { createGlobalStyle } from "styled-components";
 import backgroundImg from "./img/background.webp";
+import cursor from "./img/cursor.png";
+import pointer from "./img/pointer.png";
 import { preloadImages } from './helpers/preloadImages';
 import { useEffect } from 'react';
 import { Chatbots } from './pages/Chatbots';
@@ -18,6 +20,11 @@ const GlobalStyles = createGlobalStyle`
     background-image: url(${backgroundImg});
     background-size: auto;
     background-color: #000;
+    cursor: url(${cursor}) 16 16, auto;
+  }
+
+  a, button {
+    cursor: url(${pointer}) 16 16, auto !important;
   }
 `;
 

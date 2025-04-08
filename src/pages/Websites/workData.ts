@@ -14,7 +14,7 @@ export const workData = [
         description: "A New York street brand established by artist Gazoo.",
         url: "https://shop.uptothemoon.com",
         framework: "Shopify",
-        role: "Built on Shopify"
+        role: "Creator"
     },
     {
         imgUrl: DHHero,
@@ -22,7 +22,7 @@ export const workData = [
         title: "Daily Harvest",
         description: "Plant-based meals built on organic fruits + vegetables.",
         url: "https://dailyharvest.com",
-        framework: "Remix",
+        framework: "Shopify",
         role: 'Contributor',
     },
     {
@@ -31,7 +31,7 @@ export const workData = [
         title: "Bonobos",
         description: "Men's clothing for all occasions. Subsidary of Express.",
         url: "https://bonobos.com",
-        framework: "React",
+        framework: "NextJS",
         role: "Contributor"
     },
     {
@@ -39,9 +39,9 @@ export const workData = [
         imgAlt: "Nippies by @ScubaSteveArt",
         title: "The Nippies",
         description: "A boutique collection of 100 misfit yeti characters on Solana and Bitcoin.",
-        url: "https://nippi.es",
+        url: "https://nippies.netlify.app",
         framework: "React",
-        role: "Built with React"
+        role: "Creator"
     },
     {
         imgUrl: SVPLYCHVNScreenshot,
@@ -50,7 +50,7 @@ export const workData = [
         description: "A Music Experiment by Grammy Award Winner Daramola.",
         url: "https://svplychvn.com",
         framework: "T3",
-        role: "Built with T3 Stack"
+        role: "Creator"
     },
     {
         imgUrl: SmokeBroScreenshot,
@@ -59,7 +59,7 @@ export const workData = [
         description: "The Ultimate 4-in-1 Cigar Holder, made for golfers.",
         url: "https://mysmokebro.com",
         framework: "GoDaddy",
-        role: "Built on GoDaddy"
+        role: "Creator"
     },
     // {
     //     imgUrl: BetaEtaScreenshot,

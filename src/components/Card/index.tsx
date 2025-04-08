@@ -18,7 +18,6 @@ const Container = styled.div`
   
  box-shadow: 8px 8px #43464B;
   transition: all 75ms cubic-bezier(0.4, 0, 0.2, 1);
-   cursor: pointer;
 
   &:hover {
     transform: translate(2px, 2px);
@@ -65,7 +64,8 @@ text-decoration: underline;
 `;
 
 const RoleContainer = styled.div`
-  display: table;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-top: -22px;
   margin-bottom: 4px;
@@ -93,36 +93,38 @@ const Framework = styled.img`
 // Rest of the component remains the same
 
 type cardProps = {
-    item: {
-        url: string,
-        imgUrl: string,
-        imgAlt: string,
-        title: string,
-        description: string,
-        role?: string,
-        framework?: string,
-        subdomain?: string,
-    },
-    imageShape?: 'square' | 'rectangle' | 'round'
+  item: {
+    url: string,
+    imgUrl: string,
+    imgAlt: string,
+    title: string,
+    description: string,
+    role?: string,
+    framework?: string,
+    subdomain?: string,
+  },
+  imageShape?: 'square' | 'rectangle' | 'round'
 }
 
 export const Card = ({ item, imageShape = 'rectangle' }: cardProps) => {
-    const { url, imgUrl, imgAlt, title, description, role, framework } = item;
-    return (
-        <Container data-testid="card">
-            {role && framework && <RoleContainer>
-                <a href={frameworkMap[framework].url} target="_blank" rel="noopener noreferrer">
-                    <Framework src={frameworkMap[framework].imgUrl} alt={framework} />
-                </a>
-                <Role>{role}</Role>
-            </RoleContainer>}
-            <a target="_blank" rel="noopener noreferrer" href={url}>
-                {imageShape === 'square' && <ImageSquare src={imgUrl} alt={imgAlt} />}
-                {imageShape === 'rectangle' && <ImageRectangle src={imgUrl} alt={imgAlt} />}
-                {imageShape === 'round' && <ImageRound src={imgUrl} alt={imgAlt} />}
-                <Title>{title}</Title>
-                <Description>{description}</Description>
+  const { url, imgUrl, imgAlt, title, description, role, framework } = item;
+  return (
+    <a target="_blank" rel="noopener noreferrer" href={url}>
+      <Container data-testid="card">
+        {role && framework &&
+          <RoleContainer>
+            <Role>{role}</Role>
+            <a href={frameworkMap[framework].url} target="_blank" rel="noopener noreferrer">
+              <Framework src={frameworkMap[framework].imgUrl} alt={framework} />
             </a>
-        </Container>
-    );
+          </RoleContainer>
+        }
+        {imageShape === 'square' && <ImageSquare src={imgUrl} alt={imgAlt} />}
+        {imageShape === 'rectangle' && <ImageRectangle src={imgUrl} alt={imgAlt} />}
+        {imageShape === 'round' && <ImageRound src={imgUrl} alt={imgAlt} />}
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+      </Container>
+    </a>
+  );
 }
