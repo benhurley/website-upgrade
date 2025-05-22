@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
 import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButton';
@@ -15,7 +15,6 @@ import DailyHarvestLogo from "../../img/dailyharvest.webp";
 import RockstarLogo from "../../img/rockstarLogo.webp";
 import ttmLogo from "../../img/ttmLogo.webp";
 import nippiesLogo from "../../img/nippiesLogo.webp";
-import svplychvnLogo from "../../img/svplychvn.webp";
 import smokebroLogo from "../../img/smokebroLogo.webp";
 
 const waveAnimation = keyframes`
@@ -98,13 +97,6 @@ const Logo = styled.img<{ height: number }>`
 export const Home = () => {
   const [isFlipped, setIsFlipped] = useState(true);
   const [shouldPlay, setShouldPlay] = useState(true);
-
-  const [showMarquee, setShowMarquee] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShowMarquee(true), 1000); // wait for fade
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <FadeInComponent>
