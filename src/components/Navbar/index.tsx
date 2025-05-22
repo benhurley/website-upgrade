@@ -16,9 +16,9 @@ const tabs = [
     { name: 'Home', path: '/' },
     { name: 'Websites', path: '/websites' },
     { name: "Chatbots", path: "/chatbots" },
-    { name: "Save Your Balls", path: '/saveyourballs'},
     { name: 'Contact', path: '/contact' },
-    { name: 'Donate', path: 'https://pay.justben.fyi' }
+    { name: "Balls", path: '/saveyourballs' },
+    { name: 'Donate', path: 'https://pay.justben.fyi' },
 ];
 
 const MUINavBar = styled(AppBar)`
@@ -77,7 +77,7 @@ export const NavBar = () => {
     return (
         <FadeInComponent>
             <MUINavBar>
-                <Container maxWidth="xl" sx={{backgroundColor: 'black'}}>
+                <Container maxWidth="xl" sx={{ backgroundColor: 'black' }}>
                     <Toolbar disableGutters>
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
                             <IconButton
@@ -99,7 +99,7 @@ export const NavBar = () => {
                             >
                                 {tabs.map((tab, index) => {
                                     return tab.path.includes('https') ?
-                                        (<a style={{ top: 0,  marginTop: 3, marginBottom: 3, marginLeft: 8, color: 'white', display: 'flex', justifyContent: 'left', fontSize: 20 }}
+                                        (<a style={{ top: 0, marginTop: 3, marginBottom: 3, marginLeft: 8, color: 'white', display: 'flex', justifyContent: 'left', fontSize: 20 }}
                                             aria-label="coffee link" target="_blank" rel="noopener noreferrer" href={tab.path}>{tab.name}</a>)
                                         :
                                         (<div onClick={() => handleTabSelection(tab.path)}>
@@ -107,7 +107,7 @@ export const NavBar = () => {
                                                 <Button
                                                     key={index}
                                                     onClick={() => handleTabSelection(tab.path)}
-                                                    sx={{ my: 3, color: 'white', display: 'block', fontSize: 20, textAlign: 'left', textTransform: 'capitalize'}}
+                                                    sx={{ my: 3, color: 'white', display: 'block', fontSize: 20, textAlign: 'left', textTransform: 'capitalize' }}
                                                 >
                                                     {tab.name}
                                                 </Button>

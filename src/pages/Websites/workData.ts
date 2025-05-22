@@ -17,15 +17,6 @@ export const workData = [
         role: "Creator"
     },
     {
-        imgUrl: DHHero,
-        imgAlt: "Daily Harvest Smoothies",
-        title: "Daily Harvest",
-        description: "Plant-based meals built on organic fruits + vegetables.",
-        url: "https://dailyharvest.com",
-        framework: "Shopify",
-        role: 'Contributor',
-    },
-    {
         imgUrl: BonobosHero,
         imgAlt: "Justin Rose wearing a Bonobos golf outfit",
         title: "Bonobos",
@@ -42,6 +33,15 @@ export const workData = [
         url: "https://nippies.netlify.app",
         framework: "React",
         role: "Creator"
+    },
+        {
+        imgUrl: DHHero,
+        imgAlt: "Daily Harvest Smoothies",
+        title: "Daily Harvest",
+        description: "Plant-based meals built on organic fruits + vegetables.",
+        url: "https://dailyharvest.com",
+        framework: "Shopify",
+        role: 'Contributor',
     },
     {
         imgUrl: SVPLYCHVNScreenshot,

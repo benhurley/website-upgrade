@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
     cursor: url(${cursor}) 16 16, auto;
   }
 
-  a, button {
+  a, button, img {
     cursor: url(${pointer}) 16 16, auto !important;
   }
 `;

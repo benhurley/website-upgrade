@@ -28,6 +28,10 @@ const Container = styled.div`
   }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+`;
+
 const ImageRectangle = styled.img`
   border-radius: 0.375rem;
   width: 275px;
@@ -109,7 +113,7 @@ type cardProps = {
 export const Card = ({ item, imageShape = 'rectangle' }: cardProps) => {
   const { url, imgUrl, imgAlt, title, description, role, framework } = item;
   return (
-    <a target="_blank" rel="noopener noreferrer" href={url}>
+    <Link target="_blank" rel="noopener noreferrer" href={url}>
       <Container data-testid="card">
         {role && framework &&
           <RoleContainer>
@@ -125,6 +129,6 @@ export const Card = ({ item, imageShape = 'rectangle' }: cardProps) => {
         <Title>{title}</Title>
         <Description>{description}</Description>
       </Container>
-    </a>
+    </Link>
   );
 }
