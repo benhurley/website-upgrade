@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { PrimaryLinkButton } from '../../components/Buttons/PrimaryLinkButton';
 import { SecondaryLinkButton } from '../../components/Buttons/SecondaryLinkButton';
@@ -98,6 +98,14 @@ const Logo = styled.img<{ height: number }>`
 export const Home = () => {
   const [isFlipped, setIsFlipped] = useState(true);
   const [shouldPlay, setShouldPlay] = useState(true);
+
+  const [showMarquee, setShowMarquee] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowMarquee(true), 1000); // wait for fade
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <FadeInComponent>
       <Container>
@@ -132,7 +140,7 @@ export const Home = () => {
           <WebsitesButton to="/websites">My Websites</WebsitesButton>
           <ChatbotsButton to="/chatbots">My Chatbots</ChatbotsButton>
         </CTAContainer>
-        <FadeInComponent timeout={3000}>
+        <FadeInComponent>
           <MarqueeWrapper onClick={() => setShouldPlay(!shouldPlay)}>
             <Marquee
               autoFill
@@ -142,7 +150,7 @@ export const Home = () => {
               gradientColor='black'
               gradientWidth={'10px'}
               speed={50}
-              delay={5}
+              delay={3.5}
             >
               <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
               <Logo alt="the nippies logo" src={nippiesLogo} height={35} />
