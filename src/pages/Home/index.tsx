@@ -132,25 +132,27 @@ export const Home = () => {
           <WebsitesButton to="/websites">My Websites</WebsitesButton>
           <ChatbotsButton to="/chatbots">My Chatbots</ChatbotsButton>
         </CTAContainer>
-        <MarqueeWrapper onClick={() => setShouldPlay(!shouldPlay)}>
-          <Marquee
-            autoFill
-            play={shouldPlay}
-            pauseOnClick
-            gradient
-            gradientColor='black'
-            gradientWidth={'10px'}
-            speed={50}
-            delay={3.25}
-          >
-            <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
-            <Logo alt="the nippies logo" src={nippiesLogo} height={35} />
-            <Logo alt="to the moon logo" src={ttmLogo} height={40} />
-            <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
-            <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={40} />
-            <Logo alt="smokebro logo" src={smokebroLogo} height={30} />
-          </Marquee>
-        </MarqueeWrapper>
+        <FadeInComponent timeout={3000}>
+          <MarqueeWrapper onClick={() => setShouldPlay(!shouldPlay)}>
+            <Marquee
+              autoFill
+              play={shouldPlay}
+              pauseOnClick
+              gradient
+              gradientColor='black'
+              gradientWidth={'10px'}
+              speed={50}
+              delay={5}
+            >
+              <Logo alt="rockstar games logo" src={RockstarLogo} height={35} />
+              <Logo alt="the nippies logo" src={nippiesLogo} height={35} />
+              <Logo alt="to the moon logo" src={ttmLogo} height={40} />
+              <Logo alt="bonobos logo" src={BonobosLogo} height={30} />
+              <Logo alt="daily harvest logo" src={DailyHarvestLogo} height={40} />
+              <Logo alt="smokebro logo" src={smokebroLogo} height={30} />
+            </Marquee>
+          </MarqueeWrapper>
+        </FadeInComponent>
       </Container>
     </FadeInComponent>
   )
