@@ -37,7 +37,7 @@ export const projectData = [
         imgAlt: "BidZippy Homepage",
         title: "BidZippy",
         description: "Quick Filters to find the Best Auctions on eBay.",
-        url: "https://bidzippy.com",
+        url: "https://bidzippy.justben.fyi",
         framework: "NextJS",
         role: "Creator"
     },
