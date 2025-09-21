@@ -119,7 +119,7 @@ export const CardWithCTAs = ({ item, imageShape = 'rectangle', primaryCTAData, s
         <Container data-testid="card">
             {role && framework && <RoleContainer>
                 <a href={frameworkMap[framework].url} target="_blank" rel="noopener noreferrer">
-                    <Framework src={frameworkMap[framework].imgUrl} alt={framework} />
+                    <Framework title={framework} src={frameworkMap[framework].imgUrl} alt={framework} />
                 </a>
                 <Role>{role}</Role>
             </RoleContainer>}

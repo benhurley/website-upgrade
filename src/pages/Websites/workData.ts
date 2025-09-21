@@ -1,9 +1,8 @@
-import DHHero from "../../img/dh-hero.webp";
 import BonobosHero from "../../img/bonobos-hero.webp";
 import NippiesScreenshot from "../../img/nippies.webp";
 import SVPLYCHVNScreenshot from "../../img/svply.webp";
 import SmokeBroScreenshot from "../../img/smokebro.webp";
-import BetaEtaScreenshot from "../../img/betaeta.webp";
+import RetroScreenshot from "../../img/retro.webp";
 import TTMScreenshot from "../../img/ttm.webp"
 
 export const workData = [
@@ -17,15 +16,6 @@ export const workData = [
         role: "Creator"
     },
     {
-        imgUrl: BonobosHero,
-        imgAlt: "Justin Rose wearing a Bonobos golf outfit",
-        title: "Bonobos",
-        description: "Men's clothing for all occasions. Subsidary of Express.",
-        url: "https://bonobos.com",
-        framework: "NextJS",
-        role: "Contributor"
-    },
-    {
         imgUrl: NippiesScreenshot,
         imgAlt: "Nippies by @ScubaSteveArt",
         title: "The Nippies",
@@ -33,15 +23,6 @@ export const workData = [
         url: "https://nippies.netlify.app",
         framework: "React",
         role: "Creator"
-    },
-        {
-        imgUrl: DHHero,
-        imgAlt: "Daily Harvest Smoothies",
-        title: "Daily Harvest",
-        description: "Plant-based meals built on organic fruits + vegetables.",
-        url: "https://dailyharvest.com",
-        framework: "Shopify",
-        role: 'Contributor',
     },
     {
         imgUrl: SVPLYCHVNScreenshot,
@@ -61,6 +42,25 @@ export const workData = [
         framework: "GoDaddy",
         role: "Creator"
     },
+        {
+        imgUrl: BonobosHero,
+        imgAlt: "Justin Rose wearing a Bonobos golf outfit",
+        title: "Bonobos",
+        description: "Men's clothing for all occasions. Subsidary of Express.",
+        url: "https://bonobos.com",
+        framework: "NextJS",
+        role: "Contributor"
+    },
+      {
+    imgUrl: RetroScreenshot,
+    imgAlt: "Retro Portfolio Homepage",
+    title: "Retro Portfolio",
+    description:
+      "A version of this site inspired by the 1965 Newport Folk Festival.",
+    url: "https://retro.justben.fyi",
+    framework: "ReactRouter",
+    role: "Creator",
+  },
     // {
     //     imgUrl: BetaEtaScreenshot,
     //     imgAlt: "Westcott Fountain at Florida State University",

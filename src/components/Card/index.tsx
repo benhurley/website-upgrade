@@ -119,7 +119,7 @@ export const Card = ({ item, imageShape = 'rectangle' }: cardProps) => {
           <RoleContainer>
             <Role>{role}</Role>
             <a href={frameworkMap[framework].url} target="_blank" rel="noopener noreferrer">
-              <Framework src={frameworkMap[framework].imgUrl} alt={framework} />
+              <Framework title={framework} src={frameworkMap[framework].imgUrl} alt={framework} />
             </a>
           </RoleContainer>
         }
